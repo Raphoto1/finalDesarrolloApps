@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 //imports propios
 import Navigator from './src/navigation/navigator';
 import { fonts } from './src/constants/fonts';
+import { colors } from './src/constants/colors';
 
 export default function App() {
 
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
   container: {
     width:'100%',
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     justifyContent: 'center',
   },
 });
