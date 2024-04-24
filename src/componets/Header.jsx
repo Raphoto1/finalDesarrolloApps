@@ -14,12 +14,16 @@ const Header = ({ title }) => {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: 70,
+    height: '20%',
+    paddingTop: 10,
+    alignItems: 'center',
     justifyContent: "center",
-    },
-    text: {
-        color: 'black'
-    }
+  },
+  text: {
+    fontFamily:'Jersey_25',
+    color: "black",
+    fontSize:30
+  },
 });
 
 export default Header;
