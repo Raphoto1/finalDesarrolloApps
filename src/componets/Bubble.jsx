@@ -1,15 +1,33 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, Image } from "react-native";
+import React from "react";
 
-const Bubble = ({thumbnail, text, color}) => {
+const Bubble = ({ thumbnail, text, color }) => {
   return (
-      <View>
-          <Image></Image>
-      <Text>Bubbble</Text>
+    <View>
+      <View style={styles.bubbleContainer}>
+        <Image
+          resizeMode='cover'
+          style={styles.bubbleImage}
+          source={{ uri: "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" }}></Image>
+        <Text style={styles.bubbleText}>Bubbble long text extra long</Text>
+      </View>
     </View>
-  )
-}
+  );
+};
 
-export default Bubble
+export default Bubble;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  bubbleContainer: {
+    paddingHorizontal:10,
+  },
+  bubbleImage: {
+    height: 100,
+    width: 100,
+    borderRadius: 50,
+  },
+  bubbleText: {
+    width:100,
+    textAlign:'center'
+  }
+});
