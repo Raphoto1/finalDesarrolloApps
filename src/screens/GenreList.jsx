@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 //imports propios
 import GridList from '../componets/GridList'
-const GenreList = () => {
+const GenreList = ({navigation}) => {
   return (
     <View>
           <Text>GenreList</Text>

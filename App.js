@@ -1,5 +1,5 @@
 //imports de app
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet, Platform, StatusBar } from 'react-native';
 import { useFonts } from 'expo-font';
 //imports propios
 import Navigator from './src/navigation/navigator';
@@ -25,9 +25,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    width:'100%',
+    // marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     flex: 1,
-    backgroundColor: colors.white,
-    justifyContent: 'center',
+    backgroundColor: colors.teal200,
   },
 });

@@ -1,13 +1,14 @@
 //imports de app
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 import React from 'react'
 //imports Propios
 import GridList from '../componets/GridList'
 
-const GameList = () => {
+const GameList = ({route, navigation}) => {
   return (
     <View>
-          <Text>GameList</Text>
+      <Text>GameList title</Text>
+      <Button title='Back' onPress={()=>{navigation.goBack()}}></Button>
           <GridList/>
     </View>
   )

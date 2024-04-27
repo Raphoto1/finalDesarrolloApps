@@ -5,20 +5,14 @@ import React from "react";
 import HorizontalList from "../componets/HorizontalList";
 import { colors } from "../constants/colors";
 
-const Home = () => {
-  const handleAllGames = () => {
-    navigation.navigate("GameList", GameList);
-  };
+const Home = ({ route, navigation }) => {
   return (
     <View>
       <Text>Gamming Panas HOME</Text>
       <View style={styles.mainGroup}>
-        <Pressable onPress={handleAllGames()}>
-          <Text>Check all games</Text>
-        </Pressable>
-        <HorizontalList title={"Games"} />
-        <HorizontalList title={"Genre"} />
-        <HorizontalList title={"Friends"} />
+        <HorizontalList title={"Games"} navigation={navigation} gridList={"GameList"} />
+        <HorizontalList title={"Genre"} navigation={navigation} gridList={"GenreList"}/>
+        <HorizontalList title={"Friends"} navigation={navigation} gridList={"FriendsList"}/>
       </View>
     </View>
   );

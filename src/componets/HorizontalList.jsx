@@ -1,13 +1,17 @@
 //Imports app
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Pressable, Button } from "react-native";
 import React from "react";
 //Imports propios
 import Bubble from "./Bubble";
 import { colors } from "../constants/colors";
 
-const HorizontalList = ({ title }) => {
+const HorizontalList = ({ title, navigation, gridList }) => {
+
   return (
     <View style={styles.listGroup}>
+      <Pressable onPress={()=>{navigation.navigate(`${gridList}`)}}>
+        <Text>{`Check all ${title}`}</Text>
+      </Pressable>
       <Text style={styles.listTitle}>{`${title} HorizontalList`}</Text>
       <View style={styles.listContainer}>
         <Bubble />
@@ -23,7 +27,7 @@ export default HorizontalList;
 
 const styles = StyleSheet.create({
   listGroup: {
-    backgroundColor: colors.cyan
+    backgroundColor: colors.cyan,
   },
   listTitle: {
     fontFamily: "LatoRegular",
