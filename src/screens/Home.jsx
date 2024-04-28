@@ -10,9 +10,9 @@ const Home = ({ route, navigation }) => {
     <View>
       <Text>Gamming Panas HOME</Text>
       <View style={styles.mainGroup}>
-        <HorizontalList title={"Games"} navigation={navigation} gridList={"GameList"} />
-        <HorizontalList title={"Genre"} navigation={navigation} gridList={"GenreList"}/>
-        <HorizontalList title={"Friends"} navigation={navigation} gridList={"FriendsList"}/>
+        <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} />
+        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"}/>
+        <HorizontalList title={"Friends Ready"} navigation={navigation} gridList={"FriendsList"}/>
       </View>
     </View>
   );

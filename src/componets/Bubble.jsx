@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
+import { colors } from "../constants/colors";
 
 const Bubble = ({ thumbnail, text, color }) => {
   return (
@@ -19,12 +20,16 @@ export default Bubble;
 
 const styles = StyleSheet.create({
   bubbleContainer: {
-    paddingHorizontal:10,
+    paddingHorizontal: 10,
+    borderBlockColor: 'red',
+    
   },
   bubbleImage: {
     height: 100,
     width: 100,
     borderRadius: 50,
+    borderColor: colors.lightBlue,
+    borderWidth:3
   },
   bubbleText: {
     width:100,

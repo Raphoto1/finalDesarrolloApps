@@ -9,10 +9,12 @@ const HorizontalList = ({ title, navigation, gridList }) => {
 
   return (
     <View style={styles.listGroup}>
-      <Pressable onPress={()=>{navigation.navigate(`${gridList}`)}}>
-        <Text>{`Check all ${title}`}</Text>
-      </Pressable>
-      <Text style={styles.listTitle}>{`${title} HorizontalList`}</Text>
+      <View style={styles.titleContainer}>
+        <Text style={styles.listTitle}>{`${title}`}</Text>
+        <Pressable style={styles.checkAll} onPress={()=>{navigation.navigate(`${gridList}`)}} navigation={navigation}>
+          <Text>{`Check all ${title}`}</Text>
+        </Pressable>
+      </View>
       <View style={styles.listContainer}>
         <Bubble />
         <Bubble />
@@ -26,12 +28,26 @@ const HorizontalList = ({ title, navigation, gridList }) => {
 export default HorizontalList;
 
 const styles = StyleSheet.create({
+  titleContainer: {
+    flexDirection: 'row',
+    justifyContent:'space-around'
+  },
+  checkAll: {
+    alignContent: 'center',
+    justifyContent:'center'
+  },
   listGroup: {
-    backgroundColor: colors.cyan,
+    paddingTop:10,
+    borderColor: colors.gray,
+    borderTopWidth: 5,
   },
   listTitle: {
+    padding: 10,
+    borderRadius:10,
     fontFamily: "LatoRegular",
-    fontSize: 22,
+    fontSize: 24,
+    color:colors.gray,
+    backgroundColor:colors.darkBlue
   },
   listContainer: {
     width: "100%",

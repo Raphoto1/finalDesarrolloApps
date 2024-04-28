@@ -25,11 +25,13 @@ const Navigator = () => {
                 title={
                   route.name === "Home"
                     ? "Game Call"
-                    : route.name === "Games List"
-                    ? "GenreList"
-                    : route.name === "Genres List"
-                    ? "FriendsList"
-                    : route.name === "Friends List"
+                    : route.name === "GameList"
+                    ? "Games List"
+                    : route.name === "GenreList"
+                    ? "Genre List"
+                    : route.name === "FriendsList"
+                    ? "Friends List"
+                    : route.name === "lost"
                 }
               />
             );
