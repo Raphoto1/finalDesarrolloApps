@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.darkBlue,
   },
   text: {
-    padding:'3%',
     fontFamily:'Jersey_25',
     color: "white",
     fontSize:50

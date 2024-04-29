@@ -41,7 +41,7 @@ const Home = ({ route, navigation }) => {
       <View style={styles.mainGroup}>
         <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} />
         <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"} />
-        <HorizontalList title={"Friends Online"} navigation={navigation} gridList={"FriendsList"} />
+        {/* <HorizontalList title={"Friends Online"} navigation={navigation} gridList={"FriendsList"} /> */}
       </View>
     </View>
   );
