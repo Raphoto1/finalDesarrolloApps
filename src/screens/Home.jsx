@@ -1,18 +1,47 @@
 //imports de app
 import { StyleSheet, Text, View, Pressable } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 //imports propios
 import HorizontalList from "../componets/HorizontalList";
+import ModalCustom from "../componets/ModalCustom";
 import { colors } from "../constants/colors";
 
 const Home = ({ route, navigation }) => {
+  //Modal controls
+  const [modalVisible, setModalVisible] = useState(false);
+  const handleGreen = () => {
+    console.log("oprimo green y genero el call");
+  };
+  const handleAux = () => {
+    console.log('see edita el call');
+  }
+  const handleRed = () => {
+    setModalVisible(!modalVisible);
+  };
+  const handleModal = () => {
+    setModalVisible(!modalVisible);
+  }
+  //end modal controls
   return (
     <View>
-      <Text>Gamming Panas HOME</Text>
+      <Text>Gamming Panas HOME puede ir un call del favorito</Text>
+      <ModalCustom
+        modalVisible={modalVisible}
+        handleModal={handleModal}
+        title={`Fast Call the Group`}
+        mainText={'test desde home'}
+        btnRedActive={"cancel"}
+        handleRed={handleRed}
+        btnAuxActive={"adjust"}
+        handleAux={handleAux}
+        btnGreenActive={"lets Play"}
+        handleGreen={handleGreen}
+      />
+
       <View style={styles.mainGroup}>
         <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} />
-        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"}/>
-        <HorizontalList title={"Friends Ready"} navigation={navigation} gridList={"FriendsList"}/>
+        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"} />
+        <HorizontalList title={"Friends Online"} navigation={navigation} gridList={"FriendsList"} />
       </View>
     </View>
   );

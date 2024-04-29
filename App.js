@@ -6,6 +6,8 @@ import Navigator from './src/navigation/navigator';
 import { fonts } from './src/constants/fonts';
 import { colors } from './src/constants/colors';
 
+//nav bar/ send call(main)llama modal seleccionar juego y grupo o jugadores/program session/search session/Invite friends/manage Groups(carrito)
+
 export default function App() {
 
   const [fontsLoaded, fontError] = useFonts(fonts);
