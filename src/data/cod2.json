@@ -1,0 +1,3212 @@
+{
+  "count": 55472,
+  "next": "https://api.rawg.io/api/games?key=6553a6e544484e8cb8d71f84df2a4905&page=3&page_size=1000&search=call+of+duty",
+  "previous": "https://api.rawg.io/api/games?key=6553a6e544484e8cb8d71f84df2a4905&page_size=1000&search=call+of+duty",
+  "results": [
+    {
+      "slug": "call-of-duty-2000",
+      "name": "Call of Duty 2000(itch)",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2015-07-23",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/5aa/5aa963d37b1fc3957b955bfa87b9b322.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 1, "title": "skip", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 1,
+      "added_by_status": { "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 12,
+      "updated": "2019-04-22T11:39:06",
+      "id": 166186,
+      "score": "32.148163",
+      "clip": null,
+      "tags": [
+        {
+          "id": 2590,
+          "name": "fun",
+          "slug": "fun",
+          "language": "eng",
+          "games_count": 28829,
+          "image_background": "https://media.rawg.io/media/screenshots/53a/53a98929b8c944db6522487896fd9264.jpg"
+        },
+        {
+          "id": 1303,
+          "name": "Shadows",
+          "slug": "shadows",
+          "language": "eng",
+          "games_count": 784,
+          "image_background": "https://media.rawg.io/media/screenshots/607/607c822d3311f20736699d68d89ad331.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/5aa/5aa963d37b1fc3957b955bfa87b9b322.jpg" },
+        { "id": 1222618, "image": "https://media.rawg.io/media/screenshots/2a8/2a8d01dde506313b9d767f5c3647d188.jpg" },
+        { "id": 1222619, "image": "https://media.rawg.io/media/screenshots/5aa/5aa963d37b1fc3957b955bfa87b9b322.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 7, "name": "Puzzle", "slug": "puzzle" }]
+    },
+    {
+      "slug": "call-of-duty-mario-warfare",
+      "name": "Call Of Duty: Mario Warfare",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2021-04-09",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/d56/d56e9ba52631f315a5289606e056dad2.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 25,
+      "updated": "2021-04-12T20:10:08",
+      "id": 582812,
+      "score": "32.02832",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 190499,
+          "image_background": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 33713,
+          "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 25794,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 37,
+          "name": "Sandbox",
+          "slug": "sandbox",
+          "language": "eng",
+          "games_count": 5473,
+          "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+        },
+        {
+          "id": 591,
+          "name": "Unreal Engine",
+          "slug": "unreal-engine",
+          "language": "eng",
+          "games_count": 7588,
+          "image_background": "https://media.rawg.io/media/screenshots/b64/b6444c663d3fb801a4374ce1f77ec4e4.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/d56/d56e9ba52631f315a5289606e056dad2.jpg" },
+        { "id": 2787692, "image": "https://media.rawg.io/media/screenshots/d56/d56e9ba52631f315a5289606e056dad2.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-wwii-joaquim",
+      "name": "call of duty wwii-joaquim",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2021-10-28",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/57d/57d4e0864ab5f15ffa5eea1b2e7d24c5.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 7,
+      "updated": "2021-10-29T06:22:13",
+      "id": 685353,
+      "score": "30.970276",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/57d/57d4e0864ab5f15ffa5eea1b2e7d24c5.jpg" },
+        { "id": 3084134, "image": "https://media.rawg.io/media/screenshots/57d/57d4e0864ab5f15ffa5eea1b2e7d24c5.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 83, "name": "Platformer", "slug": "platformer" }]
+    },
+    {
+      "slug": "call-of-duty-zombies-therapy",
+      "name": "Call of Duty: Zombies: Therapy",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 21, "name": "Android", "slug": "android" } },
+        { "platform": { "id": 5, "name": "macOS", "slug": "macos" } },
+        { "platform": { "id": 6, "name": "Linux", "slug": "linux" } }
+      ],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2022-02-03",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/5d3/5d3231b5b785277eab4b1e819965d3a8.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 1, "title": "skip", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": { "owned": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 162,
+      "updated": "2022-11-12T13:12:52",
+      "id": 732890,
+      "score": "30.970276",
+      "clip": null,
+      "tags": [
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 9420,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 2100,
+          "name": "violence",
+          "slug": "violence",
+          "language": "eng",
+          "games_count": 126,
+          "image_background": "https://media.rawg.io/media/screenshots/bf5/bf55615c0a81173033c7048ea6f62dd6.jpg"
+        },
+        {
+          "id": 3420,
+          "name": "doctor",
+          "slug": "doctor",
+          "language": "eng",
+          "games_count": 116,
+          "image_background": "https://media.rawg.io/media/screenshots/f1b/f1b340c9f1c74308bc45384196fb64dc.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/5d3/5d3231b5b785277eab4b1e819965d3a8.jpg" },
+        { "id": 3221474, "image": "https://media.rawg.io/media/screenshots/8a4/8a4f94bf059bf2f155fe8edfcd585b62.jpg" },
+        { "id": 3221475, "image": "https://media.rawg.io/media/screenshots/30b/30bc13ac6a885fc775049cd0ec27f6d1.jpg" },
+        { "id": 3221476, "image": "https://media.rawg.io/media/screenshots/434/43448ae9fcc1442062ba07d38285cd65.jpg" },
+        { "id": 3221477, "image": "https://media.rawg.io/media/screenshots/5d3/5d3231b5b785277eab4b1e819965d3a8.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 8, "name": "Android", "slug": "android" } },
+        { "platform": { "id": 5, "name": "Apple Macintosh", "slug": "mac" } },
+        { "platform": { "id": 6, "name": "Linux", "slug": "linux" } }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-advanced-warfare-havoc",
+      "name": "Call of Duty: Advanced Warfare - Havoc",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }],
+      "stores": null,
+      "released": "2015-01-27",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/1f5/1f5cd4e923d424f11d997c32338fbd35.jpg",
+      "rating": 0.0,
+      "rating_top": 5,
+      "ratings": [
+        { "id": 5, "title": "exceptional", "count": 2, "percent": 40.0 },
+        { "id": 4, "title": "recommended", "count": 2, "percent": 40.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 20.0 }
+      ],
+      "ratings_count": 5,
+      "reviews_text_count": 0,
+      "added": 11,
+      "added_by_status": { "owned": 2, "beaten": 6, "toplay": 2, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 609,
+      "updated": "2023-03-13T20:02:23",
+      "id": 42980,
+      "score": "29.475994",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 5,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/1f5/1f5cd4e923d424f11d997c32338fbd35.jpg" },
+        { "id": 622185, "image": "https://media.rawg.io/media/screenshots/7cc/7cc7328fd6e62f8592681e70d25da7b9.jpg" },
+        { "id": 622186, "image": "https://media.rawg.io/media/screenshots/ede/ede4890427ec022010f8096ba5d39286.jpg" },
+        { "id": 622187, "image": "https://media.rawg.io/media/screenshots/2a6/2a6491ec7196358dafffa6f0cd100ed6.jpg" },
+        { "id": 622188, "image": "https://media.rawg.io/media/screenshots/ce0/ce0e6f4f7638f9ef6d84f1f397295391.jpg" },
+        { "id": 622189, "image": "https://media.rawg.io/media/screenshots/1c3/1c3901641a7838c99012508f9405a2b9.jpg" },
+        { "id": 622190, "image": "https://media.rawg.io/media/screenshots/8ee/8ee40c2f8f3cdaed867fc1cffdf55f45.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-escalation",
+      "name": "Call of Duty: Black Ops - Escalation",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 13, "name": "Nintendo DSi", "slug": "nintendo-dsi" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": null,
+      "released": "2011-05-03",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/49c/49c1813da3c18e50af8e55b1623e6687.jpg",
+      "rating": 3.5,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 3, "percent": 50.0 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 16.67 },
+        { "id": 3, "title": "meh", "count": 1, "percent": 16.67 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 16.67 }
+      ],
+      "ratings_count": 6,
+      "reviews_text_count": 0,
+      "added": 21,
+      "added_by_status": { "yet": 2, "owned": 6, "beaten": 6, "toplay": 4, "dropped": 2, "playing": 1 },
+      "metacritic": null,
+      "suggestions_count": 700,
+      "updated": "2023-09-02T20:11:25",
+      "id": 41861,
+      "score": "29.475994",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 6,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/49c/49c1813da3c18e50af8e55b1623e6687.jpg" },
+        { "id": 604473, "image": "https://media.rawg.io/media/screenshots/2e0/2e02b9c4ba1a9b728b0bf31f3bbd0774.jpg" },
+        { "id": 604474, "image": "https://media.rawg.io/media/screenshots/ff5/ff50476547ac87fa502143371e52ae69.jpg" },
+        { "id": 604475, "image": "https://media.rawg.io/media/screenshots/8bf/8bf50e25966352cda670ab30c540a3c7.jpg" },
+        { "id": 604476, "image": "https://media.rawg.io/media/screenshots/0cc/0cc48a7a66437dac84547f7f1780b522.jpg" },
+        { "id": 604477, "image": "https://media.rawg.io/media/screenshots/b51/b51d83b40c2f9e7acf57ba45ed28651f.jpg" },
+        { "id": 604478, "image": "https://media.rawg.io/media/screenshots/fc0/fc03d8c003a235c1237359ba9b49f05a.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 7, "name": "Nintendo", "slug": "nintendo" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-annihilation",
+      "name": "Call of Duty: Black Ops - Annihilation",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": null,
+      "released": "2011-06-28",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/602/602bc393d459134c967b25d48ac7f5bb.jpg",
+      "rating": 0.0,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 2, "percent": 40.0 },
+        { "id": 1, "title": "skip", "count": 2, "percent": 40.0 },
+        { "id": 3, "title": "meh", "count": 1, "percent": 20.0 }
+      ],
+      "ratings_count": 5,
+      "reviews_text_count": 0,
+      "added": 14,
+      "added_by_status": { "yet": 1, "owned": 3, "beaten": 4, "toplay": 3, "dropped": 2, "playing": 1 },
+      "metacritic": null,
+      "suggestions_count": 677,
+      "updated": "2023-09-02T20:11:50",
+      "id": 41860,
+      "score": "29.165062",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 5,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/602/602bc393d459134c967b25d48ac7f5bb.jpg" },
+        { "id": 604459, "image": "https://media.rawg.io/media/screenshots/48e/48ebc7c15d1b769728407c9c0adec693.jpg" },
+        { "id": 604460, "image": "https://media.rawg.io/media/screenshots/c07/c0711a4849250cc85e6df61c98124712_dqjQPQJ.jpg" },
+        { "id": 604461, "image": "https://media.rawg.io/media/screenshots/932/932161a86722c8399b4f2ed761cad088.jpg" },
+        { "id": 604462, "image": "https://media.rawg.io/media/screenshots/15a/15a3b730e80112fff2a6f8276bd7d25c_Mi0fXez.jpg" },
+        { "id": 604463, "image": "https://media.rawg.io/media/screenshots/467/467082a66253332bf2dd3b93ae13faba.jpg" },
+        { "id": 604464, "image": "https://media.rawg.io/media/screenshots/890/89003bfca78e429e3f963179e3fe198e.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-d-day-16",
+      "name": "Call of duty D-day 1.6",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 171, "name": "Web", "slug": "web" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2022-11-12",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/371/37168e63837c93830139917e357cbdf7.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-11-14T09:44:20",
+      "id": 880345,
+      "score": "29.165062",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 191296,
+          "image_background": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg"
+        },
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 182732,
+          "image_background": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png"
+        },
+        {
+          "id": 6,
+          "name": "Exploration",
+          "slug": "exploration",
+          "language": "eng",
+          "games_count": 17668,
+          "image_background": "https://media.rawg.io/media/games/9aa/9aa42d16d425fa6f179fc9dc2f763647.jpg"
+        },
+        {
+          "id": 111,
+          "name": "Short",
+          "slug": "short",
+          "language": "eng",
+          "games_count": 53094,
+          "image_background": "https://media.rawg.io/media/games/34e/34e100b1f648de99f32d477065f04653.jpg"
+        },
+        {
+          "id": 246,
+          "name": "Clicker",
+          "slug": "clicker",
+          "language": "eng",
+          "games_count": 6652,
+          "image_background": "https://media.rawg.io/media/screenshots/4f9/4f946dac48cf28907ed8e57870c0f6d3.jpg"
+        },
+        {
+          "id": 958,
+          "name": "sprites",
+          "slug": "sprites",
+          "language": "eng",
+          "games_count": 2919,
+          "image_background": "https://media.rawg.io/media/screenshots/97a/97a082284288b4da8eb78f0db6acf633.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/371/37168e63837c93830139917e357cbdf7.jpg" },
+        { "id": 3649932, "image": "https://media.rawg.io/media/screenshots/371/37168e63837c93830139917e357cbdf7.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 14, "name": "Web", "slug": "web" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 10, "name": "Strategy", "slug": "strategy" },
+        { "id": 4, "name": "Action", "slug": "action" },
+        { "id": 7, "name": "Puzzle", "slug": "puzzle" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-rezurrection",
+      "name": "Call of Duty: Black Ops - Rezurrection",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": null,
+      "released": "2011-08-22",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/a2c/a2c560a7bf449dc4965f7145515b504e.jpg",
+      "rating": 3.57,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 4, "percent": 57.14 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 14.29 },
+        { "id": 3, "title": "meh", "count": 1, "percent": 14.29 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 14.29 }
+      ],
+      "ratings_count": 7,
+      "reviews_text_count": 0,
+      "added": 18,
+      "added_by_status": { "yet": 1, "owned": 4, "beaten": 6, "toplay": 4, "dropped": 2, "playing": 1 },
+      "metacritic": null,
+      "suggestions_count": 740,
+      "updated": "2023-09-02T20:10:57",
+      "id": 41863,
+      "score": "29.023956",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 7,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/a2c/a2c560a7bf449dc4965f7145515b504e.jpg" },
+        { "id": 604509, "image": "https://media.rawg.io/media/screenshots/be2/be2752d474cdbd6a5686ba3f2f41ce68_FwrF8Om.jpg" },
+        { "id": 604510, "image": "https://media.rawg.io/media/screenshots/788/78891e6e4651d703e91a859754ad5079.jpg" },
+        { "id": 604511, "image": "https://media.rawg.io/media/screenshots/0fa/0fa549a27f5b3c4e39d56b04033ba277_URzYKpK.jpg" },
+        { "id": 604512, "image": "https://media.rawg.io/media/screenshots/13f/13f31ac0061b9a4236ed1a37ea6e9873.jpg" },
+        { "id": 604513, "image": "https://media.rawg.io/media/screenshots/167/1671dc9339b2f65ac213e06e1ca90969.jpg" },
+        { "id": 604514, "image": "https://media.rawg.io/media/screenshots/c10/c10b14fdfa7a6dd7def2f5d234978635.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-advanced-warfare-ascendance",
+      "name": "Call of Duty: Advanced Warfare - Ascendance",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }],
+      "stores": null,
+      "released": "2015-03-31",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/e61/e610745824772a1d33044dc2c58ef959.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 33.33 },
+        { "id": 4, "title": "recommended", "count": 1, "percent": 33.33 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 33.33 }
+      ],
+      "ratings_count": 3,
+      "reviews_text_count": 0,
+      "added": 8,
+      "added_by_status": { "owned": 2, "beaten": 4, "toplay": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 345,
+      "updated": "2023-03-13T20:02:22",
+      "id": 43226,
+      "score": "28.44786",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 3,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/e61/e610745824772a1d33044dc2c58ef959.jpg" },
+        { "id": 624313, "image": "https://media.rawg.io/media/screenshots/43e/43e1bbd8793f3742e84905eb70f5749b.jpg" },
+        { "id": 624314, "image": "https://media.rawg.io/media/screenshots/715/71581a1eb876463172791cebf77bf227.jpg" },
+        { "id": 624315, "image": "https://media.rawg.io/media/screenshots/07c/07c3190d11bdf9e9c7dff198a9d358e8.jpg" },
+        { "id": 624316, "image": "https://media.rawg.io/media/screenshots/3f6/3f6f522854f305f80bb7a01bf4d70c44.jpg" },
+        { "id": 624317, "image": "https://media.rawg.io/media/screenshots/844/844dc1d462291fc1324c98b89322bc1d_6J1THSm.jpg" },
+        { "id": 3689785, "image": "https://media.rawg.io/media/screenshots/e61/e610745824772a1d33044dc2c58ef959.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-3-unity-study",
+      "name": "Call of Duty 3 - Unity Study",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2021-10-23",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/f8e/f8e43932559b78f8cfb4da8fd776fabb.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 189,
+      "updated": "2021-10-25T08:03:39",
+      "id": 684265,
+      "score": "28.191711",
+      "clip": null,
+      "tags": [
+        {
+          "id": 111,
+          "name": "Short",
+          "slug": "short",
+          "language": "eng",
+          "games_count": 52855,
+          "image_background": "https://media.rawg.io/media/screenshots/6ac/6ac143af704c95c774af432785ff9762.jpeg"
+        },
+        {
+          "id": 571,
+          "name": "3D",
+          "slug": "3d",
+          "language": "eng",
+          "games_count": 72344,
+          "image_background": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg"
+        },
+        {
+          "id": 607,
+          "name": "Unity",
+          "slug": "unity",
+          "language": "eng",
+          "games_count": 67505,
+          "image_background": "https://media.rawg.io/media/screenshots/4db/4dbe6762d5b7721e7ac412d6ab7661db.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/f8e/f8e43932559b78f8cfb4da8fd776fabb.jpg" },
+        { "id": 3080217, "image": "https://media.rawg.io/media/screenshots/74c/74c7241860bdc2e2a38a3083545e8413.jpg" },
+        { "id": 3080218, "image": "https://media.rawg.io/media/screenshots/be7/be7af7a44c40b964796dd9f6b6d1513f.jpg" },
+        { "id": 3080219, "image": "https://media.rawg.io/media/screenshots/77c/77ce88b418f4b0ee8896954d24a2d48d.jpg" },
+        { "id": 3080220, "image": "https://media.rawg.io/media/screenshots/f8e/f8e43932559b78f8cfb4da8fd776fabb.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" },
+        { "id": 14, "name": "Simulation", "slug": "simulation" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-gb",
+      "name": "Call Of Duty - Black Ops GB",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2021-01-18",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/20b/20b3dc9bc005323bb8f060b18972c30f.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": {},
+      "metacritic": null,
+      "suggestions_count": 48,
+      "updated": "2021-01-22T08:43:12",
+      "id": 546422,
+      "score": "28.191711",
+      "clip": null,
+      "tags": [
+        {
+          "id": 30,
+          "name": "FPS",
+          "slug": "fps",
+          "language": "eng",
+          "games_count": 11649,
+          "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg"
+        },
+        {
+          "id": 882,
+          "name": "Game Boy",
+          "slug": "game-boy",
+          "language": "eng",
+          "games_count": 3618,
+          "image_background": "https://media.rawg.io/media/screenshots/cc2/cc27cf9f26102fbc841167cc95ff0720.jpg"
+        },
+        {
+          "id": 5044,
+          "name": "call-of-duty",
+          "slug": "call-of-duty",
+          "language": "eng",
+          "games_count": 30,
+          "image_background": "https://media.rawg.io/media/screenshots/f93/f93c8348b0c5d6974413cafeba903823.jpg"
+        },
+        {
+          "id": 4364,
+          "name": "Game Boy Advance",
+          "slug": "game-boy-advance",
+          "language": "eng",
+          "games_count": 209,
+          "image_background": "https://media.rawg.io/media/screenshots/113/1139f51d8e0770df3655f77b0449485b.jpg"
+        },
+        {
+          "id": 40229,
+          "name": "gb-studio",
+          "slug": "gb-studio",
+          "language": "eng",
+          "games_count": 332,
+          "image_background": "https://media.rawg.io/media/screenshots/688/6884604c31496c558ea68102c6f4830b.jpg"
+        },
+        {
+          "id": 58611,
+          "name": "Game Boy ROM",
+          "slug": "game-boy-rom",
+          "language": "eng",
+          "games_count": 403,
+          "image_background": "https://media.rawg.io/media/screenshots/4ee/4eeb65cfd06c3f83dbc3e8277b6a266a.jpg"
+        },
+        {
+          "id": 5294,
+          "name": "cod",
+          "slug": "cod",
+          "language": "eng",
+          "games_count": 11,
+          "image_background": "https://media.rawg.io/media/screenshots/60a/60a68f6ad80fb36b38e431c08fd2f7ba.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/20b/20b3dc9bc005323bb8f060b18972c30f.jpg" },
+        { "id": 2680224, "image": "https://media.rawg.io/media/screenshots/20b/20b3dc9bc005323bb8f060b18972c30f.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-black-ops-declassified",
+      "name": "Call of Duty: Black Ops Declassified",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 19, "name": "PS Vita", "slug": "ps-vita" } }],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2012-11-13",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/e6b/e6b5e38610a563d1d87475adeb9a0840.jpg",
+      "rating": 3.12,
+      "rating_top": 3,
+      "ratings": [
+        { "id": 3, "title": "meh", "count": 9, "percent": 52.94 },
+        { "id": 4, "title": "recommended", "count": 6, "percent": 35.29 },
+        { "id": 1, "title": "skip", "count": 2, "percent": 11.76 }
+      ],
+      "ratings_count": 16,
+      "reviews_text_count": 0,
+      "added": 34,
+      "added_by_status": { "yet": 3, "owned": 9, "beaten": 12, "toplay": 5, "dropped": 5 },
+      "metacritic": 33,
+      "suggestions_count": 183,
+      "updated": "2023-06-10T05:58:51",
+      "id": 4190,
+      "score": "28.054958",
+      "clip": null,
+      "tags": [
+        {
+          "id": 37796,
+          "name": "exclusive",
+          "slug": "exclusive",
+          "language": "eng",
+          "games_count": 4500,
+          "image_background": "https://media.rawg.io/media/games/f0e/f0e050dc774d4ae3afced76b33516295.jpg"
+        },
+        {
+          "id": 37797,
+          "name": "true exclusive",
+          "slug": "true-exclusive",
+          "language": "eng",
+          "games_count": 3986,
+          "image_background": "https://media.rawg.io/media/games/560/56056a71c74f751552c9baedebf8f317.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 17,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/e6b/e6b5e38610a563d1d87475adeb9a0840.jpg" },
+        { "id": 2023441, "image": "https://media.rawg.io/media/screenshots/4ec/4ec9e042b5703fb6be2585be5100037d.jpg" },
+        { "id": 2023445, "image": "https://media.rawg.io/media/screenshots/cad/cad5c6097a5c20ac31fd09bd19d6e952.jpg" },
+        { "id": 2023448, "image": "https://media.rawg.io/media/screenshots/fdb/fdb10409f97c64cd2b5c674dc6ba93ce.jpg" },
+        { "id": 2023449, "image": "https://media.rawg.io/media/screenshots/c97/c97c05d70cf9a0e391c5e8307e62fe2d.jpg" },
+        { "id": 3689778, "image": "https://media.rawg.io/media/screenshots/e6b/e6b5e38610a563d1d87475adeb9a0840.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-mobilized",
+      "name": "Call of Duty Modern Warfare: Mobilized",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 9, "name": "Nintendo DS", "slug": "nintendo-ds" } }],
+      "stores": [{ "store": { "id": 6, "name": "Nintendo Store", "slug": "nintendo" } }],
+      "released": "2009-11-10",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/3df/3dfa0f3a5303e3def6edf0b4cd7ee4ab.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 2, "percent": 66.67 },
+        { "id": 3, "title": "meh", "count": 1, "percent": 33.33 }
+      ],
+      "ratings_count": 3,
+      "reviews_text_count": 0,
+      "added": 14,
+      "added_by_status": { "yet": 1, "owned": 5, "beaten": 2, "toplay": 3, "dropped": 3 },
+      "metacritic": null,
+      "suggestions_count": 239,
+      "updated": "2019-09-12T06:36:57",
+      "id": 24489,
+      "score": "27.488514",
+      "clip": null,
+      "tags": [
+        {
+          "id": 37796,
+          "name": "exclusive",
+          "slug": "exclusive",
+          "language": "eng",
+          "games_count": 4513,
+          "image_background": "https://media.rawg.io/media/games/d89/d89bd0cf4fcdc10820892980cbba0f49.jpg"
+        },
+        {
+          "id": 37797,
+          "name": "true exclusive",
+          "slug": "true-exclusive",
+          "language": "eng",
+          "games_count": 3995,
+          "image_background": "https://media.rawg.io/media/games/dfa/dfa0906773ebb8a50d15548ac5b8ee5e.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 3,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/3df/3dfa0f3a5303e3def6edf0b4cd7ee4ab.jpg" },
+        { "id": 246858, "image": "https://media.rawg.io/media/screenshots/2bf/2bf5b49bd53c7ef3cda8d4db81c69533.jpg" },
+        { "id": 246859, "image": "https://media.rawg.io/media/screenshots/9cb/9cb28272077369951d7a3bc8dc3b271d.jpg" },
+        { "id": 246860, "image": "https://media.rawg.io/media/screenshots/933/9335879521f7e3dd16cedb46b95b893f.jpg" },
+        { "id": 246861, "image": "https://media.rawg.io/media/screenshots/3a5/3a54b3caa59b34a046c8a3830025c98c.jpg" },
+        { "id": 246862, "image": "https://media.rawg.io/media/screenshots/32a/32a43e8d638cd7105031460c9aad448c.jpg" },
+        { "id": 246863, "image": "https://media.rawg.io/media/screenshots/7b4/7b467c161c6a82c64623a9565f4386d3.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 7, "name": "Nintendo", "slug": "nintendo" } }],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-black-ops-zombies",
+      "name": "Call of Duty: Black Ops Zombies",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 3, "name": "iOS", "slug": "ios" } }, { "platform": { "id": 21, "name": "Android", "slug": "android" } }],
+      "stores": [
+        { "store": { "id": 4, "name": "App Store", "slug": "apple-appstore" } },
+        { "store": { "id": 8, "name": "Google Play", "slug": "google-play" } }
+      ],
+      "released": "2011-11-30",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/f93/f93e818e0dbc57e1a48db2400c7d798d.jpg",
+      "rating": 3.5,
+      "rating_top": 5,
+      "ratings": [
+        { "id": 5, "title": "exceptional", "count": 2, "percent": 33.33 },
+        { "id": 3, "title": "meh", "count": 2, "percent": 33.33 },
+        { "id": 4, "title": "recommended", "count": 1, "percent": 16.67 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 16.67 }
+      ],
+      "ratings_count": 6,
+      "reviews_text_count": 0,
+      "added": 16,
+      "added_by_status": { "yet": 3, "owned": 2, "beaten": 5, "toplay": 2, "dropped": 4 },
+      "metacritic": null,
+      "suggestions_count": 356,
+      "updated": "2023-03-13T20:02:34",
+      "id": 485,
+      "score": "27.488514",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35200,
+          "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg"
+        },
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 9707,
+          "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+        },
+        {
+          "id": 5816,
+          "name": "console",
+          "slug": "console",
+          "language": "eng",
+          "games_count": 1387,
+          "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg"
+        },
+        {
+          "id": 744,
+          "name": "friends",
+          "slug": "friends",
+          "language": "eng",
+          "games_count": 15085,
+          "image_background": "https://media.rawg.io/media/games/415/41563ce6cb061a210160687a4e5d39f6.jpg"
+        },
+        {
+          "id": 1863,
+          "name": "challenge",
+          "slug": "challenge",
+          "language": "eng",
+          "games_count": 12657,
+          "image_background": "https://media.rawg.io/media/screenshots/aca/aca80d402fcf64ea31d63cafe14cc6d2.jpg"
+        },
+        {
+          "id": 500,
+          "name": "Solo",
+          "slug": "solo",
+          "language": "eng",
+          "games_count": 1616,
+          "image_background": "https://media.rawg.io/media/screenshots/e92/e925675403902177874a4f7ab463e6c7.jpg"
+        },
+        {
+          "id": 2528,
+          "name": "brain",
+          "slug": "brain",
+          "language": "eng",
+          "games_count": 4169,
+          "image_background": "https://media.rawg.io/media/screenshots/28e/28e807ed5022f3abad262150a648910b.jpg"
+        },
+        {
+          "id": 3597,
+          "name": "tablet",
+          "slug": "tablet",
+          "language": "eng",
+          "games_count": 1718,
+          "image_background": "https://media.rawg.io/media/screenshots/2f8/2f847d44cf7bb0ef550911cc24d4f752.jpg"
+        },
+        {
+          "id": 1787,
+          "name": "mobile",
+          "slug": "mobile",
+          "language": "eng",
+          "games_count": 4582,
+          "image_background": "https://media.rawg.io/media/screenshots/aa0/aa0915abe13d4832ce99da38c22fcb89.jpg"
+        },
+        {
+          "id": 2835,
+          "name": "word",
+          "slug": "word",
+          "language": "eng",
+          "games_count": 2060,
+          "image_background": "https://media.rawg.io/media/screenshots/d2a/d2aba0d270da168cc96dbd69e854f787.jpg"
+        },
+        {
+          "id": 1736,
+          "name": "bug",
+          "slug": "bug",
+          "language": "eng",
+          "games_count": 2311,
+          "image_background": "https://media.rawg.io/media/games/313/3137f0b7fb36b53e34abcde6e7607909.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 6,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/f93/f93e818e0dbc57e1a48db2400c7d798d.jpg" },
+        { "id": 2053389, "image": "https://media.rawg.io/media/screenshots/76d/76dcecb2a1b9943d2f0595e6547ed58e.jpg" },
+        { "id": 2053390, "image": "https://media.rawg.io/media/screenshots/c2b/c2bfc0483656070c14a51d8bb2955d41.jpg" },
+        { "id": 2053391, "image": "https://media.rawg.io/media/screenshots/10a/10aa381a8095714f8a9d23d29f8c07e3.jpg" },
+        { "id": 2053392, "image": "https://media.rawg.io/media/screenshots/e89/e89fc5dee2547bcd57b3aa0a9b1e4408.jpg" },
+        { "id": 3689774, "image": "https://media.rawg.io/media/screenshots/7af/7aff73da2984a99617a95436592fa26b.jpg" },
+        { "id": 4170, "image": "https://media.rawg.io/media/screenshots/d7c/d7c2e18772a680941138b81f92f2912d.jpeg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 4, "name": "iOS", "slug": "ios" } }, { "platform": { "id": 8, "name": "Android", "slug": "android" } }],
+      "genres": [
+        { "id": 3, "name": "Adventure", "slug": "adventure" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-zombies-fan-made",
+      "name": "Call of Duty Zombies: Fan Made(itch)",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2017-01-22",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/22e/22e2f9d6efb9ce2e69d06eaf127b3d9a.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 1, "title": "skip", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": { "beaten": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 42,
+      "updated": "2019-04-22T11:38:59",
+      "id": 163531,
+      "score": "26.965065",
+      "clip": null,
+      "tags": [
+        {
+          "id": 80,
+          "name": "Tactical",
+          "slug": "tactical",
+          "language": "eng",
+          "games_count": 3687,
+          "image_background": "https://media.rawg.io/media/games/9af/9af24c1886e2c7b52a4a2c65aa874638.jpg"
+        },
+        {
+          "id": 571,
+          "name": "3D",
+          "slug": "3d",
+          "language": "eng",
+          "games_count": 72375,
+          "image_background": "https://media.rawg.io/media/games/df2/df20fd77db56ae7b0a26a7ff4baa9ccc.jpg"
+        },
+        {
+          "id": 220,
+          "name": "Experimental",
+          "slug": "experimental",
+          "language": "eng",
+          "games_count": 9311,
+          "image_background": "https://media.rawg.io/media/games/cef/cef4c326dd57a8f39d696379eaa84411.jpg"
+        },
+        {
+          "id": 5044,
+          "name": "call-of-duty",
+          "slug": "call-of-duty",
+          "language": "eng",
+          "games_count": 30,
+          "image_background": "https://media.rawg.io/media/screenshots/f93/f93c8348b0c5d6974413cafeba903823.jpg"
+        },
+        {
+          "id": 22822,
+          "name": "zom",
+          "slug": "zom",
+          "language": "eng",
+          "games_count": 5,
+          "image_background": "https://media.rawg.io/media/screenshots/2e9/2e986b8452f8b1794b7b7cc8dfb716a0.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [{ "id": -1, "image": "https://media.rawg.io/media/screenshots/22e/22e2f9d6efb9ce2e69d06eaf127b3d9a.jpg" }],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-black-ops-2-revolution",
+      "name": "Call of Duty: Black Ops 2 - Revolution",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }],
+      "stores": null,
+      "released": "2013-02-28",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/949/9490101ae6e14fc6f5ad99270f9cf86a_YbzRmyC.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 1, "percent": 50.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 50.0 }
+      ],
+      "ratings_count": 2,
+      "reviews_text_count": 0,
+      "added": 7,
+      "added_by_status": { "owned": 2, "beaten": 2, "toplay": 2, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 589,
+      "updated": "2023-03-13T20:02:28",
+      "id": 41864,
+      "score": "26.452202",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 2,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/949/9490101ae6e14fc6f5ad99270f9cf86a_YbzRmyC.jpg" },
+        { "id": 604523, "image": "https://media.rawg.io/media/screenshots/075/075f502a75c1210407d1aab7cd2910d2.jpg" },
+        { "id": 604524, "image": "https://media.rawg.io/media/screenshots/745/745a4ab24433546e96bf109501a5ccd5.jpg" },
+        { "id": 604525, "image": "https://media.rawg.io/media/screenshots/7bc/7bc9be0352dbe5c9a8e00a4148e50093.jpg" },
+        { "id": 604526, "image": "https://media.rawg.io/media/screenshots/c53/c539a2938fc376d95bdef2fae528839a.jpg" },
+        { "id": 604527, "image": "https://media.rawg.io/media/screenshots/2a4/2a44bab7045d36edac1553e0892556e5.jpg" },
+        { "id": 604528, "image": "https://media.rawg.io/media/screenshots/a7c/a7c3d0baf73c443d011ea480c852bc4f.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-first-strike",
+      "name": "Call of Duty: Black Ops - First Strike",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": null,
+      "released": "2011-02-01",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/1f7/1f725e0192881c7cbfbba065f40de9bc.jpg",
+      "rating": 2.86,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 3, "percent": 42.86 },
+        { "id": 3, "title": "meh", "count": 2, "percent": 28.57 },
+        { "id": 1, "title": "skip", "count": 2, "percent": 28.57 }
+      ],
+      "ratings_count": 7,
+      "reviews_text_count": 0,
+      "added": 15,
+      "added_by_status": { "yet": 1, "owned": 3, "beaten": 5, "toplay": 3, "dropped": 2, "playing": 1 },
+      "metacritic": null,
+      "suggestions_count": 629,
+      "updated": "2023-09-02T20:12:07",
+      "id": 41862,
+      "score": "26.163599",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 7,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/1f7/1f725e0192881c7cbfbba065f40de9bc.jpg" },
+        { "id": 604498, "image": "https://media.rawg.io/media/screenshots/391/391b54d8f91402ced8838cc0908342da.jpg" },
+        { "id": 604499, "image": "https://media.rawg.io/media/screenshots/8c2/8c23d653d4ed1fcfc44e8e381fde782e.jpg" },
+        { "id": 604500, "image": "https://media.rawg.io/media/screenshots/30d/30dd304b7b9166ff627364ad0b392a25_fjawKDc.jpg" },
+        { "id": 604501, "image": "https://media.rawg.io/media/screenshots/c5a/c5a79ad5588ce349f5d3e18198341ba5.jpg" },
+        { "id": 604502, "image": "https://media.rawg.io/media/screenshots/436/4361ecc258fd62963784f8084e855e40.jpg" },
+        { "id": 604503, "image": "https://media.rawg.io/media/screenshots/464/4645e0a9be8dd40aa9ea2de5aa065895.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-infinite-warfare-free-trial",
+      "name": "Call of Duty: Infinite Warfare - Free Trial",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2016-12-15",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/fe9/fe9b3a5708280c7917f83cf6076b9994.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 3,
+      "added_by_status": { "owned": 1, "beaten": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 603,
+      "updated": "2023-03-13T20:02:20",
+      "id": 508536,
+      "score": "26.032436",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35921,
+          "image_background": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg"
+        },
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 10093,
+          "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+        },
+        {
+          "id": 70,
+          "name": "War",
+          "slug": "war",
+          "language": "eng",
+          "games_count": 8865,
+          "image_background": "https://media.rawg.io/media/games/997/997ab4d67e96fb20a4092383477d4463.jpg"
+        },
+        {
+          "id": 1465,
+          "name": "combat",
+          "slug": "combat",
+          "language": "eng",
+          "games_count": 9092,
+          "image_background": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6651,
+          "image_background": "https://media.rawg.io/media/screenshots/bf9/bf987c6a9734996d3be6838357d369b2.jpg"
+        },
+        {
+          "id": 4565,
+          "name": "offline",
+          "slug": "offline",
+          "language": "eng",
+          "games_count": 1084,
+          "image_background": "https://media.rawg.io/media/games/27c/27cb94ed1763fec383fb99151580095a.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/fe9/fe9b3a5708280c7917f83cf6076b9994.jpg" },
+        { "id": 2574041, "image": "https://media.rawg.io/media/screenshots/dbc/dbcaa88011231216f0bea5470efd6ce0.jpg" },
+        { "id": 2574042, "image": "https://media.rawg.io/media/screenshots/d96/d96845bb0d95654751ae8aa24575fa45.jpg" },
+        { "id": 2574043, "image": "https://media.rawg.io/media/screenshots/e1f/e1f1f06e4e639a7e6a2dc84f95f12b5b.jpg" },
+        { "id": 2574044, "image": "https://media.rawg.io/media/screenshots/b8e/b8e5a1937e0a70437827e86c1cc07ecf.jpg" },
+        { "id": 2574045, "image": "https://media.rawg.io/media/screenshots/648/648fac613f6b2706432c60d6d97c5b41.jpg" },
+        { "id": 2574046, "image": "https://media.rawg.io/media/screenshots/5ba/5ba9e566c64bc56d88080799672941d5.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-ghosts-digital-hardened-edition",
+      "name": "Call of Duty: Ghosts - Digital Hardened Edition",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 1, "name": "Steam", "slug": "steam" } }],
+      "released": "2013-11-04",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/1d1/1d16d82fdf37d693154b69d198fe16bc.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 1, "title": "skip", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 6,
+      "added_by_status": { "owned": 2, "beaten": 3, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 419,
+      "updated": "2019-08-28T22:07:53",
+      "id": 21719,
+      "score": "26.032436",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 216849,
+          "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 35163,
+          "image_background": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 36937,
+          "image_background": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 16468,
+          "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+        },
+        {
+          "id": 40849,
+          "name": "Steam Cloud",
+          "slug": "steam-cloud",
+          "language": "eng",
+          "games_count": 16509,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 30,
+          "name": "FPS",
+          "slug": "fps",
+          "language": "eng",
+          "games_count": 12796,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 40850,
+          "name": "Steam Leaderboards",
+          "slug": "steam-leaderboards",
+          "language": "eng",
+          "games_count": 6460,
+          "image_background": "https://media.rawg.io/media/games/1fb/1fb1c5f7a71d771f440b27ce7f71e7eb.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/1d1/1d16d82fdf37d693154b69d198fe16bc.jpg" },
+        { "id": 207193, "image": "https://media.rawg.io/media/screenshots/718/7186c69c5bdd52a151e0db8d5f517305.jpg" },
+        { "id": 207194, "image": "https://media.rawg.io/media/screenshots/936/93681661b7770b610b242caaa9a5fad1.jpg" },
+        { "id": 207195, "image": "https://media.rawg.io/media/screenshots/ba3/ba38fd6e67ee59b331ecc52e1e91cdf7.jpg" },
+        { "id": 207196, "image": "https://media.rawg.io/media/screenshots/a41/a41cbf3608bd080b162ff9652475e268.jpg" },
+        { "id": 207197, "image": "https://media.rawg.io/media/screenshots/1fb/1fb5f815ba337cba8c114cb8c3c388f2.jpg" },
+        { "id": 207198, "image": "https://media.rawg.io/media/screenshots/1d1/1d16d82fdf37d693154b69d198fe16bc.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [{ "id": 4, "name": "Action", "slug": "action" }]
+    },
+    {
+      "slug": "call-of-duty-black-ops-zombies-itch",
+      "name": "Call of Duty: Black Ops Zombies (itch)",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 5, "name": "macOS", "slug": "macos" } },
+        { "platform": { "id": 6, "name": "Linux", "slug": "linux" } }
+      ],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2018-08-14",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/2a1/2a123a08276ce83403be2bd0ee3878c0.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 4, "title": "recommended", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 4,
+      "added_by_status": { "owned": 2, "beaten": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 62,
+      "updated": "2022-09-05T16:56:52",
+      "id": 175058,
+      "score": "25.591646",
+      "clip": null,
+      "tags": [
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 9355,
+          "image_background": "https://media.rawg.io/media/games/364/3642d850efb217c58feab80b8affaa89.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/2a1/2a123a08276ce83403be2bd0ee3878c0.jpg" },
+        { "id": 1244208, "image": "https://media.rawg.io/media/screenshots/2a1/2a1472b5e5d7c4a34151e2be6a5d6f6b.jpg" },
+        { "id": 1244210, "image": "https://media.rawg.io/media/screenshots/7bf/7bfaea28068e82f7a2748b38b9a4b475.jpg" },
+        { "id": 1244212, "image": "https://media.rawg.io/media/screenshots/2a1/2a123a08276ce83403be2bd0ee3878c0.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 5, "name": "Apple Macintosh", "slug": "mac" } },
+        { "platform": { "id": 6, "name": "Linux", "slug": "linux" } }
+      ],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-3-defiance",
+      "name": "Call of Duty: Modern Warfare 3 Defiance",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 9, "name": "Nintendo DS", "slug": "nintendo-ds" } }],
+      "stores": [{ "store": { "id": 6, "name": "Nintendo Store", "slug": "nintendo" } }],
+      "released": "2011-11-08",
+      "tba": false,
+      "background_image": null,
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 4, "title": "recommended", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 4,
+      "added_by_status": { "owned": 1, "beaten": 1, "toplay": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-09-05T16:56:37",
+      "id": 26810,
+      "score": "25.590227",
+      "clip": null,
+      "tags": [
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 23941,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        },
+        {
+          "id": 37796,
+          "name": "exclusive",
+          "slug": "exclusive",
+          "language": "eng",
+          "games_count": 4512,
+          "image_background": "https://media.rawg.io/media/games/267/267bd0dbc496f52692487d07d014c061.jpg"
+        },
+        {
+          "id": 37797,
+          "name": "true exclusive",
+          "slug": "true-exclusive",
+          "language": "eng",
+          "games_count": 3997,
+          "image_background": "https://media.rawg.io/media/screenshots/0f5/0f585fa72f534f62f9e5da051179f5de.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [],
+      "parent_platforms": [{ "platform": { "id": 7, "name": "Nintendo", "slug": "nintendo" } }],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-black-ops-2-uprising",
+      "name": "Call of Duty: Black Ops 2 - Uprising",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }],
+      "stores": null,
+      "released": "2013-04-16",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/046/046a6f107aefd65988cd33c0046b303f.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 1, "percent": 50.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 50.0 }
+      ],
+      "ratings_count": 2,
+      "reviews_text_count": 0,
+      "added": 7,
+      "added_by_status": { "owned": 2, "beaten": 3, "toplay": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 599,
+      "updated": "2023-03-13T20:02:28",
+      "id": 42166,
+      "score": "25.481579",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 2,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/046/046a6f107aefd65988cd33c0046b303f.jpg" },
+        { "id": 609105, "image": "https://media.rawg.io/media/screenshots/9c3/9c386c4704b956a9f3b5237b04977b1c.jpg" },
+        { "id": 609106, "image": "https://media.rawg.io/media/screenshots/993/993356bed05848dfdea57299cbf5dd0e.jpg" },
+        { "id": 609107, "image": "https://media.rawg.io/media/screenshots/d03/d038c235702da86a9e4d90bbae356878.jpg" },
+        { "id": 609108, "image": "https://media.rawg.io/media/screenshots/806/8061a7e2c20a26b38119861aa0436d68_t3jgCSr.jpg" },
+        { "id": 609109, "image": "https://media.rawg.io/media/screenshots/7b1/7b187e277223b37f1831fa397fbb2d75.jpg" },
+        { "id": 609110, "image": "https://media.rawg.io/media/screenshots/6da/6da2b1efc7e8750cb0f94fe9cc44ea17.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-2-vengeance",
+      "name": "Call of Duty: Black Ops 2 - Vengeance",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }],
+      "stores": null,
+      "released": "2013-07-02",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/5ca/5ca57994d9ac0c295c42dad0b6f9e9d1.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 1, "percent": 50.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 50.0 }
+      ],
+      "ratings_count": 2,
+      "reviews_text_count": 0,
+      "added": 9,
+      "added_by_status": { "owned": 3, "beaten": 3, "toplay": 2, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 650,
+      "updated": "2023-03-13T20:02:28",
+      "id": 42246,
+      "score": "25.481579",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 2,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/5ca/5ca57994d9ac0c295c42dad0b6f9e9d1.jpg" },
+        { "id": 611197, "image": "https://media.rawg.io/media/screenshots/99f/99f87256946d48b2914777a9f281a301.jpg" },
+        { "id": 611198, "image": "https://media.rawg.io/media/screenshots/f37/f37519a34285df118e30dbc6b4582b24.jpg" },
+        { "id": 611199, "image": "https://media.rawg.io/media/screenshots/d44/d44f7c9f2798b44a2ad13c49ab2a4dd9.jpg" },
+        { "id": 611200, "image": "https://media.rawg.io/media/screenshots/d83/d8375e2474177a1844050352e508afa7.jpg" },
+        { "id": 611201, "image": "https://media.rawg.io/media/screenshots/a4b/a4bdaca0ee462c355d99bef31b4157af.jpg" },
+        { "id": 611202, "image": "https://media.rawg.io/media/screenshots/edf/edfa1db6fe0ef315defb535435b17e53.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-2v2-alpha",
+      "name": "Call of Duty: Modern Warfare - 2v2 Alpha",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }],
+      "stores": null,
+      "released": "2019-08-22",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/cfe/cfe2d6cb7c0085d5f39a74313fd02959.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 3, "title": "meh", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 3,
+      "added_by_status": { "beaten": 1, "dropped": 2 },
+      "metacritic": null,
+      "suggestions_count": 189,
+      "updated": "2023-03-13T20:00:47",
+      "id": 367199,
+      "score": "25.481579",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35200,
+          "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6524,
+          "image_background": "https://media.rawg.io/media/screenshots/3ea/3ea3f535b2a779ca5cd2e466a2f8abba.jpg"
+        },
+        {
+          "id": 486,
+          "name": "versus",
+          "slug": "versus",
+          "language": "eng",
+          "games_count": 1797,
+          "image_background": "https://media.rawg.io/media/screenshots/27a/27ab5d706a13441faad8d02148dff5ae.jpg"
+        },
+        {
+          "id": 2960,
+          "name": "alpha",
+          "slug": "alpha",
+          "language": "eng",
+          "games_count": 810,
+          "image_background": "https://media.rawg.io/media/screenshots/85f/85f7deba0dbf674f2b723e38a7cf87b7.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/cfe/cfe2d6cb7c0085d5f39a74313fd02959.jpg" },
+        { "id": 2141077, "image": "https://media.rawg.io/media/screenshots/933/933dcbed9c41bf7e74f21cb03c41ef34.jpg" },
+        { "id": 2141078, "image": "https://media.rawg.io/media/screenshots/d1f/d1f8673da5ffdfc208b54814ad7c6d37.jpg" },
+        { "id": 3812699, "image": "https://media.rawg.io/media/screenshots/cfe/cfe2d6cb7c0085d5f39a74313fd02959.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-open-beta",
+      "name": "Call of Duty: Modern Warfare - Open Beta",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }],
+      "stores": null,
+      "released": "2019-09-10",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/333/3333b4a587fcfa8534741098ed8089ed.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 4, "title": "recommended", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 6,
+      "added_by_status": { "yet": 1, "owned": 2, "beaten": 1, "dropped": 2 },
+      "metacritic": null,
+      "suggestions_count": 210,
+      "updated": "2023-03-13T20:00:47",
+      "id": 373658,
+      "score": "25.481579",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 37026,
+          "image_background": "https://media.rawg.io/media/games/ec3/ec3a7db7b8ab5a71aad622fe7c62632f.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6544,
+          "image_background": "https://media.rawg.io/media/games/431/4317e294e88e4c9d77327693b15f499a.jpg"
+        },
+        {
+          "id": 1652,
+          "name": "night",
+          "slug": "night",
+          "language": "eng",
+          "games_count": 4454,
+          "image_background": "https://media.rawg.io/media/games/571/571f17c2ace00aeeef54d234bb23b91f.jpg"
+        },
+        {
+          "id": 1626,
+          "name": "collection",
+          "slug": "collection",
+          "language": "eng",
+          "games_count": 3656,
+          "image_background": "https://media.rawg.io/media/screenshots/49f/49fe8509f39b0d6b42e4dd6533f95988.jpg"
+        },
+        {
+          "id": 754,
+          "name": "gun",
+          "slug": "gun",
+          "language": "eng",
+          "games_count": 3209,
+          "image_background": "https://media.rawg.io/media/screenshots/928/92898d8a4b0c0c51166c8241305d549c.jpg"
+        },
+        {
+          "id": 6214,
+          "name": "beta",
+          "slug": "beta",
+          "language": "eng",
+          "games_count": 1236,
+          "image_background": "https://media.rawg.io/media/screenshots/a9c/a9c3d61c1b3eeb4038aee9bad98200a7.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/333/3333b4a587fcfa8534741098ed8089ed.jpg" },
+        { "id": 2169098, "image": "https://media.rawg.io/media/screenshots/f68/f683aa7f814a4ce520714c3640ddd4e9.jpg" },
+        { "id": 2169099, "image": "https://media.rawg.io/media/screenshots/761/761799ed65d318a1d347e4908c4a4f16.jpg" },
+        { "id": 3812700, "image": "https://media.rawg.io/media/screenshots/333/3333b4a587fcfa8534741098ed8089ed.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "call-of-duty-world-at-war-final-fronts",
+      "name": "Call of Duty: World at War - Final Fronts",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 15, "name": "PlayStation 2", "slug": "playstation2" } }],
+      "stores": null,
+      "released": "2008-11-11",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/games/f24/f24a751b368c7382a9c163b9dd018082.jpg",
+      "rating": 3.29,
+      "rating_top": 3,
+      "ratings": [
+        { "id": 3, "title": "meh", "count": 3, "percent": 42.86 },
+        { "id": 4, "title": "recommended", "count": 2, "percent": 28.57 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 14.29 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 14.29 }
+      ],
+      "ratings_count": 7,
+      "reviews_text_count": 0,
+      "added": 25,
+      "added_by_status": { "yet": 2, "owned": 4, "beaten": 8, "toplay": 6, "dropped": 5 },
+      "metacritic": null,
+      "suggestions_count": 383,
+      "updated": "2023-05-19T22:47:15",
+      "id": 266185,
+      "score": "24.70775",
+      "clip": null,
+      "tags": [
+        {
+          "id": 37796,
+          "name": "exclusive",
+          "slug": "exclusive",
+          "language": "eng",
+          "games_count": 4496,
+          "image_background": "https://media.rawg.io/media/games/f24/f2493ea338fe7bd3c7d73750a85a0959.jpeg"
+        },
+        {
+          "id": 37797,
+          "name": "true exclusive",
+          "slug": "true-exclusive",
+          "language": "eng",
+          "games_count": 3983,
+          "image_background": "https://media.rawg.io/media/screenshots/135/135a00cf33b0c860fcb366747e95b89b.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 7,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/games/f24/f24a751b368c7382a9c163b9dd018082.jpg" },
+        { "id": 1737511, "image": "https://media.rawg.io/media/screenshots/737/737cef5994733f8a250664c67f9557eb.jpg" },
+        { "id": 1737512, "image": "https://media.rawg.io/media/screenshots/801/801e60de7818b283a310ffd6cd706a45_bUUSbux.jpg" },
+        { "id": 1737513, "image": "https://media.rawg.io/media/screenshots/5fb/5fbe94bd76147f04a0429104ddfa18ac.jpg" },
+        { "id": 1737514, "image": "https://media.rawg.io/media/screenshots/5b4/5b4d7f44abbfcfe070a2fde81d42deac.jpg" },
+        { "id": 1737515, "image": "https://media.rawg.io/media/screenshots/d23/d236d428f9f18f4984d1f9806738968e.jpg" },
+        { "id": 1737516, "image": "https://media.rawg.io/media/screenshots/535/535a0c60eb910d18d5f474924262d57f.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 4, "name": "Action", "slug": "action" }]
+    },
+    {
+      "slug": "call-of-duty-infinite-warfare-destiny-the-collecti",
+      "name": "Call of Duty: Infinite Warfare + Destiny - The Collection",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 1, "name": "Xbox One", "slug": "xbox-one" } },
+        { "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }
+      ],
+      "stores": [
+        { "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } },
+        { "store": { "id": 2, "name": "Xbox Store", "slug": "xbox-store" } }
+      ],
+      "released": "2016-12-22",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/5db/5db6d341576b36c3bbc0440aff9c1aee.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 2, "percent": 66.67 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 33.33 }
+      ],
+      "ratings_count": 3,
+      "reviews_text_count": 0,
+      "added": 9,
+      "added_by_status": { "owned": 3, "beaten": 4, "dropped": 2 },
+      "metacritic": null,
+      "suggestions_count": 431,
+      "updated": "2019-08-02T16:25:26",
+      "id": 575,
+      "score": "24.313574",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35329,
+          "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+        },
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 9728,
+          "image_background": "https://media.rawg.io/media/games/fd6/fd6a1eecd3ec0f875f1924f3656b7dd9.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6527,
+          "image_background": "https://media.rawg.io/media/games/5dd/5dd4d2dd986d2826800bc37fff64aa4f.jpg"
+        },
+        {
+          "id": 808,
+          "name": "character",
+          "slug": "character",
+          "language": "eng",
+          "games_count": 8785,
+          "image_background": "https://media.rawg.io/media/games/a12/a12f806432cb385bc286f0935c49cd14.jpg"
+        },
+        {
+          "id": 1626,
+          "name": "collection",
+          "slug": "collection",
+          "language": "eng",
+          "games_count": 3636,
+          "image_background": "https://media.rawg.io/media/games/fa7/fa7e8ba1bca24d8ac299c8d04a0cef59.jpg"
+        },
+        {
+          "id": 5641,
+          "name": "bundle",
+          "slug": "bundle",
+          "language": "eng",
+          "games_count": 433,
+          "image_background": "https://media.rawg.io/media/screenshots/dca/dca322b06cf8f8927737b24e10658dd2.jpg"
+        },
+        {
+          "id": 1446,
+          "name": "infinite",
+          "slug": "infinite",
+          "language": "eng",
+          "games_count": 788,
+          "image_background": "https://media.rawg.io/media/screenshots/933/933606069387c17927a83e127f41fa7b.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 3,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/5db/5db6d341576b36c3bbc0440aff9c1aee.jpg" },
+        { "id": 31441, "image": "https://media.rawg.io/media/screenshots/09f/09f87c7c51a22a0818995a34c622ecb0.jpg" },
+        { "id": 31448, "image": "https://media.rawg.io/media/screenshots/3d9/3d93d2bbab5a7db2c57e440463386c32.jpg" },
+        { "id": 31453, "image": "https://media.rawg.io/media/screenshots/f79/f792182af5442ac3eb9c75cab6af0708.jpg" },
+        { "id": 31456, "image": "https://media.rawg.io/media/screenshots/155/1552970c1ee67330084244282d36c990.jpg" },
+        { "id": 31461, "image": "https://media.rawg.io/media/screenshots/1fe/1fefcba412aa51c8c1163e7e01a4df83.jpg" },
+        { "id": 31466, "image": "https://media.rawg.io/media/screenshots/5db/5db6d341576b36c3bbc0440aff9c1aee.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-black-ops-with-first-strike",
+      "name": "Call of Duty: Black Ops with First Strike",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2011-02-01",
+      "tba": false,
+      "background_image": null,
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 2, "percent": 50.0 },
+        { "id": 1, "title": "skip", "count": 2, "percent": 50.0 }
+      ],
+      "ratings_count": 4,
+      "reviews_text_count": 0,
+      "added": 8,
+      "added_by_status": { "yet": 1, "owned": 2, "beaten": 3, "dropped": 2 },
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2023-09-02T20:15:38",
+      "id": 4389,
+      "score": "23.95592",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35427,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6533,
+          "image_background": "https://media.rawg.io/media/games/174/1743b3dd185bda4a7be349347d4064df.jpg"
+        },
+        {
+          "id": 2889,
+          "name": "balance",
+          "slug": "balance",
+          "language": "eng",
+          "games_count": 1664,
+          "image_background": "https://media.rawg.io/media/games/a32/a32694acd6a88dc463e58082d49d272a.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 4,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-4-digital-deluxe",
+      "name": "Call of Duty: Black Ops 4 - Digital Deluxe",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 1, "name": "Xbox One", "slug": "xbox-one" } }],
+      "stores": [{ "store": { "id": 2, "name": "Xbox Store", "slug": "xbox-store" } }],
+      "released": "2018-10-12",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/16a/16a020f5c26b617b467b91339ea6c453.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 2, "percent": 50.0 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 25.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 25.0 }
+      ],
+      "ratings_count": 4,
+      "reviews_text_count": 0,
+      "added": 5,
+      "added_by_status": { "yet": 1, "beaten": 3, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 414,
+      "updated": "2023-03-13T20:02:18",
+      "id": 58844,
+      "score": "23.905182",
+      "clip": null,
+      "tags": [
+        {
+          "id": 5641,
+          "name": "bundle",
+          "slug": "bundle",
+          "language": "eng",
+          "games_count": 431,
+          "image_background": "https://media.rawg.io/media/games/537/5370caa62388062ccb3d4a1f9ca0e2e1.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 4,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/16a/16a020f5c26b617b467b91339ea6c453.jpg" },
+        { "id": 779531, "image": "https://media.rawg.io/media/screenshots/8e9/8e9b61f93a5c7b84b610f6ee230fefef.jpg" },
+        { "id": 779532, "image": "https://media.rawg.io/media/screenshots/182/1821c8c57f69fa55d66cb8ffa24ab1df.jpg" },
+        { "id": 779533, "image": "https://media.rawg.io/media/screenshots/3bf/3bf9135711e6f94f0e4564c30076d937.jpg" },
+        { "id": 779534, "image": "https://media.rawg.io/media/screenshots/383/3838a4993df92ac6f673faa456fc6ef3_xw5EcZE.jpg" },
+        { "id": 779535, "image": "https://media.rawg.io/media/screenshots/502/502b3eabbe995ee967b1de752b577697_9RPMdNv.jpg" },
+        { "id": 779536, "image": "https://media.rawg.io/media/screenshots/66d/66dbffa7e44826a0bfd7a1274ad9a47d.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-black-ops-iii-zombies-deluxe",
+      "name": "Call of Duty: Black Ops III - Zombies Deluxe",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 1, "name": "Xbox One", "slug": "xbox-one" } },
+        { "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }
+      ],
+      "stores": [
+        { "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } },
+        { "store": { "id": 2, "name": "Xbox Store", "slug": "xbox-store" } }
+      ],
+      "released": "2017-08-29",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/d96/d9644e3189928df10827c06ba8936bdb.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 3, "percent": 75.0 },
+        { "id": 1, "title": "skip", "count": 1, "percent": 25.0 }
+      ],
+      "ratings_count": 4,
+      "reviews_text_count": 0,
+      "added": 11,
+      "added_by_status": { "yet": 2, "owned": 1, "beaten": 3, "toplay": 1, "dropped": 3, "playing": 1 },
+      "metacritic": null,
+      "suggestions_count": 665,
+      "updated": "2023-03-13T20:02:20",
+      "id": 46129,
+      "score": "23.6436",
+      "clip": null,
+      "tags": [
+        {
+          "id": 5641,
+          "name": "bundle",
+          "slug": "bundle",
+          "language": "eng",
+          "games_count": 433,
+          "image_background": "https://media.rawg.io/media/screenshots/dca/dca322b06cf8f8927737b24e10658dd2.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 4,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/d96/d9644e3189928df10827c06ba8936bdb.jpg" },
+        { "id": 654723, "image": "https://media.rawg.io/media/screenshots/5ad/5ad1717c8196071c048f9482be1f66f2.jpg" },
+        { "id": 654724, "image": "https://media.rawg.io/media/screenshots/535/5354d8066bf5ebdaf90382ff08f755b6_L6TQ9UC.jpg" },
+        { "id": 654725, "image": "https://media.rawg.io/media/screenshots/f41/f41ecfcbb8b942259c8fed2f657ba12b_U2NSs8r.jpg" },
+        { "id": 654726, "image": "https://media.rawg.io/media/screenshots/e41/e41f178a09a472588421d6ac45aeb4b9.jpg" },
+        { "id": 654727, "image": "https://media.rawg.io/media/screenshots/f0a/f0aecca9c34a2dd99affa5e622556baa.jpg" },
+        { "id": 654728, "image": "https://media.rawg.io/media/screenshots/a06/a0689857721737fe10e73ce1829baa00.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-2-resurgence-pack",
+      "name": "Call of Duty: Modern Warfare 2 - Resurgence Pack",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": null,
+      "released": "2010-06-03",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/3a9/3a9d05e923d5d7e7da0995a720f22d42.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 4, "title": "recommended", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 10,
+      "added_by_status": { "owned": 3, "beaten": 5, "toplay": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 401,
+      "updated": "2023-03-13T20:02:36",
+      "id": 42122,
+      "score": "23.537151",
+      "clip": null,
+      "tags": [],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/3a9/3a9d05e923d5d7e7da0995a720f22d42.jpg" },
+        { "id": 608009, "image": "https://media.rawg.io/media/screenshots/19d/19d6b52a2e8f8f7c63ce6bf7834c3cec.jpg" },
+        { "id": 608010, "image": "https://media.rawg.io/media/screenshots/330/330d5db21dc8c2bc1af92cf6e9974ffe.jpg" },
+        { "id": 608011, "image": "https://media.rawg.io/media/screenshots/d25/d25655754806458ae49479b52ae99a74.jpg" },
+        { "id": 608012, "image": "https://media.rawg.io/media/screenshots/9b7/9b73a1753ea8bccb86270e6db22da2ec.jpg" },
+        { "id": 608013, "image": "https://media.rawg.io/media/screenshots/664/664c78801c7503649967d393da8a8d83.jpg" },
+        { "id": 3689770, "image": "https://media.rawg.io/media/screenshots/3a9/3a9d05e923d5d7e7da0995a720f22d42.jpg" }
+      ],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-battle-pass-ed",
+      "name": "Call of Duty: Modern Warfare - Battle Pass Ed.",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2019-10-24",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/de0/de0dd87b906a73189fd5467d75aa1623.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 4,
+      "added_by_status": { "owned": 1, "beaten": 2, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 494,
+      "updated": "2023-03-13T20:00:46",
+      "id": 395988,
+      "score": "23.277012",
+      "clip": null,
+      "tags": [
+        {
+          "id": 1,
+          "name": "Survival",
+          "slug": "survival",
+          "language": "eng",
+          "games_count": 7331,
+          "image_background": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg"
+        },
+        {
+          "id": 41,
+          "name": "Dark",
+          "slug": "dark",
+          "language": "eng",
+          "games_count": 14226,
+          "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+        },
+        {
+          "id": 1465,
+          "name": "combat",
+          "slug": "combat",
+          "language": "eng",
+          "games_count": 9624,
+          "image_background": "https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6524,
+          "image_background": "https://media.rawg.io/media/screenshots/3ea/3ea3f535b2a779ca5cd2e466a2f8abba.jpg"
+        },
+        {
+          "id": 981,
+          "name": "battle",
+          "slug": "battle",
+          "language": "eng",
+          "games_count": 10558,
+          "image_background": "https://media.rawg.io/media/games/c35/c354856af9151dc63844be4f9843d2c2.jpg"
+        },
+        {
+          "id": 744,
+          "name": "friends",
+          "slug": "friends",
+          "language": "eng",
+          "games_count": 15085,
+          "image_background": "https://media.rawg.io/media/games/415/41563ce6cb061a210160687a4e5d39f6.jpg"
+        },
+        {
+          "id": 151,
+          "name": "Modern",
+          "slug": "modern",
+          "language": "eng",
+          "games_count": 1129,
+          "image_background": "https://media.rawg.io/media/games/8b9/8b9e77be7f0f7941b11ae4b21ca2db43.jpg"
+        },
+        {
+          "id": 5777,
+          "name": "pack",
+          "slug": "pack",
+          "language": "eng",
+          "games_count": 2638,
+          "image_background": "https://media.rawg.io/media/screenshots/92c/92c15660f548971664fdcc66bf15e729.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/de0/de0dd87b906a73189fd5467d75aa1623.jpg" },
+        { "id": 2248485, "image": "https://media.rawg.io/media/screenshots/04c/04ca7fc0df1ab5ea7c473e685e8090cf.jpg" },
+        { "id": 2248486, "image": "https://media.rawg.io/media/screenshots/6b6/6b65265a5d2c8ff150769f317b3e8c32.jpg" },
+        { "id": 2248487, "image": "https://media.rawg.io/media/screenshots/6e6/6e696b3b395dd951dd58bb022ad543d2.jpg" },
+        { "id": 2248488, "image": "https://media.rawg.io/media/screenshots/9d7/9d71828cc4d609d6a070afe09b3427a2.jpg" },
+        { "id": 2248489, "image": "https://media.rawg.io/media/screenshots/190/1903fc44f0feefa48619317579eb7ed1.jpg" },
+        { "id": 2248490, "image": "https://media.rawg.io/media/screenshots/0f6/0f6669098a68ad34169b4198a7c99cdb.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": [{ "id": 2, "name": "Shooter", "slug": "shooter" }]
+    },
+    {
+      "slug": "grand-pigeons-duty",
+      "name": "Grand Pigeon's Duty",
+      "playtime": 4,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 1, "name": "Steam", "slug": "steam" } }],
+      "released": "2016-08-05",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/da4/da461b85c69f535f2241f48e426e127c.jpg",
+      "rating": 3.07,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 5, "percent": 35.71 },
+        { "id": 3, "title": "meh", "count": 5, "percent": 35.71 },
+        { "id": 1, "title": "skip", "count": 3, "percent": 21.43 },
+        { "id": 5, "title": "exceptional", "count": 1, "percent": 7.14 }
+      ],
+      "ratings_count": 14,
+      "reviews_text_count": 0,
+      "added": 291,
+      "added_by_status": { "yet": 10, "owned": 270, "beaten": 6, "dropped": 5 },
+      "metacritic": null,
+      "suggestions_count": 119,
+      "updated": "2023-11-01T07:30:14",
+      "id": 11575,
+      "score": "22.175848",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 220522,
+          "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+        },
+        {
+          "id": 42417,
+          "name": "Экшен",
+          "slug": "ekshen",
+          "language": "rus",
+          "games_count": 38542,
+          "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+        },
+        {
+          "id": 42392,
+          "name": "Приключение",
+          "slug": "prikliuchenie",
+          "language": "rus",
+          "games_count": 36505,
+          "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+        },
+        {
+          "id": 40847,
+          "name": "Steam Achievements",
+          "slug": "steam-achievements",
+          "language": "eng",
+          "games_count": 36657,
+          "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg"
+        },
+        {
+          "id": 42398,
+          "name": "Инди",
+          "slug": "indi-2",
+          "language": "rus",
+          "games_count": 53503,
+          "image_background": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg"
+        },
+        {
+          "id": 7808,
+          "name": "steam-trading-cards",
+          "slug": "steam-trading-cards",
+          "language": "eng",
+          "games_count": 7569,
+          "image_background": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg"
+        },
+        {
+          "id": 42401,
+          "name": "Отличный саундтрек",
+          "slug": "otlichnyi-saundtrek",
+          "language": "rus",
+          "games_count": 4613,
+          "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Great Soundtrack",
+          "slug": "great-soundtrack",
+          "language": "eng",
+          "games_count": 3391,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 42394,
+          "name": "Глубокий сюжет",
+          "slug": "glubokii-siuzhet",
+          "language": "rus",
+          "games_count": 11861,
+          "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+        },
+        {
+          "id": 24,
+          "name": "RPG",
+          "slug": "rpg",
+          "language": "eng",
+          "games_count": 20341,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 42412,
+          "name": "Ролевая игра",
+          "slug": "rolevaia-igra",
+          "language": "rus",
+          "games_count": 16754,
+          "image_background": "https://media.rawg.io/media/games/4e0/4e0e7b6d6906a131307c94266e5c9a1c.jpg"
+        },
+        {
+          "id": 118,
+          "name": "Story Rich",
+          "slug": "story-rich",
+          "language": "eng",
+          "games_count": 21003,
+          "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+        },
+        {
+          "id": 42421,
+          "name": "Стратегия",
+          "slug": "strategiia",
+          "language": "rus",
+          "games_count": 18185,
+          "image_background": "https://media.rawg.io/media/games/858/858c016de0cf7bc21a57dcc698a04a0c.jpg"
+        },
+        {
+          "id": 42399,
+          "name": "Казуальная игра",
+          "slug": "kazualnaia-igra",
+          "language": "rus",
+          "games_count": 39168,
+          "image_background": "https://media.rawg.io/media/games/e40/e40cc9d1957b0a0ed7e389834457b524.jpg"
+        },
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 194092,
+          "image_background": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg"
+        },
+        {
+          "id": 42413,
+          "name": "Симулятор",
+          "slug": "simuliator",
+          "language": "rus",
+          "games_count": 18354,
+          "image_background": "https://media.rawg.io/media/games/08b/08b2eee52a9876a48b955e5149affe5b.jpg"
+        },
+        {
+          "id": 42481,
+          "name": "Юмор",
+          "slug": "iumor",
+          "language": "rus",
+          "games_count": 5484,
+          "image_background": "https://media.rawg.io/media/games/295/295eb868c241e6ad32ac033b8e6a2ede.jpg"
+        },
+        {
+          "id": 123,
+          "name": "Comedy",
+          "slug": "comedy",
+          "language": "eng",
+          "games_count": 12144,
+          "image_background": "https://media.rawg.io/media/games/c7a/c7a71a0531a9518236d99d0d60abe447.jpg"
+        },
+        {
+          "id": 42415,
+          "name": "Пиксельная графика",
+          "slug": "pikselnaia-grafika",
+          "language": "rus",
+          "games_count": 11945,
+          "image_background": "https://media.rawg.io/media/games/501/501e7019925a3c692bf1c8062f07abe6.jpg"
+        },
+        {
+          "id": 122,
+          "name": "Pixel Graphics",
+          "slug": "pixel-graphics",
+          "language": "eng",
+          "games_count": 93033,
+          "image_background": "https://media.rawg.io/media/screenshots/6fe/6fe228662a253cd929cc78a103541ee0.jpg"
+        },
+        {
+          "id": 42587,
+          "name": "Аркада",
+          "slug": "arkada",
+          "language": "rus",
+          "games_count": 10093,
+          "image_background": "https://media.rawg.io/media/games/aa3/aa36ba4b486a03ddfaef274fb4f5afd4.jpg"
+        },
+        {
+          "id": 120,
+          "name": "Memes",
+          "slug": "memes",
+          "language": "eng",
+          "games_count": 1769,
+          "image_background": "https://media.rawg.io/media/games/530/5302dd22a190e664531236ca724e8726.jpg"
+        },
+        {
+          "id": 42561,
+          "name": "Мемы",
+          "slug": "memy",
+          "language": "rus",
+          "games_count": 1617,
+          "image_background": "https://media.rawg.io/media/screenshots/ca8/ca840f2a8ebfc74aac1688367dc1f903.jpg"
+        },
+        {
+          "id": 42408,
+          "name": "Симулятор свиданий",
+          "slug": "simuliator-svidanii",
+          "language": "rus",
+          "games_count": 2635,
+          "image_background": "https://media.rawg.io/media/screenshots/ef2/ef2fded04fb3ed42a84bcd4cb5f7fb18.jpeg"
+        },
+        {
+          "id": 160,
+          "name": "Dating Sim",
+          "slug": "dating-sim",
+          "language": "eng",
+          "games_count": 5079,
+          "image_background": "https://media.rawg.io/media/screenshots/635/635e6d2d85748197f39212addb4f200b.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 14,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/da4/da461b85c69f535f2241f48e426e127c.jpg" },
+        { "id": 94584, "image": "https://media.rawg.io/media/screenshots/fb0/fb04055cbc06bccce29b1596c49a8f34.jpg" },
+        { "id": 94585, "image": "https://media.rawg.io/media/screenshots/1aa/1aab81f5076fb76fe255b10797ac77f4.jpg" },
+        { "id": 94586, "image": "https://media.rawg.io/media/screenshots/910/91023d5d76234221ee4e889a0296abd6.jpg" },
+        { "id": 94587, "image": "https://media.rawg.io/media/screenshots/973/973c5f0aa8c6115f5bc624d00be3b6c4.jpg" },
+        { "id": 94588, "image": "https://media.rawg.io/media/screenshots/da4/da461b85c69f535f2241f48e426e127c.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [
+        { "id": 3, "name": "Adventure", "slug": "adventure" },
+        { "id": 4, "name": "Action", "slug": "action" },
+        { "id": 5, "name": "RPG", "slug": "role-playing-games-rpg" },
+        { "id": 40, "name": "Casual", "slug": "casual" },
+        { "id": 14, "name": "Simulation", "slug": "simulation" },
+        { "id": 51, "name": "Indie", "slug": "indie" }
+      ]
+    },
+    {
+      "slug": "call-of-juarez",
+      "name": "Call of Juarez",
+      "playtime": 3,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }, { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } }],
+      "stores": [
+        { "store": { "id": 1, "name": "Steam", "slug": "steam" } },
+        { "store": { "id": 5, "name": "GOG", "slug": "gog" } },
+        { "store": { "id": 7, "name": "Xbox 360 Store", "slug": "xbox360" } }
+      ],
+      "released": "2006-09-06",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/games/a41/a4126f8dc70a3e664b18b983722ed082.jpg",
+      "rating": 3.83,
+      "rating_top": 4,
+      "ratings": [
+        { "id": 4, "title": "recommended", "count": 182, "percent": 62.33 },
+        { "id": 3, "title": "meh", "count": 50, "percent": 17.12 },
+        { "id": 5, "title": "exceptional", "count": 45, "percent": 15.41 },
+        { "id": 1, "title": "skip", "count": 15, "percent": 5.14 }
+      ],
+      "ratings_count": 288,
+      "reviews_text_count": 4,
+      "added": 1617,
+      "added_by_status": { "yet": 75, "owned": 1108, "beaten": 317, "toplay": 49, "dropped": 61, "playing": 7 },
+      "metacritic": 72,
+      "suggestions_count": 547,
+      "updated": "2024-04-24T17:54:18",
+      "id": 19572,
+      "score": "21.819157",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 220522,
+          "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
+        },
+        {
+          "id": 42396,
+          "name": "Для одного игрока",
+          "slug": "dlia-odnogo-igroka",
+          "language": "rus",
+          "games_count": 46028,
+          "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+        },
+        {
+          "id": 42417,
+          "name": "Экшен",
+          "slug": "ekshen",
+          "language": "rus",
+          "games_count": 38542,
+          "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+        },
+        {
+          "id": 42392,
+          "name": "Приключение",
+          "slug": "prikliuchenie",
+          "language": "rus",
+          "games_count": 36505,
+          "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 37503,
+          "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Atmospheric",
+          "slug": "atmospheric",
+          "language": "eng",
+          "games_count": 32548,
+          "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+        },
+        {
+          "id": 42425,
+          "name": "Для нескольких игроков",
+          "slug": "dlia-neskolkikh-igrokov",
+          "language": "rus",
+          "games_count": 9491,
+          "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+        },
+        {
+          "id": 42400,
+          "name": "Атмосфера",
+          "slug": "atmosfera",
+          "language": "rus",
+          "games_count": 6083,
+          "image_background": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg"
+        },
+        {
+          "id": 7808,
+          "name": "steam-trading-cards",
+          "slug": "steam-trading-cards",
+          "language": "eng",
+          "games_count": 7569,
+          "image_background": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg"
+        },
+        {
+          "id": 42401,
+          "name": "Отличный саундтрек",
+          "slug": "otlichnyi-saundtrek",
+          "language": "rus",
+          "games_count": 4613,
+          "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Great Soundtrack",
+          "slug": "great-soundtrack",
+          "language": "eng",
+          "games_count": 3391,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 42394,
+          "name": "Глубокий сюжет",
+          "slug": "glubokii-siuzhet",
+          "language": "rus",
+          "games_count": 11861,
+          "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+        },
+        {
+          "id": 118,
+          "name": "Story Rich",
+          "slug": "story-rich",
+          "language": "eng",
+          "games_count": 21003,
+          "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+        },
+        {
+          "id": 42442,
+          "name": "Открытый мир",
+          "slug": "otkrytyi-mir",
+          "language": "rus",
+          "games_count": 5448,
+          "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg"
+        },
+        {
+          "id": 42428,
+          "name": "Шутер",
+          "slug": "shuter",
+          "language": "rus",
+          "games_count": 8590,
+          "image_background": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 31080,
+          "image_background": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg"
+        },
+        {
+          "id": 42429,
+          "name": "От первого лица",
+          "slug": "ot-pervogo-litsa",
+          "language": "rus",
+          "games_count": 10152,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42435,
+          "name": "Шедевр",
+          "slug": "shedevr",
+          "language": "rus",
+          "games_count": 1059,
+          "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg"
+        },
+        {
+          "id": 30,
+          "name": "FPS",
+          "slug": "fps",
+          "language": "eng",
+          "games_count": 13046,
+          "image_background": "https://media.rawg.io/media/games/7a2/7a2500ee8b2c0e1ff268bb4479463dea.jpg"
+        },
+        {
+          "id": 42427,
+          "name": "Шутер от первого лица",
+          "slug": "shuter-ot-pervogo-litsa",
+          "language": "rus",
+          "games_count": 5029,
+          "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+        },
+        {
+          "id": 42461,
+          "name": "Классика",
+          "slug": "klassika",
+          "language": "rus",
+          "games_count": 1452,
+          "image_background": "https://media.rawg.io/media/games/7a2/7a2500ee8b2c0e1ff268bb4479463dea.jpg"
+        },
+        {
+          "id": 193,
+          "name": "Classic",
+          "slug": "classic",
+          "language": "eng",
+          "games_count": 1788,
+          "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Stealth",
+          "slug": "stealth",
+          "language": "eng",
+          "games_count": 6172,
+          "image_background": "https://media.rawg.io/media/games/364/3642d850efb217c58feab80b8affaa89.jpg"
+        },
+        {
+          "id": 42439,
+          "name": "Стелс",
+          "slug": "stels",
+          "language": "rus",
+          "games_count": 2033,
+          "image_background": "https://media.rawg.io/media/games/c80/c80bcf321da44d69b18a06c04d942662.jpg"
+        },
+        {
+          "id": 152,
+          "name": "Western",
+          "slug": "western",
+          "language": "eng",
+          "games_count": 1262,
+          "image_background": "https://media.rawg.io/media/games/d11/d116eb848dad9bc60d63d1b209f5d3c8.jpeg"
+        },
+        {
+          "id": 42475,
+          "name": "Вестерн",
+          "slug": "vestern",
+          "language": "rus",
+          "games_count": 316,
+          "image_background": "https://media.rawg.io/media/screenshots/e28/e283bf6d6bfeb6bddba82edf7a311f1a.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 292,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/games/a41/a4126f8dc70a3e664b18b983722ed082.jpg" },
+        { "id": 183709, "image": "https://media.rawg.io/media/screenshots/ad1/ad138154542b0482f96d3db2de028760.jpg" },
+        { "id": 183710, "image": "https://media.rawg.io/media/screenshots/e7a/e7a80f16db9f904b068ab89c84db1e04.jpg" },
+        { "id": 183711, "image": "https://media.rawg.io/media/screenshots/35c/35c7e6cfbf5d70ff4d7a26a38688e5af.jpg" },
+        { "id": 183712, "image": "https://media.rawg.io/media/screenshots/d8c/d8c628b79a23058ba286390e35941ddb.jpg" },
+        { "id": 183713, "image": "https://media.rawg.io/media/screenshots/459/459d4b267a4d517a814d8a8380b0d015.jpg" },
+        { "id": 183714, "image": "https://media.rawg.io/media/screenshots/1a9/1a91d73cfa837be3ca46c654e69bd17b.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }, { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-cold-war-free-access",
+      "name": "Call of Duty: Black Ops Cold War - Free Access",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 1, "name": "Xbox One", "slug": "xbox-one" } }],
+      "stores": [{ "store": { "id": 2, "name": "Xbox Store", "slug": "xbox-store" } }],
+      "released": "2020-12-17",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/4d8/4d8dcfbb06a5e72088553167eb70553a.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 1,
+      "added_by_status": { "beaten": 1 },
+      "metacritic": null,
+      "suggestions_count": 104,
+      "updated": "2023-03-13T20:00:40",
+      "id": 532527,
+      "score": "21.772106",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35496,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        },
+        {
+          "id": 70,
+          "name": "War",
+          "slug": "war",
+          "language": "eng",
+          "games_count": 8762,
+          "image_background": "https://media.rawg.io/media/games/736/736c0eaec96d848d7824b33298a182f2.jpg"
+        },
+        {
+          "id": 981,
+          "name": "battle",
+          "slug": "battle",
+          "language": "eng",
+          "games_count": 10577,
+          "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg"
+        },
+        {
+          "id": 3109,
+          "name": "weapons",
+          "slug": "weapons",
+          "language": "eng",
+          "games_count": 2136,
+          "image_background": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/4d8/4d8dcfbb06a5e72088553167eb70553a.jpg" },
+        { "id": 2639669, "image": "https://media.rawg.io/media/screenshots/2a4/2a419cf127890d18cce578ebe2aa73e9.jpg" },
+        { "id": 2639670, "image": "https://media.rawg.io/media/screenshots/e08/e082de4689d745c48f5eff04c86bfde4.jpg" },
+        { "id": 2639671, "image": "https://media.rawg.io/media/screenshots/864/864fb33cbb44115b94e691492ddc2c10.jpg" },
+        { "id": 3812937, "image": "https://media.rawg.io/media/screenshots/4d8/4d8dcfbb06a5e72088553167eb70553a.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }],
+      "genres": []
+    },
+    {
+      "slug": "call-of-duty-modern-warfare-2-with-stimulus-packag",
+      "name": "Call of Duty: Modern Warfare 2 with Stimulus Package",
+      "playtime": 0,
+      "platforms": [
+        { "platform": { "id": 4, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 14, "name": "Xbox 360", "slug": "xbox360" } },
+        { "platform": { "id": 16, "name": "PlayStation 3", "slug": "playstation3" } }
+      ],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2010-03-30",
+      "tba": false,
+      "background_image": null,
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 4, "title": "recommended", "count": 1, "percent": 100.0 }],
+      "ratings_count": 1,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": { "owned": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-09-05T16:57:01",
+      "id": 4390,
+      "score": "21.765083",
+      "clip": null,
+      "tags": [
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 32583,
+          "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg"
+        },
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6375,
+          "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg"
+        },
+        {
+          "id": 151,
+          "name": "Modern",
+          "slug": "modern",
+          "language": "eng",
+          "games_count": 817,
+          "image_background": "https://media.rawg.io/media/screenshots/438/4386fdc13fa355b57303c9a89507964f.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 1,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [],
+      "parent_platforms": [
+        { "platform": { "id": 1, "name": "PC", "slug": "pc" } },
+        { "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } },
+        { "platform": { "id": 3, "name": "Xbox", "slug": "xbox" } }
+      ],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-4-blackout-free-access",
+      "name": "Call of Duty: Black Ops 4 - Blackout Free Access",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 18, "name": "PlayStation 4", "slug": "playstation4" } }],
+      "stores": [{ "store": { "id": 3, "name": "PlayStation Store", "slug": "playstation-store" } }],
+      "released": "2019-01-17",
+      "tba": false,
+      "background_image": null,
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 2,
+      "added_by_status": { "owned": 1, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2022-09-05T16:56:06",
+      "id": 306169,
+      "score": "21.726158",
+      "clip": null,
+      "tags": [
+        {
+          "id": 413,
+          "name": "online",
+          "slug": "online",
+          "language": "eng",
+          "games_count": 6515,
+          "image_background": "https://media.rawg.io/media/games/d51/d51ada3b94bfd617bf91d4344ab81ce9.jpg"
+        },
+        {
+          "id": 981,
+          "name": "battle",
+          "slug": "battle",
+          "language": "eng",
+          "games_count": 10518,
+          "image_background": "https://media.rawg.io/media/games/c36/c366f32194f488b2d04c0ec086c2cc3d.jpg"
+        },
+        {
+          "id": 744,
+          "name": "friends",
+          "slug": "friends",
+          "language": "eng",
+          "games_count": 15061,
+          "image_background": "https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg"
+        },
+        {
+          "id": 3189,
+          "name": "color",
+          "slug": "color",
+          "language": "eng",
+          "games_count": 6471,
+          "image_background": "https://media.rawg.io/media/screenshots/13f/13fbabb0f35721f1f15fbd4c87d960ea.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 4, "name": "Mature", "slug": "mature", "name_en": "Mature", "name_ru": "С 17 лет" },
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [],
+      "parent_platforms": [{ "platform": { "id": 2, "name": "PlayStation", "slug": "playstation" } }],
+      "genres": []
+    },
+    {
+      "slug": "duty-of-the-union-the-call",
+      "name": "Duty of the Union: The Call",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 171, "name": "Web", "slug": "web" } }],
+      "stores": [{ "store": { "id": 9, "name": "itch.io", "slug": "itch" } }],
+      "released": "2021-01-03",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/556/5566ccf2465606df20cb4c7108916e21.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [],
+      "ratings_count": 0,
+      "reviews_text_count": 0,
+      "added": 0,
+      "added_by_status": null,
+      "metacritic": null,
+      "suggestions_count": 0,
+      "updated": "2021-01-04T03:58:57",
+      "id": 539379,
+      "score": "21.447174",
+      "clip": null,
+      "tags": [
+        {
+          "id": 45,
+          "name": "2D",
+          "slug": "2d",
+          "language": "eng",
+          "games_count": 88149,
+          "image_background": "https://media.rawg.io/media/games/234/23410661770ae13eac11066980834367.jpg"
+        },
+        {
+          "id": 89,
+          "name": "Historical",
+          "slug": "historical",
+          "language": "eng",
+          "games_count": 949,
+          "image_background": "https://media.rawg.io/media/games/bff/bff7d82316cddea9541261a045ba008a.jpg"
+        },
+        {
+          "id": 208,
+          "name": "Alternate History",
+          "slug": "alternate-history",
+          "language": "eng",
+          "games_count": 730,
+          "image_background": "https://media.rawg.io/media/games/c69/c69e0952cdea6baa7cf0739b2e7792fb.jpg"
+        },
+        {
+          "id": 738,
+          "name": "Boss battle",
+          "slug": "boss-battle",
+          "language": "eng",
+          "games_count": 1806,
+          "image_background": "https://media.rawg.io/media/screenshots/d05/d05e6a22490dd3f3778231fdf3aaeef7.jpg"
+        },
+        {
+          "id": 605,
+          "name": "Explosions",
+          "slug": "explosions",
+          "language": "eng",
+          "games_count": 1318,
+          "image_background": "https://media.rawg.io/media/screenshots/270/270938ab0434db8cccba1d89f24c73a5.jpg"
+        }
+      ],
+      "esrb_rating": null,
+      "user_game": null,
+      "reviews_count": 0,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/556/5566ccf2465606df20cb4c7108916e21.jpg" },
+        { "id": 2659485, "image": "https://media.rawg.io/media/screenshots/556/5566ccf2465606df20cb4c7108916e21.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 14, "name": "Web", "slug": "web" } }],
+      "genres": [
+        { "id": 2, "name": "Shooter", "slug": "shooter" },
+        { "id": 83, "name": "Platformer", "slug": "platformer" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    },
+    {
+      "slug": "call-of-duty-black-ops-iii-multiplayer-starter-pac",
+      "name": "Call of Duty: Black Ops III - Multiplayer Starter Pack",
+      "playtime": 0,
+      "platforms": [{ "platform": { "id": 4, "name": "PC", "slug": "pc" } }],
+      "stores": [{ "store": { "id": 1, "name": "Steam", "slug": "steam" } }],
+      "released": "2015-11-06",
+      "tba": false,
+      "background_image": "https://media.rawg.io/media/screenshots/b0c/b0c3684b5f58cd34e0e78b0a393def5c_JTaQEt8.jpg",
+      "rating": 0.0,
+      "rating_top": 0,
+      "ratings": [{ "id": 1, "title": "skip", "count": 2, "percent": 100.0 }],
+      "ratings_count": 2,
+      "reviews_text_count": 0,
+      "added": 6,
+      "added_by_status": { "yet": 1, "owned": 1, "beaten": 3, "dropped": 1 },
+      "metacritic": null,
+      "suggestions_count": 357,
+      "updated": "2023-03-08T19:57:20",
+      "id": 18907,
+      "score": "21.4218",
+      "clip": null,
+      "tags": [
+        {
+          "id": 31,
+          "name": "Singleplayer",
+          "slug": "singleplayer",
+          "language": "eng",
+          "games_count": 208470,
+          "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Multiplayer",
+          "slug": "multiplayer",
+          "language": "eng",
+          "games_count": 35496,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        },
+        {
+          "id": 40836,
+          "name": "Full controller support",
+          "slug": "full-controller-support",
+          "language": "eng",
+          "games_count": 13786,
+          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+        },
+        {
+          "id": 18,
+          "name": "Co-op",
+          "slug": "co-op",
+          "language": "eng",
+          "games_count": 9648,
+          "image_background": "https://media.rawg.io/media/games/dd5/dd50d4266915d56dd5b63ae1bf72606a.jpg"
+        },
+        {
+          "id": 8,
+          "name": "First-Person",
+          "slug": "first-person",
+          "language": "eng",
+          "games_count": 28934,
+          "image_background": "https://media.rawg.io/media/games/c24/c24ec439abf4a2e92f3429dfa83f7f94.jpg"
+        },
+        {
+          "id": 30,
+          "name": "FPS",
+          "slug": "fps",
+          "language": "eng",
+          "games_count": 12518,
+          "image_background": "https://media.rawg.io/media/games/49c/49c3dfa4ce2f6f140cc4825868e858cb.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Online Co-Op",
+          "slug": "online-co-op",
+          "language": "eng",
+          "games_count": 4175,
+          "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+        },
+        {
+          "id": 40850,
+          "name": "Steam Leaderboards",
+          "slug": "steam-leaderboards",
+          "language": "eng",
+          "games_count": 5690,
+          "image_background": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg"
+        },
+        {
+          "id": 79,
+          "name": "Free to Play",
+          "slug": "free-to-play",
+          "language": "eng",
+          "games_count": 5177,
+          "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+        },
+        {
+          "id": 63,
+          "name": "Zombies",
+          "slug": "zombies",
+          "language": "eng",
+          "games_count": 9959,
+          "image_background": "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg"
+        },
+        {
+          "id": 167,
+          "name": "Futuristic",
+          "slug": "futuristic",
+          "language": "eng",
+          "games_count": 4194,
+          "image_background": "https://media.rawg.io/media/games/ae1/ae1518c3dc1e847344661905fd2a8d16.jpg"
+        },
+        {
+          "id": 40856,
+          "name": "Valve Anti-Cheat enabled",
+          "slug": "valve-anti-cheat-enabled",
+          "language": "eng",
+          "games_count": 104,
+          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+        }
+      ],
+      "esrb_rating": { "id": 5, "name": "Adults Only", "slug": "adults-only", "name_en": "Adults Only", "name_ru": "Только для взрослых" },
+      "user_game": null,
+      "reviews_count": 2,
+      "community_rating": 0,
+      "saturated_color": "0f0f0f",
+      "dominant_color": "0f0f0f",
+      "short_screenshots": [
+        { "id": -1, "image": "https://media.rawg.io/media/screenshots/b0c/b0c3684b5f58cd34e0e78b0a393def5c_JTaQEt8.jpg" },
+        { "id": 175869, "image": "https://media.rawg.io/media/screenshots/cb0/cb0365cde0babeabc4c86041da97c2d2.jpg" },
+        { "id": 175870, "image": "https://media.rawg.io/media/screenshots/1c6/1c6e4fad2cf26d81b32d5b384fa500db.jpg" },
+        { "id": 175871, "image": "https://media.rawg.io/media/screenshots/4de/4decd8db5c6c1b3c6f1bc71127c8c52e.jpg" },
+        { "id": 175872, "image": "https://media.rawg.io/media/screenshots/263/26362c2c4a72e7278d9af3816de15aba.jpg" },
+        { "id": 175873, "image": "https://media.rawg.io/media/screenshots/27e/27e498d184f15b06081c70a0bf8e64f7.jpg" },
+        { "id": 175874, "image": "https://media.rawg.io/media/screenshots/b9d/b9dd0d8122082c48d82ba70c4a7176a4.jpg" }
+      ],
+      "parent_platforms": [{ "platform": { "id": 1, "name": "PC", "slug": "pc" } }],
+      "genres": [
+        { "id": 3, "name": "Adventure", "slug": "adventure" },
+        { "id": 4, "name": "Action", "slug": "action" }
+      ]
+    }
+  ],
+  "user_platforms": false
+}

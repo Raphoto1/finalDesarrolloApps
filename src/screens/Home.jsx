@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import HorizontalList from "../componets/HorizontalList";
 import ModalCustom from "../componets/ModalCustom";
 import { colors } from "../constants/colors";
+import gamesFull from "../data/gamesFull.json";
+import genresClear from '../data/genresClear.json'
 
 const Home = ({ route, navigation }) => {
   //Modal controls
@@ -13,14 +15,14 @@ const Home = ({ route, navigation }) => {
     console.log("oprimo green y genero el call");
   };
   const handleAux = () => {
-    console.log('see edita el call');
-  }
+    console.log("see edita el call");
+  };
   const handleRed = () => {
     setModalVisible(!modalVisible);
   };
   const handleModal = () => {
     setModalVisible(!modalVisible);
-  }
+  };
   //end modal controls
   return (
     <View>
@@ -29,7 +31,7 @@ const Home = ({ route, navigation }) => {
         modalVisible={modalVisible}
         handleModal={handleModal}
         title={`Fast Call the Group`}
-        mainText={'test desde home'}
+        mainText={"test desde home"}
         btnRedActive={"cancel"}
         handleRed={handleRed}
         btnAuxActive={"adjust"}
@@ -39,9 +41,9 @@ const Home = ({ route, navigation }) => {
       />
 
       <View style={styles.mainGroup}>
-        <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} />
-        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"} />
-        {/* <HorizontalList title={"Friends Online"} navigation={navigation} gridList={"FriendsList"} /> */}
+        <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} listToShow={gamesFull}/>
+        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"} listToShow={genresClear} bubbleNavigationTarget={'GameListGenre'}/>
+        <HorizontalList title={"Friends Online"} navigation={navigation} />
       </View>
     </View>
   );

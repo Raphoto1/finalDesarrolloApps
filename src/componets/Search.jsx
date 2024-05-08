@@ -1,20 +1,27 @@
+//imports de app
 import { StyleSheet, Text, View, TextInput, Pressable } from "react-native";
 import React, { useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
+//imports propios
 import { colors } from "../constants/colors";
-const Search = () => {
-  const [keyword, setKeyword] = useState("");
+
+const Search = ({onSearch=()=>{}, error="", }) => {
+  const [searchWord, setSearchWord] = useState("");
+  // const handleClear = () => {
+  //   setSearchWord('')
+  // }
+  // const handleSearch = () => {
+    
+  // }
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput placeholder='Search...' value={keyword} onChangeText={setKeyword} />
+        <TextInput placeholder='Search...' value={searchWord} onChangeText={setSearchWord} />
       </View>
-      <Pressable>
+      {error ? <Text style={styles.errorText}>{error}</Text> : null}
+      <Pressable onPress={onSearch(searchWord)}>
         <AntDesign name='search1' size={24} color='black' />
-      </Pressable>
-      <Pressable>
-        <MaterialIcons name='search-off' size={24} color='gray' />
       </Pressable>
     </View>
   );

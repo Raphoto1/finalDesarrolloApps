@@ -10,39 +10,41 @@ import Header from "../componets/Header";
 import GameList from "../screens/GameList";
 import GenreList from "../screens/GenreList";
 import FriendsList from "../screens/FriendsList";
+import GameListGenre from "../screens/GameListGenre";
 
 const Stack = createNativeStackNavigator();
 
 const Navigator = () => {
   return (
-
-      <Stack.Navigator
-        initialRouteName='Home'
-        screenOptions={({ route }) => ({
-          header: () => {
-            return (
-              <Header
-                title={
-                  route.name === "Home"
-                    ? "Game Call"
-                    : route.name === "GameList"
-                    ? "Games List"
-                    : route.name === "GenreList"
-                    ? "Genre List"
-                    : route.name === "FriendsList"
-                    ? "Friends List"
-                    : route.name === "lost"
-                }
-              />
-            );
-          },
-        })}>
-        <Stack.Screen name='Home' component={Home} />
-        <Stack.Screen name='GameList' component={GameList} />
-        <Stack.Screen name='GenreList' component={GenreList} />
-        <Stack.Screen name='FriendsList' component={FriendsList} />
-      </Stack.Navigator>
-   
+    <Stack.Navigator
+      initialRouteName='Home'
+      screenOptions={({ route }) => ({
+        header: () => {
+          return (
+            <Header
+              title={
+                route.name === "Home"
+                  ? "Game Call"
+                  : route.name === "GameList"
+                  ? "Games List"
+                  : route.name === "GenreList"
+                  ? "Genre List"
+                  : route.name === "FriendsList"
+                        ? "Friends List"
+                        : route.name === "GameListGenre"
+                  ? "Game List By Genre"
+                  : route.name === "lost"
+              }
+            />
+          );
+        },
+      })}>
+      <Stack.Screen name='Home' component={Home} />
+      <Stack.Screen name='GameList' component={GameList} />
+      <Stack.Screen name='GameListGenre' component={GameListGenre} />
+      <Stack.Screen name='GenreList' component={GenreList} />
+      <Stack.Screen name='FriendsList' component={FriendsList} />
+    </Stack.Navigator>
   );
 };
 

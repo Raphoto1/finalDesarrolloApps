@@ -8,7 +8,7 @@ import { fonts } from "./src/constants/fonts";
 import { colors } from "./src/constants/colors";
 import Store from "./src/Store";
 
-//nav bar/ send call(main)llama modal seleccionar juego y grupo o jugadores/sessions(program session/search session)/Friends(Invite friends/manage Groups(carrito))
+//nav bar/ send call(main)llama modal seleccionar juego y grupo o jugadores / sessions(program session / search session) / Friends(Invite friends/manage Groups(carrito))
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts(fonts);
