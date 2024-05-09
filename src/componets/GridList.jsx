@@ -6,9 +6,10 @@ import Bubble from "./Bubble";
 import Search from "./Search";
 import { colors } from "../constants/colors";
 
-const GridList = ({ listToShow, specialFilter, navigation, bubbleFunct=()=>{}, targetRedirectBubble }) => {
+const GridList = ({ listToShow, specialFilter, navigation, bubbleFunct = () => {}, targetRedirectBubble }) => {
   const [searchWord, setSearchWord] = useState("");
   const [extraFilter, setExtraFilter] = useState("");
+  const [dataEmpty, setDataEmpty] = useState(false);
   const [gamesFiltered, setGamesFiltered] = useState(listToShow);
   const [error, setError] = useState("");
 
@@ -22,8 +23,7 @@ const GridList = ({ listToShow, specialFilter, navigation, bubbleFunct=()=>{}, t
       const gamesFilter = listToShow.filter((game) => game.name.toLocaleLowerCase().includes(searchWord.toLocaleLowerCase()));
       setGamesFiltered(gamesFilter);
     }
-  }, [searchWord,extraFilter]);
-
+  }, [searchWord, extraFilter]);
   return (
     <View style={styles.gridContainer}>
       <View style={styles.searchContainer}>
@@ -34,7 +34,18 @@ const GridList = ({ listToShow, specialFilter, navigation, bubbleFunct=()=>{}, t
           data={gamesFiltered}
           numColumns={3}
           initialNumToRender={30}
-          renderItem={({ item }) => <Bubble text={item.name} thumbnail={item.background_image} navigation={navigation} bubblePress={() => { navigation.navigate(`${targetRedirectBubble}`,`${item.name}`) }} />}
+          ListEmptyComponent={<Text>No Results</Text>}
+          ListFooterComponent={<Text>No More Results Available</Text>}
+          renderItem={({ item }) => (
+            <Bubble
+              text={item.name}
+              thumbnail={item.background_image}
+              navigation={navigation}
+              bubblePress={() => {
+                navigation.navigate(`${targetRedirectBubble}`, `${item.name}`);
+              }}
+            />
+          )}
         />
       </View>
     </View>
@@ -45,8 +56,7 @@ export default GridList;
 
 const styles = StyleSheet.create({
   gridContainer: {
-    height:'100%',
-    paddingTop: 10,
+    height: "100%",
     backgroundColor: colors.white,
   },
   searchContainer: {
@@ -57,7 +67,7 @@ const styles = StyleSheet.create({
   },
   gridGroup: {
     paddingTop: 10,
-    paddingBottom:280,
+    paddingBottom: 200,
     justifyContent: "center",
     alignItems: "center",
   },

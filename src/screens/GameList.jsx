@@ -4,12 +4,11 @@ import React from "react";
 //imports Propios
 import GridList from "../componets/GridList";
 import gamesFull from '../data/gamesFull.json'
-
+import { colors } from "../constants/colors";
 const GameList = ({ route, navigation }) => {
   return (
     <View>
       <View style={styles.titleContainer}>
-        <Text>All Games</Text>
         <Button
           title='Back'
           onPress={() => {
@@ -24,7 +23,17 @@ const GameList = ({ route, navigation }) => {
 export default GameList;
 
 const styles = StyleSheet.create({
+  title: {
+    textAlign:'center',
+    padding: 10,
+    borderRadius: 10,
+    fontFamily: "LatoRegular",
+    fontSize: 24,
+    color: colors.gray,
+    backgroundColor: colors.darkBlue,
+  },
   titleContainer: {
-    
+    padding:10,
+    justifyContent:'center'
   }
 });

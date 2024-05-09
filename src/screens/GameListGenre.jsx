@@ -8,7 +8,6 @@ import { colors } from "../constants/colors";
 
 const GameList = ({ route, navigation }) => {
   const genreSelected = route.params
-  console.log(genreSelected);
   return (
     <View>
       <View style={styles.titleContainer}>
