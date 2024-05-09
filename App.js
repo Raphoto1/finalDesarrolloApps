@@ -9,7 +9,7 @@ import { colors } from "./src/constants/colors";
 import Store from "./src/Store";
 
 //nav bar/ send call(main)llama modal seleccionar juego y grupo o jugadores / sessions(program session / search session) / Friends(Invite friends/manage Groups(carrito))
-
+//push por viaje, falta agregar conexion a db en varios componentes
 export default function App() {
   const [fontsLoaded, fontError] = useFonts(fonts);
 

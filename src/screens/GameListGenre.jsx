@@ -5,8 +5,10 @@ import React from "react";
 import GridList from "../componets/GridList";
 import gamesFull from '../data/gamesFull.json'
 import { colors } from "../constants/colors";
+import { useGetGamesQuery } from "../services/gamesService";
 
 const GameList = ({ route, navigation }) => {
+  const{data:games,isLoading,error}=useGetGamesQuery()
   const genreSelected = route.params
   return (
     <View>
@@ -18,7 +20,7 @@ const GameList = ({ route, navigation }) => {
             navigation.goBack();
           }}></Button>
       </View>
-      <GridList listToShow={gamesFull} specialFilter={genreSelected} navigation={navigation}/>
+      <GridList listToShow={games} specialFilter={genreSelected} navigation={navigation} isLoadingIn={isLoading}/>
     </View>
   );
 };

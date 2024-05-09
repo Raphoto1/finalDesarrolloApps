@@ -5,7 +5,11 @@ import React from "react";
 import GridList from "../componets/GridList";
 import gamesFull from '../data/gamesFull.json'
 import { colors } from "../constants/colors";
+import { useGetGamesQuery } from "../services/gamesService";
+
 const GameList = ({ route, navigation }) => {
+  const { data:allGames, isLoading, error } = useGetGamesQuery();
+console.log(isLoading);
   return (
     <View>
       <View style={styles.titleContainer}>
@@ -15,7 +19,7 @@ const GameList = ({ route, navigation }) => {
             navigation.goBack();
           }}></Button>
       </View>
-      <GridList listToShow={gamesFull} navigation={navigation } />
+      <GridList listToShow={allGames} navigation={navigation } isLoadingIn={isLoading}/>
     </View>
   );
 };

@@ -1,0 +1,1 @@
+export const firebase_url= 'https://gamecall-e74d1-default-rtdb.firebaseio.com/'
