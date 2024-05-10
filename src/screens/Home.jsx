@@ -6,9 +6,16 @@ import HorizontalList from "../componets/HorizontalList";
 import ModalCustom from "../componets/ModalCustom";
 import { colors } from "../constants/colors";
 import gamesFull from "../data/gamesFull.json";
-import genresClear from '../data/genresClear.json'
+import genresClear from "../data/genresClear.json";
+import { useGetGamesQuery, useGetGenreQuery } from "../services/gamesService";
 
 const Home = ({ route, navigation }) => {
+  const { data: allGames, isLoading:isLoadingGames, error:errorGames } = useGetGamesQuery();
+  const {
+    data: allGenres,
+    isLoading: isLoadingGenre,
+    error:errorGenres,
+  } = useGetGenreQuery();
   //Modal controls
   const [modalVisible, setModalVisible] = useState(false);
   const handleGreen = () => {
@@ -41,8 +48,21 @@ const Home = ({ route, navigation }) => {
       />
 
       <View style={styles.mainGroup}>
-        <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} listToShow={gamesFull}/>
-        <HorizontalList title={"Genres Available"} navigation={navigation} gridList={"GenreList"} listToShow={genresClear} bubbleNavigationTarget={'GameListGenre'}/>
+        <HorizontalList
+          title={"Games Available"}
+          navigation={navigation}
+          gridList={"GameList"}
+          listToShow={allGames}
+          isLoadingIn={isLoadingGames}
+        />
+        <HorizontalList
+          title={"Genres Available"}
+          navigation={navigation}
+          gridList={"GenreList"}
+          listToShow={allGenres}
+          isLoadingIn={isLoadingGenre}
+          bubbleNavigationTarget={"GameListGenre"}
+        />
         <HorizontalList title={"Friends Online"} navigation={navigation} />
       </View>
     </View>

@@ -1,38 +1,85 @@
 //Imports app
-import { StyleSheet, Text, View, Pressable, Button, FlatList } from "react-native";
-import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+  Button,
+  FlatList,
+} from "react-native";
+import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 //Imports propios
 import Bubble from "./Bubble";
 import { colors } from "../constants/colors";
 import gamesFull from "../data/gamesFull.json";
 
-const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigationTarget }) => {
+const HorizontalList = ({
+  title,
+  navigation,
+  gridList,
+  listToShow,
+  bubbleNavigationTarget,
+  isLoadingIn,
+}) => {
+  const [isLoading, setIsLoading] = useState(isLoadingIn);
+  const [dataReady, setDataReady] = useState([]);
+  const [emptyData, setEmptyData] = useState(false);
+  useEffect(() => {
+    showData(listToShow);
+  }, [dataReady, listToShow]);
+
+  const showData = async (listToShow) => {
+    setIsLoading(true);
+    const dataPreloading = await listToShow;
+    if (dataPreloading === []) {
+      console.log("esta vacio");
+      setEmptyData(true);
+    }
+    setIsLoading(false);
+    setDataReady(dataPreloading);
+  };
   return (
     <View style={styles.listGroup}>
       <View style={styles.titleContainer}>
         <Text style={styles.listTitle}>{`${title}`}</Text>
-        {gridList? <Pressable
-          style={styles.checkAll}
-          onPress={() => {
-            navigation.navigate(`${gridList}`);
-          }}
-          navigation={navigation}>
-          <Text>{`Check all ${title}`}</Text>
-        </Pressable>:null}
-        
+        {gridList ? (
+          <Pressable
+            style={styles.checkAll}
+            onPress={() => {
+              navigation.navigate(`${gridList}`);
+            }}
+            navigation={navigation}
+          >
+            <Text>{`Check all ${title}`}</Text>
+          </Pressable>
+        ) : null}
       </View>
       <View style={styles.listContainer}>
-        {listToShow ? (
-          <FlatList
-            data={listToShow}
-            horizontal={true}
-            initialNumToRender={10}
-            renderItem={({ item }) => <Bubble text={item.name} thumbnail={item.background_image} bubblePress={()=>navigation.navigate(`${bubbleNavigationTarget}`,item.name)}/>}
-          />
-        ) : (
-          <Bubble text={`No ${title} found`} />
-        )}
+        <FlatList
+          data={dataReady}
+          horizontal={true}
+          ListEmptyComponent={
+            isLoading ? (
+              <Text>Loading...</Text>
+            ) : (
+              <Text>{`No ${title} to Show`}</Text>
+            )
+          }
+          ListFooterComponent={
+            emptyData ? null : <Bubble text={`No More Data`} />
+          }
+          initialNumToRender={10}
+          renderItem={({ item }) => (
+            <Bubble
+              text={item.name}
+              thumbnail={item.background_image}
+              bubblePress={() =>
+                navigation.navigate(`${bubbleNavigationTarget}`, item.name)
+              }
+            />
+          )}
+        />
       </View>
     </View>
   );
