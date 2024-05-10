@@ -63,7 +63,7 @@ const Home = ({ route, navigation }) => {
           isLoadingIn={isLoadingGenre}
           bubbleNavigationTarget={"GameListGenre"}
         />
-        <HorizontalList title={"Friends Online"} navigation={navigation} />
+        <HorizontalList title={"Friends Online"} navigation={navigation} isLoadingIn={isLoadingGames}/>
       </View>
     </View>
   );
