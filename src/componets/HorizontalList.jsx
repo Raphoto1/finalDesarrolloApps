@@ -18,6 +18,7 @@ const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigat
   const showData = async (listToShow) => {
     setIsLoading(true);
     const dataPreloading = await listToShow;
+    dataPreloading?setEmptyData(false):setEmptyData(true);
     setIsLoading(false);
     setDataReady(dataPreloading);
   };
@@ -41,7 +42,7 @@ const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigat
           data={dataReady}
           horizontal={true}
           ListEmptyComponent={isLoading ? <Text>Loading...</Text> : <Text>{`No ${title} to Show`}</Text>}
-          ListFooterComponent={emptyData ? null : <Bubble text={`No More Data`} />}
+          ListFooterComponent={emptyData ? null:<Bubble text={`No More Data`} />}
           initialNumToRender={10}
           renderItem={({ item }) => (
             <Bubble text={item.name} thumbnail={item.background_image} bubblePress={() => navigation.navigate(`${bubbleNavigationTarget}`, item.name)} />
