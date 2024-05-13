@@ -5,13 +5,14 @@ import React from "react";
 import { colors } from "../constants/colors";
 import InputForm from "../componets/InputForm";
 import SubmitButton from "../componets/SubmitButton";
+
 const LoginScreen = ({ navigation }) => {
     const onSubmit = () => {};
   return (
     <View style={styles.main}>
       <View style={styles.container}>
         <Text style={styles.title}>Login to Start</Text>
-        <Input label={"Email"} onChange={() => {}} error={""} />
+        <InputForm label={"Email"} onChange={() => {}} error={""} />
         <InputForm
           label={"Password"}
           onChange={() => {}}
@@ -19,8 +20,8 @@ const LoginScreen = ({ navigation }) => {
           isSecure={true}
         />
         <SubmitButton onPress={onSubmit} title={"Send"} />
-        <Text style={styles.sub}>First time on GameCall</Text>
-        <Pressable onPress={() => navigation.navigate("Signup")}>
+        <Text style={styles.sub}>First time on GameCall?</Text>
+        <Pressable onPress={() => navigation.navigate("SignupScreen")}>
           <Text style={styles.subLink}>Sign Up</Text>
         </Pressable>
       </View>
@@ -42,14 +43,14 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: colors.cyan,
+        backgroundColor: colors.gray,
         gap: 15,
         paddingVertical: 20,
         borderRadius: 10,
     },
     title: {
         fontSize: 22,
-        fontFamily: "Lato",
+        fontFamily: "LatoRegular",
     },
     sub: {
         fontSize: 14,

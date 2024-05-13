@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
         width: '60%'
     },
     text: {
-        color: colors.lightBlue,
-        fontFamily: 'Lato',
+        color: colors.white,
+        fontFamily: 'LatoRegular',
         fontSize: 22
     },
 })

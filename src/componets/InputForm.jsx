@@ -7,7 +7,7 @@ const InputForm = ({ label, onChange, error = "", isSecure = false }) => {
   const [input, setInput] = useState("");
   const onChangeText = (text) => {
     setInput(text);
-    onchange(text);
+    onChange(text);
   };
   return (
     <View style={styles.inputContainer}>
@@ -37,22 +37,21 @@ const styles = StyleSheet.create({
     subtitle: {
         width: '90%',
         fontSize: 16,
-        fontFamily: 'Lato'
+        fontFamily: 'LatoRegular'
     },
     error: {
         paddintTop: 2,
         fontSize: 16,
         color: 'red',
-        fontFamily: 'Lato',
-        fontStyle: 'italic',
+        fontFamily: 'LatoRegular',
     },
     input: {
         width: '90%',
         borderWidth: 0,
         borderBottomWidth: 3,
-        borderBottomColor: colors.gray,
+        borderBottomColor: colors.white,
         padding: 2,
-        fontFamily: 'Lato',
+        fontFamily: 'LatoRegular',
         fontSize: 14,
     }
 });
