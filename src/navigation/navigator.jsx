@@ -5,9 +5,10 @@ import { NavigationContainer } from "@react-navigation/native";
 //imports propios
 import BottomTabNavigator from "./BottomTabNavigator";
 import AuthStack from "./AuthStack";
+import { useSelector } from "react-redux";
 
 const Navigator = () => {
-  const [user, setUser] = useState(null);
+  const { user } = useSelector((state) => state.auth.value);
   return <NavigationContainer>{user ? <BottomTabNavigator /> : <AuthStack />}</NavigationContainer>;
 };
 
