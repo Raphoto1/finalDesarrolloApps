@@ -1,15 +1,18 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { colors } from "../constants/colors";
 
-const Bubble = ({ thumbnail, text, color, bubblePress = () => {}, navigation }) => {
+const Bubble = ({ thumbnail, text, color, bubblePress = () => {}, navigation, localImage }) => {
   return (
     <View>
-      <Pressable
-        onPress={bubblePress}
-        navigation={navigation}>
+      <Pressable onPress={bubblePress} navigation={navigation}>
         <View style={styles.bubbleContainer}>
-          <Image resizeMode='cover' style={styles.bubbleImage} source={{ uri: `${thumbnail}` }} />
+          {localImage ? (
+            <Image resizeMode='cover' style={styles.bubbleImage} source={localImage} />
+          ) : (
+            <Image resizeMode='cover' style={styles.bubbleImage} source={{ uri: `${thumbnail}` }} />
+          )}
+
           <Text style={styles.bubbleText}>{text}</Text>
         </View>
       </Pressable>
@@ -25,7 +28,6 @@ const styles = StyleSheet.create({
     borderBlockColor: "red",
   },
   bubbleImage: {
-    // display:'none',
     height: 100,
     width: 100,
     borderRadius: 50,

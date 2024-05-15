@@ -1,0 +1,15 @@
+export const randomProfilePics = [
+    require('../../assets/ProfilePics/profile-1.png'),
+    require('../../assets/ProfilePics/profile-2.png'),
+    require('../../assets/ProfilePics/profile-3.png'),
+    require('../../assets/ProfilePics/profile-4.png'),
+    require('../../assets/ProfilePics/profile-5.png'),
+    require('../../assets/ProfilePics/profile-6.png'),
+    require('../../assets/ProfilePics/profile-7.png'),
+    require('../../assets/ProfilePics/profile-8.png'),
+    require('../../assets/ProfilePics/profile-9.png'),
+    require('../../assets/ProfilePics/profile-10.png'),
+    require('../../assets/ProfilePics/profile-11.png'),
+    require('../../assets/ProfilePics/profile-12.png'),
+    require('../../assets/ProfilePics/profile-13.png'),
+]

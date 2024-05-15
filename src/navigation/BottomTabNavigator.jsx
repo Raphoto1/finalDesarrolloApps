@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { SimpleLineIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 //imports propios
 import Header from "../componets/Header";
 import HomeStack from "./HomeStack";
 import SessionStack from "./SessionStack";
 import { colors } from "../constants/colors";
+import ProfileStack from "./ProfileStack";
 
 const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
@@ -17,7 +19,7 @@ const BottomTabNavigator = () => {
         header: () => {
           return <Header route={route} />;
         },
-        headerShown:false,
+        headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: styles.tabBar,
       })}>
@@ -42,6 +44,19 @@ const BottomTabNavigator = () => {
             return (
               <View>
                 <SimpleLineIcons name='rocket' size={24} color='white' />
+              </View>
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name='ProfileStack'
+        component={ProfileStack}
+        options={{
+          tabBarIcon: ({ focused }) => {
+            return (
+              <View>
+                <FontAwesome5 name='user-astronaut' size={24} color='white' />
               </View>
             );
           },

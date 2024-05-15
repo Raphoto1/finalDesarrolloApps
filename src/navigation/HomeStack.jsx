@@ -14,7 +14,7 @@ import GameListGenre from "../screens/GameListGenre";
 
 const Stack = createNativeStackNavigator();
 
-const Navigator = () => {
+const HomeStack = () => {
   return (
     <Stack.Navigator
       initialRouteName='Home'
@@ -48,4 +48,4 @@ const Navigator = () => {
   );
 };
 
-export default Navigator;
+export default HomeStack;

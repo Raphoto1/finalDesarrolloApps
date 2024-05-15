@@ -1,0 +1,14 @@
+import { object, string, ref } from "yup";
+
+export const signupSchema = object().shape({
+  email: string().required("Email is required").email("not a valit mail"),
+  password: string().required("Password is Required").min(6, "Password must be at least 6 characters"),
+  confirmPassword: string()
+    .oneOf([ref("password"), null], "Password must match")
+    .required(),
+});
+
+export const loginSchema = object().shape({
+  email: string().required("Email is required").email("not a valit mail"),
+  password: string().required("Password is Required").min(6, "Password must be at least 6 characters"),
+});
