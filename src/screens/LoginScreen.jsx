@@ -9,31 +9,31 @@ import SubmitButton from "../componets/SubmitButton";
 import { useLoginMutation } from "../services/authService";
 import { setUser } from "../features/User/UserSlice";
 import { loginSchema } from "../validations/signupSchema";
+import { insertSession } from "../db";
 
 const LoginScreen = ({ navigation }) => {
-
   const dispatch = useDispatch();
   //form General
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   //form Errors
-  const [errorMail, setErrorMail] = useState('');
-  const [errorPassword, setErrorPassword] = useState('');
-  const [generalError, setGeneralError] = useState('');
+  const [errorMail, setErrorMail] = useState("");
+  const [errorPassword, setErrorPassword] = useState("");
+  const [generalError, setGeneralError] = useState("");
   //form Functions
   const [triggerLogin, result] = useLoginMutation();
 
   const onSubmit = () => {
     try {
-      const validation=loginSchema.validateSync({email,password})
+      const validation = loginSchema.validateSync({ email, password });
       triggerLogin({ email, password });
     } catch (err) {
       switch (err.path) {
-        case 'email':
+        case "email":
           setErrorMail(err.message);
           break;
-        case 'password':
-          setErrorPassword(err.message)
+        case "password":
+          setErrorPassword(err.message);
           break;
         default:
           break;
@@ -43,16 +43,25 @@ const LoginScreen = ({ navigation }) => {
 
   useEffect(() => {
     if (result.isSuccess) {
-      dispatch(
-        setUser({
-          email: result.data.email,
-          idToken: result.data.idToken,
-          localId:result.data.localId
-        })
-      );
-    }
-    if (result.error) {
-      setGeneralError(result.error.data.error.message);
+      insertSession({
+        email: result.data.email,
+        localId: result.data.localId,
+        token: result.data.idToken,
+      }).then((response) => {
+        dispatch(
+          setUser({
+            email: result.data.email,
+            idToken: result.data.idToken,
+            localId: result.data.localId,
+          })
+        );
+        // if (result.error) {
+        //   setGeneralError(result.error.data.error.message);
+        // }
+      }).catch((err) => {
+        console.log(err);
+        // setGeneralError(err);
+      })
     }
   }, [result]);
   return (
@@ -66,9 +75,7 @@ const LoginScreen = ({ navigation }) => {
         <Pressable onPress={() => navigation.navigate("SignupScreen")}>
           <Text style={styles.subLink}>Sign Up</Text>
         </Pressable>
-        {generalError?
-      <Text style={styles.error}>{generalError}</Text>:null
-    }
+        {generalError ? <Text style={styles.error}>{generalError}</Text> : null}
       </View>
     </View>
   );
@@ -106,9 +113,9 @@ const styles = StyleSheet.create({
     color: "blue",
   },
   error: {
-    paddintTop: 2,
+    paddingTop: 2,
     fontSize: 16,
-    color: 'red',
-    fontFamily: 'LatoRegular',
-},
+    color: "red",
+    fontFamily: "LatoRegular",
+  },
 });
