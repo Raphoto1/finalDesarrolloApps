@@ -42,26 +42,28 @@ const LoginScreen = ({ navigation }) => {
   };
 
   useEffect(() => {
-    if (result.isSuccess) {
+    if (result?.data && result.isSuccess) {
       insertSession({
-        email: result.data.email,
         localId: result.data.localId,
+        email: result.data.email,
         token: result.data.idToken,
-      }).then((response) => {
-        dispatch(
-          setUser({
-            email: result.data.email,
-            idToken: result.data.idToken,
-            localId: result.data.localId,
-          })
-        );
-        // if (result.error) {
-        //   setGeneralError(result.error.data.error.message);
-        // }
-      }).catch((err) => {
-        console.log(err);
-        // setGeneralError(err);
       })
+        .then((response) => {
+          dispatch(
+            setUser({
+              localId: result.data.localId,
+              email: result.data.email,
+              idToken: result.data.idToken,
+            })
+          );
+          if (result.error) {
+            setGeneralError(result.error.data.error.message);
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+          setGeneralError(err);
+        });
     }
   }, [result]);
   return (
