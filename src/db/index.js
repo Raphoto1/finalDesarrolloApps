@@ -28,7 +28,6 @@ export const insertSession = ({ localId, email, token }) => {
       )
     );
   });
-  console.log({insertPromise:promise});
   return promise;
 };
 
@@ -57,6 +56,7 @@ export const truncateSessionTable = () => {
       )
     })
   })
+  console.log({promisedetruncate:promise});
   return promise
 }
 
@@ -65,6 +65,7 @@ export const dropSessionsTable = () => {
     db.transaction((tx) => {
       tx.executeSql(
         'DROP TABLE IF EXIST sessions',
+        [],
         (_, result) => resolve(result),
         (_,error)=>reject(error)
       )

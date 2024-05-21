@@ -14,14 +14,15 @@ const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigat
   useEffect(() => {
     showData(listToShow);
   }, [dataReady, listToShow]);
-
+//https://stackoverflow.com/questions/49826920/how-to-navigate-between-different-nested-stacks-in-react-navigation
   const showData = async (listToShow) => {
     setIsLoading(true);
     const dataPreloading = await listToShow;
-    dataPreloading?setEmptyData(false):setEmptyData(true);
+    dataPreloading ? setEmptyData(false) : setEmptyData(true);
     setIsLoading(false);
     setDataReady(dataPreloading);
   };
+  
   return (
     <View style={styles.listGroup}>
       <View style={styles.titleContainer}>
@@ -42,10 +43,14 @@ const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigat
           data={dataReady}
           horizontal={true}
           ListEmptyComponent={isLoading ? <Text>Loading...</Text> : <Text>{`No ${title} to Show`}</Text>}
-          ListFooterComponent={emptyData ? null:<Bubble text={`No More Data`} />}
+          ListFooterComponent={emptyData ? null : <Bubble text={`No More Data`} />}
           initialNumToRender={10}
           renderItem={({ item }) => (
-            <Bubble text={item.name} thumbnail={item.background_image} bubblePress={() => navigation.navigate(`${bubbleNavigationTarget}`, item.name)} />
+            <Bubble
+              text={item.name}
+              thumbnail={item.background_image}
+              bubblePress={bubbleNavigationTarget ? () => navigation.navigate(`${bubbleNavigationTarget}`, item.name) : ()=>navigation.navigate('SessionStack',{screen:'CreateSession',params:{gameId:item.id}})}
+            />
           )}
         />
       </View>

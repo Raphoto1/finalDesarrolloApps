@@ -1,14 +1,21 @@
 import { StyleSheet, Text, View, TextInput } from "react-native";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { colors } from "../constants/colors";
 
-const InputForm = ({ label, onChange, error = "", isSecure = false }) => {
+const InputForm = ({ label, onChange, error = "", isSecure = false, prevInfo }) => {
   const [input, setInput] = useState("");
   const onChangeText = (text) => {
     setInput(text);
     onChange(text);
   };
+
+ 
+  useEffect(() => {
+    if (prevInfo) {
+      setInput(prevInfo)
+    }   
+  },[prevInfo])
   return (
     <View style={styles.inputContainer}>
       <Text style={styles.subtitle}>{label}</Text>
@@ -17,6 +24,7 @@ const InputForm = ({ label, onChange, error = "", isSecure = false }) => {
         value={input}
         onChangeText={onChangeText}
         secureTextEntry={isSecure}
+
       />
       {error?
       <Text style={styles.error}>{error}</Text>:null

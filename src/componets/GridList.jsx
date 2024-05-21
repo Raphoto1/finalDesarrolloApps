@@ -84,9 +84,9 @@ if (bubbleFunct) {
               text={item.name}
               thumbnail={item.background_image}
               navigation={navigation}
-              bubblePress={() => {
+              bubblePress={targetRedirectBubble?() => {
                 navigation.navigate(`${targetRedirectBubble}`, `${item.name}`);
-              }}
+              }:()=>navigation.navigate('SessionStack',{screen:'CreateSession',params:{gameId:item.id}})}
             />
           )}
         />

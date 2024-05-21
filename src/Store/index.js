@@ -4,14 +4,14 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 //imports propios
 import counterReducer from "../features/counter/counterSlice";
 import authReducer from "../features/User/UserSlice";
-import {userApi} from "../services/userService";
+import { userApi } from "../services/userService";
 import { gamesApi } from "../services/gamesService";
 import { authApi } from "../services/authService";
 const store = configureStore({
   reducer: {
     counterReducer,
     auth: authReducer,
-    [userApi.reducerPath]:userApi.reducer,
+    [userApi.reducerPath]: userApi.reducer,
     [gamesApi.reducerPath]: gamesApi.reducer,
     [authApi.reducerPath]: authApi.reducer,
   },

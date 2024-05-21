@@ -13,7 +13,15 @@ export const gamesApi = createApi({
     getGenre: builder.query({
       query: () => "genre.json",
     }),
+    getGameById: builder.query({
+      query: (gameId) => `games.json?orderBy="id"&equalTo=${gameId}`,
+      transformResponse: (response) => {
+        const responseTransformed = Object.values(response);
+        if (responseTransformed.length) return responseTransformed[0];
+        return null;
+      },
+    }),
   }),
 });
 
-export const { useGetGamesQuery, useGetGenreQuery } = gamesApi;
+export const { useGetGamesQuery, useGetGenreQuery, useGetGameByIdQuery } = gamesApi;
