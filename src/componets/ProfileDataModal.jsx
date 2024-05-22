@@ -29,7 +29,7 @@ const ProfileDataModal = () => {
     setModalVisible(!modalVisible);
   };
   const submitModal = async () => {
-    await triggerUploadInfo({ data: { userName: userName, playStation: playStation, xbox: xbox, steam: steam }, localId });
+    await triggerUploadInfo({ data: { userName: userName, playStation: playStation, xbox: xbox, steam: steam, findMe:userInfoCloud.findMe }, localId });
     dispatch(
       setUserInfo({
         userInfo: userInfoCloud,
@@ -146,5 +146,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: colors.gray,
     backgroundColor: colors.darkBlue,
+    lineHeight:24,
   },
 });

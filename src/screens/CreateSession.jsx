@@ -12,7 +12,6 @@ const CreateSession = ({ navigation, route }) => {
   const { gameId: gameIdIn } = route.params;
   const { data: gameInfo, error, isLoading } = useGetGameByIdQuery(gameIdIn);
   const playersAmount = useSelector((state) => state.counterReducer.value);
-  console.log(playersAmount);
   const [playerNumberToDisplay, setPlayerNumberToDisplay] = useState([]);
 
   return (
@@ -32,8 +31,7 @@ const CreateSession = ({ navigation, route }) => {
         </View>
       </View>
       <PlayersCounter />
-      <Text>CreateSession</Text>
-      <GridOfPlayers playersNumber={playersAmount } />
+      <GridOfPlayers playersNumber={playersAmount }/>
     </View>
   );
 };

@@ -5,7 +5,8 @@ import React, { useEffect, useState } from "react";
 import Bubble from "../componets/Bubble";
 import { randomProfilePics } from "../constants/randomPics";
 import ButtonBlue from "../componets/ButtonBlue";
-import { useGetProfileImageQuery, useGetProfileInfoQuery } from "../services/userService";
+import ButtonRed from "../componets/ButtonRed";
+import { useGetProfileImageQuery, useGetProfileInfoQuery, usePostProfileInfoMutation } from "../services/userService";
 import { useDispatch, useSelector } from "react-redux";
 import { truncateSessionTable } from "../db";
 import { clearUser } from "../features/User/UserSlice";
@@ -17,8 +18,11 @@ const MyProfileScreen = ({ route, navigation }) => {
   const { imageCamera, localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: imageFromBase } = useGetProfileImageQuery(localId);
   const { data: profileInfoCloud, error, isLoading } = useGetProfileInfoQuery(localId);
-  const [userData, setUserData] = useState({});
-
+  const [triggerUploadInfoFind, result] = usePostProfileInfoMutation(localId);
+  console.log(profileInfoCloud);
+  const [userId, setUserId] = useState(localId);
+  const [allowFindMe, setAllowFindme] = useState(profileInfoCloud.findMe);
+  console.log(allowFindMe);
   const launchCamera = async () => {
     navigation.navigate("ImageSelector");
   };
@@ -32,12 +36,21 @@ const MyProfileScreen = ({ route, navigation }) => {
       console.log(error);
     }
   };
-  useEffect(() => {
-    (async () => {
-      console.log(userInfo);
 
-    })();
+  const findMe = async () => {
+    if (allowFindMe === null) {
+      setAllowFindme(true);
+    } else {
+      setAllowFindme(!allowFindMe);
+    }
+    const response = await triggerUploadInfoFind({ data: { ...profileInfoCloud, findMe: allowFindMe }, localId });
+    console.log(response);
+  };
+
+  useEffect(() => {
+    // setAllowFindme(profileInfoCloud.findMe)
   }, [profileInfoCloud]);
+
   return (
     <>
       <View style={styles.container}>
@@ -48,6 +61,8 @@ const MyProfileScreen = ({ route, navigation }) => {
         )}
         <ButtonBlue title={imageFromBase ? "Update Pic" : "Add ProfilePic"} onPress={launchCamera} />
         <ButtonBlue title={"LogOut"} onPress={logOut} />
+        {allowFindMe ? <ButtonBlue title={"Allow FindMe"} onPress={findMe} /> : <ButtonRed title={"Disable FindMe"} onPress={findMe} />}
+
         <Text style={styles.title}>Registered User Names</Text>
         <View style={styles.platformsList}>
           {profileInfoCloud?.playStation ? <Bubble text={profileInfoCloud.playStation} /> : <Bubble text={"No PlayStation User"} />}
@@ -76,5 +91,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontFamily: "LatoBold",
+    lineHeight:24
   },
 });

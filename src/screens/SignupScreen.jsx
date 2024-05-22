@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, Switch } from "react-native";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 //imports Propios
@@ -9,6 +9,7 @@ import SubmitButton from "../componets/SubmitButton";
 import { useSignUpMutation } from "../services/authService";
 import { setUser } from "../features/User/UserSlice";
 import { signupSchema } from "../validations/signupSchema";
+import { usePostUsersListMutation } from "../services/userService";
 
 const SignupScreen = ({ navigation }) => {
   const dispatch = useDispatch();
@@ -16,13 +17,19 @@ const SignupScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [findMe, setFindMe] = useState(true);
   //form Errors
   const [errorMail, setErrorMail] = useState("");
   const [errorPassword, setErrorPassword] = useState("");
   const [errorConfirmPassword, setErrorConfirmPassword] = useState("");
-  const [generalError, setGeneralError] = useState('');
+  const [generalError, setGeneralError] = useState("");
   //formFuntion
   const [triggerSignup, result] = useSignUpMutation();
+  const [trigerPostUsersList, resultUsersList] = usePostUsersListMutation();
+
+  const switchHandle = () => {
+    setFindMe(!findMe);
+  };
 
   const onSubmit = () => {
     try {
@@ -56,9 +63,14 @@ const SignupScreen = ({ navigation }) => {
         setUser({
           email: result.data.email,
           idToken: result.data.idToken,
-          localId:result.data.localId
+          localId: result.data.localId,
+          findMe: findMe,
         })
       );
+      trigerPostUsersList({
+        localId: result.data.localId,
+        findMe: findMe,
+      });
     }
     if (result.error) {
       setGeneralError(result.error.data.error.message);
@@ -72,14 +84,21 @@ const SignupScreen = ({ navigation }) => {
         <InputForm label={"Email"} onChange={setEmail} error={errorMail} isSecure={false} />
         <InputForm label={"Password"} onChange={setPassword} error={errorPassword} isSecure={true} />
         <InputForm label={"Confirm Password"} onChange={setConfirmPassword} error={errorConfirmPassword} isSecure={true} />
+        <View style={styles.switchContainer}>
+          <Text>Open To Play With Other Players?</Text>
+          <Switch
+            value={findMe}
+            onChange={switchHandle}
+            trackColor={{ false: colors.grayDark, true: colors.lightBlue }}
+            thumbColor={findMe ? `${colors.blue}` : `${colors.gray}`}
+          />
+        </View>
         <SubmitButton onPress={onSubmit} title='Signup' />
         <Text style={styles.sub}>Already GameCalling?</Text>
         <Pressable onPress={() => navigation.navigate("LoginScreen")}>
           <Text style={styles.subLink}>Login</Text>
         </Pressable>
-        {generalError?
-      <Text style={styles.error}>{generalError}</Text>:null
-    }
+        {generalError ? <Text style={styles.error}>{generalError}</Text> : null}
       </View>
     </View>
   );
@@ -121,7 +140,13 @@ const styles = StyleSheet.create({
   error: {
     paddintTop: 2,
     fontSize: 16,
-    color: 'red',
-    fontFamily: 'LatoRegular',
-},
+    color: "red",
+    fontFamily: "LatoRegular",
+  },
+  switchContainer: {
+    width: "100%",
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+  },
 });

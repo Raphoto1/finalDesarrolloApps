@@ -9,6 +9,7 @@ export const authSlice = createSlice({
       localId: null,
       imageCamera: null,
       userInfo: null,
+      findMe:true,
     },
   },
   reducers: {
