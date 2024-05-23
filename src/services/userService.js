@@ -39,13 +39,18 @@ export const userApi = createApi({
       invalidatesTags: ["profileInfoGet"],
     }),
     getUsersList: builder.query({
-      query: () => "usersList/usersList.json",
+      query: () => `usersList.json`,
+      transformResponse: (response) => {
+        const responseTransformed = Object.values(response)
+        if (responseTransformed.length) return responseTransformed;
+        return null;
+      },
       providesTags: ["usersListGet"],
     }),
     postUsersList: builder.mutation({
       query: ({ data }) => ({
-        url: "usersList/usersList.json",
-        method: "put",
+        url: `usersList/${data.localId}.json`,
+        method: "PUT",
         body: {
           localId: data.localId,
           findMe: data.findMe,
@@ -56,4 +61,11 @@ export const userApi = createApi({
   }),
 });
 
-export const { useGetProfileImageQuery, usePostProfileImageMutation, useGetProfileInfoQuery, usePostProfileInfoMutation, useGetUsersListQuery,usePostUsersListMutation } = userApi;
+export const {
+  useGetProfileImageQuery,
+  usePostProfileImageMutation,
+  useGetProfileInfoQuery,
+  usePostProfileInfoMutation,
+  useGetUsersListQuery,
+  usePostUsersListMutation,
+} = userApi;

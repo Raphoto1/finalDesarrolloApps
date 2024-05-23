@@ -56,7 +56,6 @@ export const truncateSessionTable = () => {
       )
     })
   })
-  console.log({promisedetruncate:promise});
   return promise
 }
 

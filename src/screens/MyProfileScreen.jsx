@@ -48,7 +48,7 @@ const MyProfileScreen = ({ route, navigation }) => {
   };
 
   useEffect(() => {
-    // setAllowFindme(profileInfoCloud.findMe)
+    setAllowFindme(profileInfoCloud.findMe)
   }, [profileInfoCloud]);
 
   return (
@@ -57,11 +57,11 @@ const MyProfileScreen = ({ route, navigation }) => {
         {imageFromBase ? (
           <Bubble thumbnail={imageFromBase?.image || imageCamera} text={profileInfoCloud?.userName || "No UserName"} />
         ) : (
-          <Bubble localImage={randomProfilePics[1]} text={profileInfoCloud?.userName || "No UserName"} />
+          <Bubble localImage={randomProfilePics[Math.floor(Math.random() * 13)]} text={profileInfoCloud?.userName || "No UserName"} />
         )}
         <ButtonBlue title={imageFromBase ? "Update Pic" : "Add ProfilePic"} onPress={launchCamera} />
         <ButtonBlue title={"LogOut"} onPress={logOut} />
-        {allowFindMe ? <ButtonBlue title={"Allow FindMe"} onPress={findMe} /> : <ButtonRed title={"Disable FindMe"} onPress={findMe} />}
+        {!allowFindMe ? <ButtonBlue title={"Allow FindMe"} onPress={findMe} /> : <ButtonRed title={"Disable FindMe"} onPress={findMe} />}
 
         <Text style={styles.title}>Registered User Names</Text>
         <View style={styles.platformsList}>

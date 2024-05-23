@@ -19,10 +19,10 @@ const GridOfPlayers = ({ playersNumber }) => {
   }
 
   const baseObject = { name: userInfoCloud.userName };
+  const noName = {name: 'No User Name'}
   const arrayChevere = Array.from({ length: playersNumber }, (_, index) => Object.create({ index: index }));
   if (arrayChevere.length >= 1) {
-    arrayChevere[0] = baseObject;
-
+    userInfoCloud.userName?arrayChevere[0] = baseObject:arrayChevere[0] = noName
   }
   const handleSelectPlayer = (index) => {
     console.log(index);
@@ -37,6 +37,7 @@ const GridOfPlayers = ({ playersNumber }) => {
     <>
       <View style={styles.container}>
         <FlatList
+          style={{paddingTop:10}}
           data={arrayOfPlayers}
           numColumns={3}
           renderItem={({ item }) =>
@@ -64,7 +65,7 @@ export default GridOfPlayers;
 
 const styles = StyleSheet.create({
   container: {
-    height: "43%",
+    height: "45%",
     width: "100%",
     justifyContent: "center",
     alignContent: "center",

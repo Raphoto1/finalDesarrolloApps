@@ -9,7 +9,8 @@ import SubmitButton from "../componets/SubmitButton";
 import { useSignUpMutation } from "../services/authService";
 import { setUser } from "../features/User/UserSlice";
 import { signupSchema } from "../validations/signupSchema";
-import { usePostUsersListMutation } from "../services/userService";
+import { usePostProfileInfoMutation, usePostUsersListMutation } from "../services/userService";
+import { insertSession } from "../db";
 
 const SignupScreen = ({ navigation }) => {
   const dispatch = useDispatch();
@@ -25,7 +26,8 @@ const SignupScreen = ({ navigation }) => {
   const [generalError, setGeneralError] = useState("");
   //formFuntion
   const [triggerSignup, result] = useSignUpMutation();
-  const [trigerPostUsersList, resultUsersList] = usePostUsersListMutation();
+  const [trigerPostUsersList, resultUsersList, error] = usePostUsersListMutation();
+  const [triggerUploadInfo, resultUpload] = usePostProfileInfoMutation();
 
   const switchHandle = () => {
     setFindMe(!findMe);
@@ -59,17 +61,36 @@ const SignupScreen = ({ navigation }) => {
 
   useEffect(() => {
     if (result.isSuccess) {
-      dispatch(
-        setUser({
-          email: result.data.email,
-          idToken: result.data.idToken,
-          localId: result.data.localId,
-          findMe: findMe,
-        })
-      );
-      trigerPostUsersList({
+      insertSession({
         localId: result.data.localId,
-        findMe: findMe,
+        email: result.data.email,
+        token: result.data.idToken,
+      }).then((response) => {
+        dispatch(
+          setUser({
+            email: result.data.email,
+            idToken: result.data.idToken,
+            localId: result.data.localId,
+            findMe: findMe,
+          })
+        );
+        //agregar el user a la lista general
+        try {
+          trigerPostUsersList({
+            data: {
+              localId: result.data.localId,
+              findMe: findMe,
+            },
+          });
+          
+        } catch (error) {
+          console.log({ errordeusersList: resultUsersList.error.data.error.message });
+        }
+        try {
+          triggerUploadInfo({ data: { userName: "", playStation: "", xbox: "", steam: "", findMe: findMe }, localId:result.data.localId });
+        } catch (error) {
+          console.log({error});
+        }
       });
     }
     if (result.error) {

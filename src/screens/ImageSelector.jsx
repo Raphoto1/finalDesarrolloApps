@@ -50,7 +50,7 @@ const ImageSelector = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      {imageFromBase ? (
+      {image ? (
         <>
           <Image source={{ uri: image||imageFromBase?.image }} style={styles.image} />
           <ButtonBlue title={"Take AnotherPhoto"} onPress={pickImage} />

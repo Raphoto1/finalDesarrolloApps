@@ -3,13 +3,14 @@ import { StyleSheet, Text, View, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
 //imports propios
 import HorizontalList from "../componets/HorizontalList";
+import HorizontalListPlayers from "../componets/HorizontalListPlayers";
 import ModalCustom from "../componets/ModalCustom";
 import { colors } from "../constants/colors";
 import gamesFull from "../data/gamesFull.json";
 import genresClear from "../data/genresClear.json";
 import { useGetGamesQuery, useGetGenreQuery } from "../services/gamesService";
 import { useDispatch, useSelector } from "react-redux";
-import { useGetProfileImageQuery, useGetProfileInfoQuery } from "../services/userService";
+import { useGetProfileImageQuery, useGetProfileInfoQuery, useGetUsersListQuery, usePostProfileInfoMutation } from "../services/userService";
 import { setCameraImage, setUserInfo } from "../features/User/UserSlice";
 
 const Home = ({ route, navigation }) => {
@@ -17,11 +18,12 @@ const Home = ({ route, navigation }) => {
   //General data
   const { data: allGames, isLoading: isLoadingGames, error: errorGames } = useGetGamesQuery();
   const { data: allGenres, isLoading: isLoadingGenre, error: errorGenres } = useGetGenreQuery();
+  const { data: playersAvailable, isLoading: isLoadingPlayers, error: errorPlayers } = useGetUsersListQuery();
   //user Data
   const { localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
   const { data: userPhotoCloud } = useGetProfileImageQuery(localId);
- 
+  const [triggerUploadInfo, result] = usePostProfileInfoMutation();
 
   //Modal controls
   const [modalVisible, setModalVisible] = useState(false);
@@ -40,9 +42,9 @@ const Home = ({ route, navigation }) => {
   //end modal controls
   useEffect(() => {
     if (!userInfo) {
-      dispatch(setUserInfo({ userInfo: userInfoCloud }))
-    }   
-  },[userInfo])
+      dispatch(setUserInfo({ userInfo: userInfoCloud }));
+    }
+  }, [userInfo]);
   return (
     <View>
       <Text>Gamming Panas HOME puede ir un call del favorito</Text>
@@ -69,7 +71,11 @@ const Home = ({ route, navigation }) => {
           isLoadingIn={isLoadingGenre}
           bubbleNavigationTarget={"GameListGenre"}
         />
-        <HorizontalList title={"Friends Online"} navigation={navigation} isLoadingIn={isLoadingGames} />
+        <HorizontalListPlayers
+          title={"Players Available"}
+          navigation={navigation}
+          listToShow={playersAvailable}
+          isLoadingIn={isLoadingPlayers} />
       </View>
     </View>
   );

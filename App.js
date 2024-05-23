@@ -14,8 +14,8 @@ import { init } from "./src/db";
 (async () => {
   try {
     const response = await init();
-    console.log({ responseCreatingDb: response });
-    console.log("DBinitialized");
+    // console.log({ responseCreatingDb: response });
+    // console.log("DBinitialized");
   } catch (error) {
     console.log({ errorCreatingDb: error });
   }
