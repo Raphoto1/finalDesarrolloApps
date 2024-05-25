@@ -6,13 +6,13 @@ import { colors } from "../constants/colors";
 import { useGetProfileImageQuery, useGetProfileInfoQuery } from "../services/userService";
 import { randomProfilePics } from "../constants/randomPics";
 
+
 const BubblePlayer = ({ bubblePress = () => {}, navigation, localId, findMe }) => {
   //traer data del player, photo, name, findMe
   const { data: playerInfo, isLoadingPlayerInfo: isLoading, errorPlayerInfo: error } = useGetProfileInfoQuery(localId);
   const { data: playerPhoto } = useGetProfileImageQuery(localId);
-  
   return (
-    findMe?null:<View>
+    !findMe ? null : <View>
     <Pressable onPress={bubblePress} navigation={navigation}>
       <View style={styles.bubbleContainer}>
         {!playerPhoto?.image ? (

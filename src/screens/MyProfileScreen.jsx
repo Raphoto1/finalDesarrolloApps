@@ -6,7 +6,14 @@ import Bubble from "../componets/Bubble";
 import { randomProfilePics } from "../constants/randomPics";
 import ButtonBlue from "../componets/ButtonBlue";
 import ButtonRed from "../componets/ButtonRed";
-import { useGetProfileImageQuery, useGetProfileInfoQuery, usePostProfileInfoMutation } from "../services/userService";
+import {
+  useGetProfileImageQuery,
+  useGetProfileInfoQuery,
+  useGetUsersListByIdQuery,
+  useGetUsersListQuery,
+  usePostProfileInfoMutation,
+  usePostUsersListMutation,
+} from "../services/userService";
 import { useDispatch, useSelector } from "react-redux";
 import { truncateSessionTable } from "../db";
 import { clearUser } from "../features/User/UserSlice";
@@ -18,11 +25,12 @@ const MyProfileScreen = ({ route, navigation }) => {
   const { imageCamera, localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: imageFromBase } = useGetProfileImageQuery(localId);
   const { data: profileInfoCloud, error, isLoading } = useGetProfileInfoQuery(localId);
+  const { data: globalFindMe } = useGetUsersListByIdQuery(localId);
   const [triggerUploadInfoFind, result] = usePostProfileInfoMutation(localId);
-  console.log(profileInfoCloud);
+  const [triggerPostUsersList] = usePostUsersListMutation();
   const [userId, setUserId] = useState(localId);
   const [allowFindMe, setAllowFindme] = useState(profileInfoCloud.findMe);
-  console.log(allowFindMe);
+  console.log(globalFindMe);
   const launchCamera = async () => {
     navigation.navigate("ImageSelector");
   };
@@ -30,7 +38,6 @@ const MyProfileScreen = ({ route, navigation }) => {
   const logOut = async () => {
     try {
       const response = await truncateSessionTable();
-      console.log(response);
       dispatch(clearUser());
     } catch (error) {
       console.log(error);
@@ -38,18 +45,27 @@ const MyProfileScreen = ({ route, navigation }) => {
   };
 
   const findMe = async () => {
-    if (allowFindMe === null) {
-      setAllowFindme(true);
-    } else {
-      setAllowFindme(!allowFindMe);
-    }
-    const response = await triggerUploadInfoFind({ data: { ...profileInfoCloud, findMe: allowFindMe }, localId });
-    console.log(response);
+    setAllowFindme(!allowFindMe);
+    //ajuste global
+    const globalRes = await triggerPostUsersList({
+      data: {
+        localId: localId,
+        findMe: allowFindMe,
+      },
+    });
+    //ajuste local
+    const response = await triggerUploadInfoFind({
+      data: {
+        ...profileInfoCloud,
+        findMe: allowFindMe,
+      },
+      localId,
+    });
   };
 
   useEffect(() => {
-    setAllowFindme(profileInfoCloud.findMe)
-  }, [profileInfoCloud]);
+
+  }, [profileInfoCloud,globalFindMe]);
 
   return (
     <>
@@ -91,6 +107,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontFamily: "LatoBold",
-    lineHeight:24
+    lineHeight: 24,
   },
 });

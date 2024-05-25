@@ -14,7 +14,7 @@ const HorizontalList = ({ title, navigation, gridList, listToShow, bubbleNavigat
   useEffect(() => {
     showData(listToShow);
   }, [dataReady, listToShow]);
-//https://stackoverflow.com/questions/49826920/how-to-navigate-between-different-nested-stacks-in-react-navigation
+
   const showData = async (listToShow) => {
     setIsLoading(true);
     const dataPreloading = await listToShow;

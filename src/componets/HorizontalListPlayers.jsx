@@ -4,16 +4,29 @@ import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 //Imports propios
 import BubblePlayer from "./BubblePlayer";
+import FavoriteFriendModal from "./FavoriteFriendModal";
 import Bubble from "./Bubble";
 import { colors } from "../constants/colors";
+import {
+  useGetFavoriteFriendsQuery,
+  usePostFavoriteFriendsMutation,
+  useGetUsersListQuery
+} from "../services/userService";
+import { useSelector } from "react-redux";
 
 const HorizontalListPlayers = ({ title, navigation, gridList, listToShow, bubbleNavigationTarget, isLoadingIn }) => {
   const [isLoading, setIsLoading] = useState(isLoadingIn);
   const [dataReady, setDataReady] = useState([]);
   const [emptyData, setEmptyData] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedUser, setSelectedUser] = useState("");
+  const { localId, userInfo } = useSelector((state) => state.auth.value);
+  const [triggerPostFavoriteFriends, result] = usePostFavoriteFriendsMutation();
+  // const { data: favFriends, error } = useGetFavoriteFriendsQuery(localId);
+  const { data: allowList } = useGetUsersListQuery();
   useEffect(() => {
     showData(listToShow);
-  }, [dataReady, listToShow]);
+  }, [dataReady, listToShow, selectedUser,allowList]);
 
   const showData = async (listToShow) => {
     setIsLoading(true);
@@ -23,40 +36,47 @@ const HorizontalListPlayers = ({ title, navigation, gridList, listToShow, bubble
     setDataReady(dataPreloading);
   };
 
+  const handleModal = () => {
+    setModalVisible(!modalVisible);
+  };
+
   return (
-    <View style={styles.listGroup}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.listTitle}>{`${title}`}</Text>
-        {gridList ? (
-          <Pressable
-            style={styles.checkAll}
-            onPress={() => {
-              navigation.navigate(`${gridList}`);
-            }}
-            navigation={navigation}>
-            <Text>{`Check all ${title}`}</Text>
-          </Pressable>
-        ) : null}
-      </View>
-      <View style={styles.listContainer}>
-        <FlatList
-          data={dataReady}
-          horizontal={true}
-          ListEmptyComponent={isLoading ? <Text>Loading...</Text> : <Text>{`No ${title} to Show`}</Text>}
-          ListFooterComponent={emptyData ? null : <Bubble text={`No More Data`} />}
-          initialNumToRender={10}
-          renderItem={({ item }) => (
-            <BubblePlayer
-              findMe={item.findMe}
-              localId={item.localId}
-              bubblePress={
-                bubbleNavigationTarget
-                  ? () => navigation.navigate(`${bubbleNavigationTarget}`, item.name)
-                  : () => navigation.navigate("SessionStack", { screen: "CreateSession", params: { gameId: item.id } })
-              }
-            />
-          )}
-        />
+    <View>
+      <FavoriteFriendModal modalVisibleIn={modalVisible} handleModal={handleModal} localIdIn={selectedUser} />
+
+      <View style={styles.listGroup}>
+        <View style={styles.titleContainer}>
+          <Text style={styles.listTitle}>{`${title}`}</Text>
+          {gridList ? (
+            <Pressable
+              style={styles.checkAll}
+              onPress={() => {
+                navigation.navigate(`${gridList}`);
+              }}
+              navigation={navigation}>
+              <Text>{`Check all ${title}`}</Text>
+            </Pressable>
+          ) : null}
+        </View>
+        <View style={styles.listContainer}>
+          <FlatList
+            data={dataReady}
+            horizontal={true}
+            ListEmptyComponent={isLoading ? <Text>Loading...</Text> : <Text>{`No ${title} to Show`}</Text>}
+            ListFooterComponent={emptyData ? null : <Bubble text={`No More Data`} />}
+            initialNumToRender={10}
+            renderItem={({ item }) => (
+              <BubblePlayer
+                findMe={item.findMe}
+                localId={item.localId}
+                bubblePress={() => {
+                  setModalVisible(!modalVisible);
+                  setSelectedUser(item.localId);
+                }}
+              />
+            )}
+          />
+        </View>
       </View>
     </View>
   );
