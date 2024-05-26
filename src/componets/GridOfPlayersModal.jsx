@@ -19,7 +19,7 @@ const GridOfPlayersModal = ({ navigation, route, group, setModalVisibleGrid, mod
   const { data: playerFriends } = useGetFavoriteFriendsQuery(localId);
   const [playersAvailable, setPlayersAvailable] = useState([]);
   const [playerSelected, setPlayerSelected] = useState(false);
-console.log(playerFriends);
+
   //filtrar jugadores que quieren que los encuentren
   const organizePlayersAvailable = () => {
     const filtered = playerFind.filter((item) => item.findMe === true);
@@ -41,7 +41,7 @@ console.log(playerFriends);
   return (
     <>
       <View style={styles.container}>
-        {playerSelected?<Text>User Selected!!!, please Confirm</Text>:<Text>Please Select</Text>}
+        {playerSelected ? <Text>User Selected!!!, please Confirm</Text> : <Text>Please Select</Text>}
         {!group ? (
           <FlatList
             style={{ paddingTop: 10 }}
@@ -54,7 +54,7 @@ console.log(playerFriends);
             style={{ paddingTop: 10 }}
             data={playerFriends.fId}
             numColumns={2}
-            renderItem={({ item }) => <BubblePlayer localId={item} findMe={true} bubblePress={() => handleChoosePlayer(item)}/>}
+            renderItem={({ item }) => <BubblePlayer localId={item} findMe={true} bubblePress={() => handleChoosePlayer(item)} />}
           />
         )}
       </View>

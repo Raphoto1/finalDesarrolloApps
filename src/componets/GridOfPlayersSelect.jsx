@@ -25,8 +25,6 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
   const [indexSelected, setIndexSelected] = useState(1);
   const [modalVisible, setModalVisible] = useState(false);
 
-  // console.log({ estoesgridpC: playerChoosed });
-  // console.log(indexSelected);
   //crear array para el grid
   const baseObject = { name: userInfoCloud.userName };
   const noName = { name: "No User Name" };
@@ -39,7 +37,7 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
   //filtrar jugadores que quieren que los encuentren
   const organizePlayersAvailable = () => {
     const filtered = playerFind.filter((item) => item.findMe === true);
-    console.log(filtered);
+
     setPlayersAvailable(filtered);
   };
 
@@ -48,22 +46,18 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
     let work2 = [];
     const work = arrayOfPlayers;
     const ceroData = arrayChevere[0];
-    console.log({indexselassi:indexSelected});
+
     work[indexSelected] = { info: playerChoosed };
     work[0] = { info: ceroData };
     work2 = work.map((item, index) => {
       if (item.info == undefined) {
-       console.log('entro al condi');
-       return { info: noName2 };
-     } else {
-       return item
-     }
-    })
-    // console.log({ assignW1: work });
-    // console.log({ assignW2: work2 });
-    setArrayOfPlayers(work2); 
+        return { info: noName2 };
+      } else {
+        return item;
+      }
+    });
+    setArrayOfPlayers(work2);
     setDefPlayers(work2);
-
   };
   //encontrar el index del array y agregarle info, la info viene de un modal
   const handleModal = (indexSel) => {
@@ -71,17 +65,15 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
     setIndexSelected(indexSel);
   };
 
-  const submitModal = () => {
-    console.log("te escucho");
-  };
+  const submitModal = () => {};
 
   const handleCancel = () => {
-    console.log('canceled');
-    dispatch(setPlayerChoosed({
-      playerChoosed:null
-    }))
-    
-  }
+    dispatch(
+      setPlayerChoosed({
+        playerChoosed: null,
+      })
+    );
+  };
   useEffect(() => {
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
@@ -98,7 +90,13 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
           <View style={styles.btnContinue}>
             <View style={styles.btnGroup}>
               <ButtonBlue title={"Call!!"} />
-              <ButtonBlue title={"Cancel"} onPress={() => { handleCancel(); navigation.goBack()}} />
+              <ButtonBlue
+                title={"Cancel"}
+                onPress={() => {
+                  handleCancel();
+                  navigation.goBack();
+                }}
+              />
             </View>
           </View>
         </View>
@@ -108,7 +106,7 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
               style={{ paddingTop: 10 }}
               data={defPlayers}
               numColumns={3}
-              renderItem={( item ) => 
+              renderItem={(item) =>
                 item.item.info.name ? (
                   <Bubble text={item.item.info.name} thumbnail={userImageCloud?.image} bubblePress={() => handleModal(item.index)} />
                 ) : (
@@ -121,7 +119,7 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
               style={{ paddingTop: 1 }}
               data={arrayChevere}
               numColumns={3}
-                renderItem={(item) => 
+              renderItem={(item) =>
                 item.item.name ? (
                   <Bubble text={item.item.name} thumbnail={userImageCloud?.image} />
                 ) : (

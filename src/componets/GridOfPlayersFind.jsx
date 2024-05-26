@@ -28,7 +28,7 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
   //filtrar jugadores que quieren que los encuentren
   const organizePlayersAvailable = () => {
     const filtered = playerFind.filter((item) => item.findMe === true);
-    console.log(filtered);
+
     setPlayersAvailable(filtered);
   };
   //generador de random sin repetir para no repetir id
@@ -41,13 +41,13 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
       const shuf = Math.floor(Math.random() * (max - min + 1)) + min;
       uniqueIndex.add(shuf);
     }
-    console.log(Array.from(uniqueIndex));
+
     return Array.from(uniqueIndex);
   };
   //mezclador de players
   const shufflePlayer = () => {
     const shuffleIndex = uniqueNumbers(minRange, maxRange, amount);
-    console.log({ shuffleIndex: shuffleIndex });
+
     const result = arrayChevere.map((info, index) => {
       if (index === 0) {
         return { info: info };
@@ -58,13 +58,13 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
       }
     });
     setDefPlayers(result);
-    console.log(defPlayers);
+
   };
 
   useEffect(() => {
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
-    console.log({ arrayChevereeffec: arrayOfPlayers });
+
   }, [playersNumber]);
   return (
     <>

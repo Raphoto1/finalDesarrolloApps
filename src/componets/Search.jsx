@@ -8,12 +8,7 @@ import { colors } from "../constants/colors";
 
 const Search = ({onSearch=()=>{}, error="", }) => {
   const [searchWord, setSearchWord] = useState("");
-  // const handleClear = () => {
-  //   setSearchWord('')
-  // }
-  // const handleSearch = () => {
-    
-  // }
+
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>

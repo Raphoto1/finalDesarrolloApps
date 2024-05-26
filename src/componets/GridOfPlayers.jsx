@@ -14,9 +14,7 @@ const GridOfPlayers = ({ playersNumber,navigation,route }) => {
   const { data: userImageCloud } = useGetProfileImageQuery(localId);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
   const [arrayOfPlayers, setArrayOfPlayers] = useState([]);
-  if (!userInfo) {
-    // console.log(userInfoCloud);
-  }
+
 
   const baseObject = { name: userInfoCloud.userName };
   const noName = {name: 'No User Name'}
@@ -25,10 +23,9 @@ const GridOfPlayers = ({ playersNumber,navigation,route }) => {
     userInfoCloud.userName?arrayChevere[0] = baseObject:arrayChevere[0] = noName
   }
   const handleSelectPlayer = (index) => {
-    console.log(index);
-    // arrayChevere[index] = { name: `assigned${index}` };
+
   };
-  console.log({ arrayChevere: arrayChevere });
+
   useEffect(() => {
     setArrayOfPlayers(arrayChevere);
   }, [playersNumber]);

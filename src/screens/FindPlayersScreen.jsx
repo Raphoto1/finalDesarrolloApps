@@ -11,7 +11,7 @@ const FindPlayersScreen = ({ navigation, route }) => {
   const playersAmount = useSelector((state) => state.counterReducer.value);
   const { gameId } = useSelector((state) => state.games.value);
   const { data: gameInfo, isLoading, error } = useGetGameByIdQuery(gameId);
-  console.log(gameId);
+
   return (
     <View>
       <View>

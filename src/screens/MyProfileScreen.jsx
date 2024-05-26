@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, Modal } from "react-native";
+import { StyleSheet, Text, View, Modal, Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 //imports propios
 import Bubble from "../componets/Bubble";
@@ -30,7 +30,6 @@ const MyProfileScreen = ({ route, navigation }) => {
   const [triggerPostUsersList] = usePostUsersListMutation();
   const [userId, setUserId] = useState(localId);
   const [allowFindMe, setAllowFindme] = useState(profileInfoCloud.findMe);
-  console.log(globalFindMe);
   const launchCamera = async () => {
     navigation.navigate("ImageSelector");
   };
@@ -40,7 +39,11 @@ const MyProfileScreen = ({ route, navigation }) => {
       const response = await truncateSessionTable();
       dispatch(clearUser());
     } catch (error) {
-      console.log(error);
+      Alert.alert("Error on Logout", "try again", [
+        {
+          text: "Ok",
+        },
+      ]);
     }
   };
 
@@ -61,6 +64,11 @@ const MyProfileScreen = ({ route, navigation }) => {
       },
       localId,
     });
+    Alert.alert("FindMe changed", "FindMe Changed Succesfully", [
+      {
+        text: "Ok",
+      },
+    ]);
   };
 
   useEffect(() => {
@@ -81,9 +89,9 @@ const MyProfileScreen = ({ route, navigation }) => {
 
         <Text style={styles.title}>Registered User Names</Text>
         <View style={styles.platformsList}>
-          {profileInfoCloud?.playStation ? <Bubble text={profileInfoCloud.playStation} /> : <Bubble text={"No PlayStation User"} />}
-          {profileInfoCloud?.xbox ? <Bubble text={profileInfoCloud.xbox} /> : <Bubble text={"No Xbox User"} />}
-          {profileInfoCloud?.steam ? <Bubble text={profileInfoCloud.steam} /> : <Bubble text={"No Steam User"} />}
+          {profileInfoCloud?.playStation ? <Bubble text={profileInfoCloud.playStation} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/1280px-PlayStation_logo.svg.png'}/> : <Bubble text={"No PlayStation User"} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/1280px-PlayStation_logo.svg.png'}/>}
+          {profileInfoCloud?.xbox ? <Bubble text={profileInfoCloud.xbox} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/2048px-Xbox_one_logo.svg.png'}/> : <Bubble text={"No Xbox User"} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/2048px-Xbox_one_logo.svg.png'}/>}
+          {profileInfoCloud?.steam ? <Bubble text={profileInfoCloud.steam} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_Logo.png'}/> : <Bubble text={"No Steam User"} thumbnail={'https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_Logo.png'}/>}
         </View>
         <ProfileDataModal />
       </View>

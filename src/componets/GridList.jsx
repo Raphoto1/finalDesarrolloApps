@@ -21,14 +21,6 @@ const GridList = ({
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(isLoadingIn);
 
-const bubbleFunctionManager =(bubbleFunct)=>{
-if (bubbleFunct) {
-  console.log("llega funcion");
-} else {
-  console.log("se dispara funcion directa");
-}
-}
-
   const showData = async (specialFilter, listToShow) => {
     setIsLoading(true);
     if (specialFilter) {

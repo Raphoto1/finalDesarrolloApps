@@ -1,5 +1,5 @@
 //imports de app
-import { SafeAreaView, StyleSheet, Platform, StatusBar } from "react-native";
+import { SafeAreaView, StyleSheet, Platform, StatusBar,Alert } from "react-native";
 import { useFonts } from "expo-font";
 import { Provider } from "react-redux";
 //imports propios
@@ -9,15 +9,15 @@ import { colors } from "./src/constants/colors";
 import Store from "./src/Store";
 import { init } from "./src/db";
 
-//nav bar/ send call(main)llama modal seleccionar juego y grupo o jugadores / sessions(program session / search session) / Friends(Invite friends/manage Groups(carrito))
-//push por viaje, falta agregar conexion a db en varios componentes
 (async () => {
   try {
     const response = await init();
-    // console.log({ responseCreatingDb: response });
-    // console.log("DBinitialized");
   } catch (error) {
-    console.log({ errorCreatingDb: error });
+    Alert.alert("error on sql", "restart app", [
+      {
+        text: "Ok",
+      },
+    ]);
   }
 })()
 

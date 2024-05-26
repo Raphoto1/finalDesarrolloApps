@@ -26,33 +26,20 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
 
   const handleSubmit = () => {
     if (dataAvailable === null) {
-      console.log(`dataAva:${dataAvailable}`);
-      console.log("no hay data");
       const pack = [userSelected];
       triggerPostFavFriend({ data: { friendsId: pack }, localId: localId });
       setModalVisible(!modalVisibleIn);
     } else {
-      console.log(favFriendCloud.fId);
       const chkFriend = favFriendCloud.fId?.find((item) => item === localIdIn);
-      console.log("si hay data");
       if (chkFriend) {
-        console.log("ya estaba, no se agrega, se elimina");
-        console.log(favFriendCloud.fId);
         let pack = dataAvailable.fId;
         let eraseIndex = pack?.indexOf(localIdIn);
-        console.log(eraseIndex);
         const erased = pack.filter((item) => item !== localIdIn);
-        console.log(erased);
         triggerPostFavFriend({ data: { friendsId: erased }, localId: localId });
         setModalVisible(!modalVisibleIn);
-        // console.log(pack);
       } else {
-        console.log("no estaba");
-        console.log(dataAvailable);
         const pack = favFriendCloud.fId;
-        console.log(pack);
         const friends = [...pack, userSelected];
-        console.log(friends);
         triggerPostFavFriend({ data: { friendsId: friends }, localId: localId });
         setModalVisible(!modalVisibleIn);
       }

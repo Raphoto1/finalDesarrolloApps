@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, Pressable, Switch } from "react-native";
+import { StyleSheet, Text, View, Pressable, Switch, Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 //imports Propios
@@ -82,14 +82,21 @@ const SignupScreen = ({ navigation }) => {
               findMe: findMe,
             },
           });
-          
         } catch (error) {
-          console.log({ errordeusersList: resultUsersList.error.data.error.message });
+          Alert.alert("Error on Signup", "restart app", [
+            {
+              text: "Ok",
+            },
+          ]);
         }
         try {
-          triggerUploadInfo({ data: { userName: "", playStation: "", xbox: "", steam: "", findMe: findMe }, localId:result.data.localId });
+          triggerUploadInfo({ data: { userName: "", playStation: "", xbox: "", steam: "", findMe: findMe }, localId: result.data.localId });
         } catch (error) {
-          console.log({error});
+          Alert.alert("Error on SignUp", "restart app", [
+            {
+              text: "Ok",
+            },
+          ]);
         }
       });
     }

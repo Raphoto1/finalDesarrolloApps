@@ -9,7 +9,7 @@ import { useGetGamesQuery } from "../services/gamesService";
 
 const GameList = ({ route, navigation }) => {
   const { data:allGames, isLoading, error } = useGetGamesQuery();
-console.log(isLoading);
+
   return (
     <View>
       <View style={styles.titleContainer}>
