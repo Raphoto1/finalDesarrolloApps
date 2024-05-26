@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList,Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 //imports propios
@@ -7,6 +7,7 @@ import Bubble from "./Bubble";
 import BubblePlayer from "./BubblePlayer";
 import { randomProfilePics } from "../constants/randomPics";
 import ButtonBlue from "./ButtonBlue";
+import ButtonRed from "./ButtonRed";
 import { useDispatch, useSelector } from "react-redux";
 import ListOfPlayersModal from "./ListOfPlayersModal";
 import { useGetProfileImageQuery, useGetProfileInfoQuery, useGetUsersListQuery } from "../services/userService";
@@ -74,6 +75,15 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
       })
     );
   };
+
+  const handleCall = () => {
+    Alert.alert("Call to Play Made", "Lets Play", [
+      {
+        text: "Ok",
+      },
+    ]);
+  }
+
   useEffect(() => {
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
@@ -89,8 +99,8 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
         <View style={styles.btnSuper}>
           <View style={styles.btnContinue}>
             <View style={styles.btnGroup}>
-              <ButtonBlue title={"Call!!"} />
-              <ButtonBlue
+              <ButtonBlue title={"Call!!"} onPress={handleCall}/>
+              <ButtonRed
                 title={"Cancel"}
                 onPress={() => {
                   handleCancel();

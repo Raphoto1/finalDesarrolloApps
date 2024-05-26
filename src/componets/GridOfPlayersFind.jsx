@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 //imports propios
@@ -61,6 +61,14 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
 
   };
 
+  const handleCall = () => {
+    Alert.alert("Call to Play Made", "Lets Play", [
+      {
+        text: "Ok",
+      },
+    ]);
+  }
+
   useEffect(() => {
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
@@ -103,7 +111,7 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
               <ButtonBlue title={"Let's Find Players"} onPress={shufflePlayer} />
             </View>
           <View style={styles.btnGroup}>
-            <ButtonBlue title={"Call!!"} />
+            <ButtonBlue title={"Call!!"} onPress={handleCall}/>
             <ButtonBlue title={"Cancel"} onPress={()=>navigation.navigate('Home')}/>
           </View>
         </View>
