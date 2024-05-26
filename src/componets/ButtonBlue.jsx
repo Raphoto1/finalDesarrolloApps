@@ -4,7 +4,7 @@ import React from "react";
 //imports propios
 import { colors } from "../constants/colors";
 
-const ButtonBlue = ({ onPress, title }) => {
+const ButtonBlue = ({ onPress, title, navigation, route }) => {
   return (
     <Pressable onPress={onPress} style={styles.button}>
       <Text style={styles.text}>{title}</Text>
@@ -27,6 +27,6 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontFamily: "LatoRegular",
     fontSize: 22,
-    lineHeight:22
+    lineHeight: 22,
   },
 });

@@ -7,11 +7,7 @@ import BubblePlayer from "./BubblePlayer";
 import FavoriteFriendModal from "./FavoriteFriendModal";
 import Bubble from "./Bubble";
 import { colors } from "../constants/colors";
-import {
-  useGetFavoriteFriendsQuery,
-  usePostFavoriteFriendsMutation,
-  useGetUsersListQuery
-} from "../services/userService";
+import { useGetFavoriteFriendsQuery, usePostFavoriteFriendsMutation, useGetUsersListQuery } from "../services/userService";
 import { useSelector } from "react-redux";
 
 const HorizontalListPlayers = ({ title, navigation, gridList, listToShow, bubbleNavigationTarget, isLoadingIn }) => {
@@ -26,7 +22,7 @@ const HorizontalListPlayers = ({ title, navigation, gridList, listToShow, bubble
   const { data: allowList } = useGetUsersListQuery();
   useEffect(() => {
     showData(listToShow);
-  }, [dataReady, listToShow, selectedUser,allowList]);
+  }, [dataReady, listToShow, selectedUser, allowList]);
 
   const showData = async (listToShow) => {
     setIsLoading(true);
@@ -42,7 +38,12 @@ const HorizontalListPlayers = ({ title, navigation, gridList, listToShow, bubble
 
   return (
     <View>
-      <FavoriteFriendModal modalVisibleIn={modalVisible} handleModal={handleModal} localIdIn={selectedUser} />
+      <FavoriteFriendModal
+        modalVisibleIn={modalVisible}
+        handleModal={handleModal}
+        localIdIn={selectedUser}
+        setModalVisible={setModalVisible}
+      />
 
       <View style={styles.listGroup}>
         <View style={styles.titleContainer}>

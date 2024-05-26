@@ -1,18 +1,29 @@
 //imports de app
 import { StyleSheet, Text, View, Image, Button } from "react-native";
-import React,{useState} from "react";
+import React, { useEffect, useState } from "react";
 //imports propios
 import PlayersCounter from "../componets/PlayersCounter";
 import GridOfPlayers from "../componets/GridOfPlayers";
 import { useGetGameByIdQuery } from "../services/gamesService";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Bubble from "../componets/Bubble";
+import { setGame } from "../features/Games/gamesSlice";
+import GamePreview from "../componets/GamePreview";
 
 const CreateSession = ({ navigation, route }) => {
   const { gameId: gameIdIn } = route.params;
   const { data: gameInfo, error, isLoading } = useGetGameByIdQuery(gameIdIn);
   const playersAmount = useSelector((state) => state.counterReducer.value);
+  const dispatch = useDispatch();
   const [playerNumberToDisplay, setPlayerNumberToDisplay] = useState([]);
+
+  useEffect(() => {
+    dispatch(
+      setGame({
+        gameId: gameIdIn,
+      })
+    );
+  }, [gameIdIn]);
 
   return (
     <View>
@@ -24,14 +35,9 @@ const CreateSession = ({ navigation, route }) => {
           }}
         />
       </View>
-      <View>
-        <Text style={styles.title}>Let's Play {gameInfo?.name}</Text>
-        <View style={styles.imageContainer}>
-          <Image style={styles.gameImage} resizeMode='cover' source={{ uri: `${gameInfo?.background_image}` }} />
-        </View>
-      </View>
+      <GamePreview gameInfo={gameInfo } />
       <PlayersCounter />
-      <GridOfPlayers playersNumber={playersAmount }/>
+      <GridOfPlayers playersNumber={playersAmount} gameId={gameIdIn} navigation={navigation} />
     </View>
   );
 };

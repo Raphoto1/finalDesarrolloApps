@@ -8,7 +8,7 @@ import BubblePlayer from "./BubblePlayer";
 import { useGetFavoriteFriendsQuery, usePostFavoriteFriendsMutation } from "../services/userService";
 import { useSelector } from "react-redux";
 
-const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}, submitModal = () => {} }) => {
+const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}, submitModal = () => {},setModalVisible } ) => {
   const [userSelected, setUserSelected] = useState(localIdIn);
   const [dataAvailable, setDataAvailable] = useState(null);
   const [addF, setAddF] = useState(true);
@@ -22,7 +22,7 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
     if (chkFriend) {
       setAddF(false);
     }
-  }
+  };
 
   const handleSubmit = () => {
     if (dataAvailable === null) {
@@ -30,6 +30,7 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
       console.log("no hay data");
       const pack = [userSelected];
       triggerPostFavFriend({ data: { friendsId: pack }, localId: localId });
+      setModalVisible(!modalVisibleIn);
     } else {
       console.log(favFriendCloud.fId);
       const chkFriend = favFriendCloud.fId?.find((item) => item === localIdIn);
@@ -37,12 +38,13 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
       if (chkFriend) {
         console.log("ya estaba, no se agrega, se elimina");
         console.log(favFriendCloud.fId);
-        let pack = dataAvailable.fId
+        let pack = dataAvailable.fId;
         let eraseIndex = pack?.indexOf(localIdIn);
         console.log(eraseIndex);
         const erased = pack.filter((item) => item !== localIdIn);
         console.log(erased);
         triggerPostFavFriend({ data: { friendsId: erased }, localId: localId });
+        setModalVisible(!modalVisibleIn);
         // console.log(pack);
       } else {
         console.log("no estaba");
@@ -52,6 +54,7 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
         const friends = [...pack, userSelected];
         console.log(friends);
         triggerPostFavFriend({ data: { friendsId: friends }, localId: localId });
+        setModalVisible(!modalVisibleIn);
       }
     }
   };
@@ -60,7 +63,7 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
     setAddF(true);
     setUserSelected(localIdIn);
     setDataAvailable(favFriendCloud);
-    chkAddDel()
+    chkAddDel();
   }, [modalVisibleIn, handleSubmit]);
   return (
     <View style={styles.modalGeneral}>
@@ -70,16 +73,16 @@ const FavoriteFriendModal = ({ modalVisibleIn, localIdIn, handleModal = () => {}
             <View style={styles.modalInfo}>
               <View style={styles.titleContainer}>
                 <Text style={styles.title}>Add to Friends</Text>
-                <Text>{userSelected }</Text>
+                <Text>{userSelected}</Text>
               </View>
               <BubblePlayer localId={userSelected} findMe={true} />
               <View style={styles.buttonsConatiner}>
-                {addF ?
+                {addF ? (
                   <ButtonBlue style={styles.buttonModal} title={"AddFriend"} onPress={handleSubmit} />
-                  :
+                ) : (
                   <ButtonRed style={styles.buttonModal} title={"DeleteFrien"} onPress={handleSubmit} />
-                }
-                
+                )}
+
                 <ButtonRed style={styles.buttonModal} title={"Cancel"} onPress={handleModal} />
               </View>
             </View>

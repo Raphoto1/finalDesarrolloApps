@@ -9,7 +9,7 @@ import ButtonBlue from "../componets/ButtonBlue";
 import { useSelector } from "react-redux";
 import { useGetProfileImageQuery, useGetProfileInfoQuery } from "../services/userService";
 
-const GridOfPlayers = ({ playersNumber }) => {
+const GridOfPlayers = ({ playersNumber,navigation,route }) => {
   const { localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: userImageCloud } = useGetProfileImageQuery(localId);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
@@ -31,7 +31,6 @@ const GridOfPlayers = ({ playersNumber }) => {
   console.log({ arrayChevere: arrayChevere });
   useEffect(() => {
     setArrayOfPlayers(arrayChevere);
-    console.log({ arrayChevereeffec: arrayOfPlayers });
   }, [playersNumber]);
   return (
     <>
@@ -51,8 +50,8 @@ const GridOfPlayers = ({ playersNumber }) => {
         <View style={styles.btnContinue}>
           {playersNumber >= 2 ?
             <View style={styles.btnGroup}>
-              <ButtonBlue title={"Find Players"} />
-              <ButtonBlue title={"Select Players"} />
+              <ButtonBlue title={"Find Players"} onPress={()=>navigation.navigate('FindPlayersScreen')}/>
+              <ButtonBlue title={"Select Players"} onPress={()=>navigation.navigate('SelectPlayersScreen')}/>
             </View>
             :
             null}

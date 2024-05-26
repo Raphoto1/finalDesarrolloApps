@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Header from "../componets/Header";
 import GameSession from "../screens/GameSession";
 import CreateSession from "../screens/CreateSession";
+import FindPlayersScreen from "../screens/FindPlayersScreen";
+import SelectPlayersScreen from "../screens/SelectPlayersScreen";
 
 const Stack = createNativeStackNavigator();
 const SessionStack = () => {
@@ -16,7 +18,9 @@ const SessionStack = () => {
         header: () => <Header title='Game Session' />,
       }}>
       <Stack.Screen name="GameSession" component={GameSession} />
-      <Stack.Screen name="CreateSession" component={CreateSession}/>
+      <Stack.Screen name="CreateSession" component={CreateSession} />
+      <Stack.Screen name="FindPlayersScreen" component={FindPlayersScreen} />
+      <Stack.Screen name="SelectPlayersScreen" component={SelectPlayersScreen}/>
     </Stack.Navigator>
   );
 };

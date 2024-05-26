@@ -7,7 +7,7 @@ import { useGetProfileImageQuery, useGetProfileInfoQuery } from "../services/use
 import { randomProfilePics } from "../constants/randomPics";
 
 
-const BubblePlayer = ({ bubblePress = () => {}, navigation, localId, findMe }) => {
+const BubblePlayer = ({ bubblePress = () => { }, navigation, localId, findMe }) => {
   //traer data del player, photo, name, findMe
   const { data: playerInfo, isLoadingPlayerInfo: isLoading, errorPlayerInfo: error } = useGetProfileInfoQuery(localId);
   const { data: playerPhoto } = useGetProfileImageQuery(localId);
