@@ -6,14 +6,10 @@ import Bubble from "./Bubble";
 import Search from "./Search";
 import { colors } from "../constants/colors";
 
-const GridList = ({
-  listToShow,
-  specialFilter,
-  navigation,
-  bubbleFunct,
-  targetRedirectBubble,
-  isLoadingIn,
-}) => {
+
+
+const GridList = ({ listToShow, specialFilter, navigation, bubbleFunct, targetRedirectBubble, isLoadingIn }) => {
+
   const [searchWord, setSearchWord] = useState("");
   const [extraFilter, setExtraFilter] = useState("");
   const [dataEmpty, setDataEmpty] = useState(false);
@@ -25,22 +21,14 @@ const GridList = ({
     setIsLoading(true);
     if (specialFilter) {
       setExtraFilter(specialFilter);
-      const gamesPrefilter = await listToShow.filter((game) =>
-        game.genres[0].name
-          .toLocaleLowerCase()
-          .includes(extraFilter.toLocaleLowerCase())
-      );
-      const gamesFilter = await gamesPrefilter.filter((game) =>
-        game.name.toLocaleLowerCase().includes(searchWord.toLocaleLowerCase())
-      );
+      const gamesPrefilter = await listToShow.filter((game) => game.genres[0].name.toLocaleLowerCase().includes(extraFilter.toLocaleLowerCase()));
+      const gamesFilter = await gamesPrefilter.filter((game) => game.name.toLocaleLowerCase().includes(searchWord.toLocaleLowerCase()));
       gamesFilter ? setDataEmpty(false) : setDataEmpty(true);
 
       setIsLoading(false);
       setGamesFiltered(gamesFilter);
     } else {
-      const gamesFilter = await listToShow.filter((game) =>
-        game.name.toLocaleLowerCase().includes(searchWord.toLocaleLowerCase())
-      );
+      const gamesFilter = await listToShow.filter((game) => game.name.toLocaleLowerCase().includes(searchWord.toLocaleLowerCase()));
       gamesFilter ? setDataEmpty(false) : setDataEmpty(true);
       setIsLoading(false);
       setGamesFiltered(gamesFilter);
@@ -54,31 +42,27 @@ const GridList = ({
   return (
     <View style={styles.gridContainer}>
       <View style={styles.searchContainer}>
-        <Search
-          error={error}
-          onSearch={setSearchWord}
-          handleClear={() => setGamesFiltered(listToShow)}
-        />
+        <Search error={error} onSearch={setSearchWord} handleClear={() => setGamesFiltered(listToShow)} />
       </View>
       <View style={styles.gridGroup}>
         <FlatList
           data={gamesFiltered}
           numColumns={3}
           initialNumToRender={30}
-          ListEmptyComponent={
-            isLoading ? <Text>Loading...</Text> : <Text>No Results</Text>
-          }
-          ListFooterComponent={
-            dataEmpty ? null : <Bubble text={`No More Data`} />
-          }
+          ListEmptyComponent={isLoading ? <Text>Loading...</Text> : <Text>No Results</Text>}
+          ListFooterComponent={dataEmpty ? null : <Bubble text={`No More Data`} />}
           renderItem={({ item }) => (
             <Bubble
               text={item.name}
               thumbnail={item.background_image}
               navigation={navigation}
-              bubblePress={targetRedirectBubble?() => {
-                navigation.navigate(`${targetRedirectBubble}`, `${item.name}`);
-              }:()=>navigation.navigate('SessionStack',{screen:'CreateSession',params:{gameId:item.id}})}
+              bubblePress={
+                targetRedirectBubble
+                  ? () => {
+                      navigation.navigate(`${targetRedirectBubble}`, `${item.name}`);
+                    }
+                  : () => navigation.navigate("SessionStack", { screen: "CreateSession", params: { gameId: item.id } })
+              }
             />
           )}
         />
