@@ -8,7 +8,7 @@ import { fonts } from "./src/constants/fonts";
 import { colors } from "./src/constants/colors";
 import Store from "./src/Store";
 import { init } from "./src/db";
-
+// date https://github.com/henninghall/react-native-date-picker
 (async () => {
   try {
     const response = await init();

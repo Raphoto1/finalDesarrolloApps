@@ -22,9 +22,9 @@ const FindPlayersScreen = ({ navigation, route }) => {
           }}
         />
       </View>
-      <GamePreview gameInfo={gameInfo } />
+      <GamePreview gameInfo={gameInfo} />
       <View style={styles.pContainer}>
-        <GridOfPlayersFind playersNumber={playersAmount} navigation={navigation} />
+        <GridOfPlayersFind playersNumber={playersAmount} navigation={navigation} gameId={gameId} />
       </View>
     </View>
   );

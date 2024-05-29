@@ -15,7 +15,7 @@ const SelectPlayersScreen = ({navigation}) => {
       <View>
       <GamePreview gameInfo={gamesInfo} />
       <View style={styles.pContainer}>
-        <GridOfPlayersSelect playersNumber={playersAmount} navigation={navigation} />
+        <GridOfPlayersSelect playersNumber={playersAmount} navigation={navigation} gameId={gameId}/>
       </View>
     </View>
   );

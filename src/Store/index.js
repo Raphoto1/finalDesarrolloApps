@@ -9,6 +9,7 @@ import GameSessionSlice from "../features/GameSession/GameSessionSlice";
 import { userApi } from "../services/userService";
 import { gamesApi } from "../services/gamesService";
 import { authApi } from "../services/authService";
+import { gameSessionApi } from "../services/gameSessionService";
 const store = configureStore({
   reducer: {
     counterReducer,
@@ -18,8 +19,10 @@ const store = configureStore({
     [userApi.reducerPath]: userApi.reducer,
     [gamesApi.reducerPath]: gamesApi.reducer,
     [authApi.reducerPath]: authApi.reducer,
+    [gameSessionApi.reducerPath]: gameSessionApi.reducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(gamesApi.middleware).concat(authApi.middleware).concat(userApi.middleware),
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(gamesApi.middleware).concat(authApi.middleware).concat(userApi.middleware).concat(gameSessionApi.middleware),
 });
 
 setupListeners(store.dispatch);

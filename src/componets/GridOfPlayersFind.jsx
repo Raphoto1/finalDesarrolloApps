@@ -7,17 +7,27 @@ import Bubble from "./Bubble";
 import BubblePlayer from "./BubblePlayer";
 import { randomProfilePics } from "../constants/randomPics";
 import ButtonBlue from "./ButtonBlue";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useGetProfileImageQuery, useGetProfileInfoQuery, useGetUsersListQuery } from "../services/userService";
+import DatePickerModal from "./DatePickerModal";
+import { setDateTimeSession, setGroupOfPlayersSelected } from "../features/GameSession/GameSessionSlice";
+import { useGetGameSessionByIdQuery, usePostGameSessionByIdMutation } from "../services/gameSessionService";
 
-const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
+const GridOfPlayersFind = ({ playersNumber, navigation, route, gameId }) => {
+  const dispatch = useDispatch();
   const { localId, userInfo } = useSelector((state) => state.auth.value);
+  const { groupOfPlayersSelected, datetimeSession } = useSelector((state) => state.GameSessionSlice.value);
   const { data: userImageCloud } = useGetProfileImageQuery(localId);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
   const { data: playerFind } = useGetUsersListQuery();
+  const { data: userSessions } = useGetGameSessionByIdQuery(localId);
+  const [triggerPostGameSession, result] = usePostGameSessionByIdMutation(localId);
+
   const [arrayOfPlayers, setArrayOfPlayers] = useState([]);
   const [playersAvailable, setPlayersAvailable] = useState([]);
   const [defPlayers, setDefPlayers] = useState(null);
+  const [allowCall, setAllowCall] = useState(false);
+  const [allowTime, setAllowTime] = useState(false);
   //crear array para el grid
   const baseObject = { name: userInfoCloud.userName };
   const noName = { name: "No User Name" };
@@ -28,7 +38,6 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
   //filtrar jugadores que quieren que los encuentren
   const organizePlayersAvailable = () => {
     const filtered = playerFind.filter((item) => item.findMe === true);
-
     setPlayersAvailable(filtered);
   };
   //generador de random sin repetir para no repetir id
@@ -41,7 +50,6 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
       const shuf = Math.floor(Math.random() * (max - min + 1)) + min;
       uniqueIndex.add(shuf);
     }
-
     return Array.from(uniqueIndex);
   };
   //mezclador de players
@@ -58,22 +66,39 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
       }
     });
     setDefPlayers(result);
-
+    dispatch(setGroupOfPlayersSelected({ groupOfPlayersSelected: result }));
   };
 
   const handleCall = () => {
+    if (userSessions === null) {
+      const pack = { date: datetimeSession, fId: groupOfPlayersSelected, gameId: gameId };
+      triggerPostGameSession({ data: { gameSession: [pack] }, localId: localId });
+    } else {
+      let oldSessions = userSessions.gameSession;
+      let pack = { date: datetimeSession, fId: groupOfPlayersSelected, gameId: gameId };
+      let packFinal = [...oldSessions, pack];
+      triggerPostGameSession({ data: { gameSession: packFinal }, localId: localId });
+    }
+    //confirmacion
+    setAllowCall(false);
+    setAllowTime(false);
+    dispatch(setDateTimeSession({ datetimeSession: null }), setGroupOfPlayersSelected({ groupOfPlayersSelected: null }));
     Alert.alert("Call to Play Made", "Lets Play", [
       {
         text: "Ok",
       },
     ]);
-  }
+    navigation.navigate('Home');
+  };
 
   useEffect(() => {
+    groupOfPlayersSelected ? setAllowTime(true) : null;
+    if (datetimeSession && groupOfPlayersSelected) {
+      setAllowCall(true);
+    }
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
-
-  }, [playersNumber]);
+  }, [playersNumber, datetimeSession, groupOfPlayersSelected]);
   return (
     <>
       <View style={styles.container}>
@@ -107,12 +132,13 @@ const GridOfPlayersFind = ({ playersNumber, navigation, route }) => {
           />
         )}
         <View style={styles.btnContinue}>
-            <View style={styles.btnShuffle}>
-              <ButtonBlue title={"Let's Find Players"} onPress={shufflePlayer} />
-            </View>
+          <View style={styles.btnShuffle}>
+            <ButtonBlue title={"Let's Find Players"} onPress={shufflePlayer} />
+            {allowTime ? <DatePickerModal /> : null}
+          </View>
           <View style={styles.btnGroup}>
-            <ButtonBlue title={"Call!!"} onPress={handleCall}/>
-            <ButtonBlue title={"Cancel"} onPress={()=>navigation.navigate('Home')}/>
+            {allowCall ? <ButtonBlue title={"Call!!"} onPress={handleCall} /> : null}
+            <ButtonBlue title={"Cancel"} onPress={() => navigation.navigate("Home")} />
           </View>
         </View>
       </View>
@@ -133,20 +159,22 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: "100%",
     height: "100%",
-    paddingTop: "90%",
+    paddingTop: "70%",
     alignItems: "center",
   },
   btnGroup: {
     justifyContent: "space-evenly",
     gap: 50,
-    width: "50%",
+    width: "60%",
     flexDirection: "row",
   },
   btnShuffle: {
-    width: '100%',
-    paddingBottom:10,
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-  }
+    width: "100%",
+    flexDirection: "column",
+    gap: 10,
+    paddingBottom: 10,
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+  },
 });

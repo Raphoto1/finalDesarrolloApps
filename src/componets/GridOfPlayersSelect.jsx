@@ -1,5 +1,5 @@
 //imports de app
-import { StyleSheet, Text, View, FlatList,Alert } from "react-native";
+import { StyleSheet, Text, View, FlatList, Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 //imports propios
@@ -10,21 +10,27 @@ import ButtonBlue from "./ButtonBlue";
 import ButtonRed from "./ButtonRed";
 import { useDispatch, useSelector } from "react-redux";
 import ListOfPlayersModal from "./ListOfPlayersModal";
+import DatePickerModal from "./DatePickerModal";
 import { useGetProfileImageQuery, useGetProfileInfoQuery, useGetUsersListQuery } from "../services/userService";
-import { setPlayerChoosed } from "../features/GameSession/GameSessionSlice";
+import { setGroupOfPlayersSelected, setPlayerChoosed, setDateTimeSession } from "../features/GameSession/GameSessionSlice";
+import { useGetGameSessionByIdQuery, usePostGameSessionByIdMutation } from "../services/gameSessionService";
 
-const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
+const GridOfPlayersSelect = ({ playersNumber, navigation, route, gameId }) => {
   const dispatch = useDispatch();
-  const { playerChoosed } = useSelector((state) => state.GameSessionSlice.value);
+  const { playerChoosed, datetimeSession, groupOfPlayersSelected } = useSelector((state) => state.GameSessionSlice.value);
   const { localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: userImageCloud } = useGetProfileImageQuery(localId);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
   const { data: playerFind } = useGetUsersListQuery();
+  const { data: userSessions } = useGetGameSessionByIdQuery(localId);
+  const [triggerPostGameSession, result] = usePostGameSessionByIdMutation();
   const [arrayOfPlayers, setArrayOfPlayers] = useState(null);
   const [playersAvailable, setPlayersAvailable] = useState([]);
   const [defPlayers, setDefPlayers] = useState(null);
   const [indexSelected, setIndexSelected] = useState(1);
   const [modalVisible, setModalVisible] = useState(false);
+  const [allowTime, setAllowTime] = useState(false);
+  const [allowCall, setAllowCall] = useState(false);
 
   //crear array para el grid
   const baseObject = { name: userInfoCloud.userName };
@@ -38,20 +44,19 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
   //filtrar jugadores que quieren que los encuentren
   const organizePlayersAvailable = () => {
     const filtered = playerFind.filter((item) => item.findMe === true);
-
     setPlayersAvailable(filtered);
   };
 
   //mezclador de players
   const assignGridUsers = () => {
     let work2 = [];
-    const work = arrayOfPlayers;
-    const ceroData = arrayChevere[0];
-
-    work[indexSelected] = { info: playerChoosed };
+    let work = [...arrayOfPlayers];
+    let ceroData = arrayChevere[0];
+    let newInf = { info: playerChoosed };
+    work[indexSelected] = newInf;
     work[0] = { info: ceroData };
     work2 = work.map((item, index) => {
-      if (item.info == undefined) {
+      if (item.info === undefined) {
         return { info: noName2 };
       } else {
         return item;
@@ -59,6 +64,7 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
     });
     setArrayOfPlayers(work2);
     setDefPlayers(work2);
+    dispatch(setGroupOfPlayersSelected({ groupOfPlayersSelected: work2 }));
   };
   //encontrar el index del array y agregarle info, la info viene de un modal
   const handleModal = (indexSel) => {
@@ -77,20 +83,41 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
   };
 
   const handleCall = () => {
+    if (userSessions === null) {
+      const pack = { date: datetimeSession, fId: groupOfPlayersSelected, gameId: gameId };
+      triggerPostGameSession({ data: { gameSession: [pack] }, localId: localId });
+    } else {
+      let oldSessions = userSessions.gameSession;
+      let pack = { date: datetimeSession, fId: groupOfPlayersSelected, gameId: gameId };
+      let packFinal = [...oldSessions, pack];
+      triggerPostGameSession({ data: { gameSession: packFinal }, localId: localId });
+    }
+    setAllowCall(false);
+    setAllowTime(false);
+    dispatch(
+      setDateTimeSession({ datetimeSession: null }),
+      setGroupOfPlayersSelected({ groupOfPlayersSelected: null }),
+      setPlayerChoosed({ playerChoosed: null })
+    );
     Alert.alert("Call to Play Made", "Lets Play", [
       {
         text: "Ok",
       },
     ]);
-  }
+    navigation.navigate('Home');
+  };
 
   useEffect(() => {
     organizePlayersAvailable();
     setArrayOfPlayers(arrayChevere);
     if (playerChoosed) {
       assignGridUsers();
+      setAllowTime(true);
     }
-  }, [playersNumber, playerChoosed]);
+    if (datetimeSession && groupOfPlayersSelected) {
+      setAllowCall(true);
+    }
+  }, [playersNumber, playerChoosed, datetimeSession]);
 
   return (
     <>
@@ -98,8 +125,9 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route }) => {
         <ListOfPlayersModal modalVisibleIn={modalVisible} handleModal={handleModal} setModalVisible={setModalVisible} submitModal={submitModal} />
         <View style={styles.btnSuper}>
           <View style={styles.btnContinue}>
+            {allowTime ? <DatePickerModal /> : null}
             <View style={styles.btnGroup}>
-              <ButtonBlue title={"Call!!"} onPress={handleCall}/>
+              {allowCall ? <ButtonBlue title={"Call!!"} onPress={handleCall} /> : null}
               <ButtonRed
                 title={"Cancel"}
                 onPress={() => {
@@ -157,6 +185,7 @@ const styles = StyleSheet.create({
   },
   btnSuper: {
     height: "20%",
+    width: "100%",
   },
   gridGroup: {
     height: "75%",
@@ -166,6 +195,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "50%",
     alignItems: "center",
+    gap: 10,
   },
   btnGroup: {
     justifyContent: "space-evenly",

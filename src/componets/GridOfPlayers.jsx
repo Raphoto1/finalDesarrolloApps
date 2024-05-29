@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: "100%",
     height: "100%",
-    paddingTop: "65%",
+    paddingTop: "50%",
     alignItems: "center",
   },
   btnGroup: {
