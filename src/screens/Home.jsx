@@ -15,6 +15,9 @@ import {
   usePostProfileInfoMutation,
 } from "../services/userService";
 import { setCameraImage, setUserInfo } from "../features/User/UserSlice";
+import { useGetGameSessionByIdQuery } from "../services/gameSessionService";
+import ButtonBlue from "../componets/ButtonBlue";
+import SessionCard from "../componets/SessionCard";
 
 const Home = ({ route, navigation }) => {
   const [favFriends, setFavFriends] = useState([]);
@@ -27,6 +30,7 @@ const Home = ({ route, navigation }) => {
   const { localId, userInfo } = useSelector((state) => state.auth.value);
   const { data: userInfoCloud } = useGetProfileInfoQuery(localId);
   const { data: userFriends, isLoading: isLoadingFriends } = useGetFavoriteFriendsQuery(localId);
+  const { data: gameSessions } = useGetGameSessionByIdQuery(localId);
   //user favorites reOrganize
   const favs = async () => {
     const reOrganize = await userFriends.fId.map((item) => {
@@ -44,8 +48,17 @@ const Home = ({ route, navigation }) => {
 
   return (
     <View>
-      <Text>Gamming Panas HOME puede ir un call del favorito</Text>
-
+      <View style={styles.sessSection}>
+        {gameSessions ? (
+          <View style={styles.sessGroup}>
+            <Text style={styles.title}>Last Call</Text>
+            <SessionCard gameId={gameSessions.gameSession[0].gameId} date={gameSessions.gameSession[0].date } players={gameSessions.gameSession[0].fId}/>
+            <ButtonBlue title={"Check all Sessions"} onPress={()=>navigation.navigate("SessionStack", { screen: "GameSession"})} />
+          </View>
+        ) : (
+          <Text style={styles.title}> Find A game Play!!</Text>
+        )}
+      </View>
       <ScrollView style={styles.scrollView}>
         <View style={styles.mainGroup}>
           <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} listToShow={allGames} isLoadingIn={isLoadingGames} />
@@ -77,4 +90,23 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "column",
   },
+  sessSection:{
+    width: '100%',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    padding:5
+  },
+  sessGroup: {
+    width: '100%',
+    justifyContent: 'center',
+    alignItems:'center'
+  },
+  title: {
+    width: '100%',
+    fontFamily: 'LatoBold',
+    fontSize:24,
+    textAlign: 'center',
+    color:colors.darkBlue
+  }
 });

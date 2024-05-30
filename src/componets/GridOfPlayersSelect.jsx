@@ -104,7 +104,7 @@ const GridOfPlayersSelect = ({ playersNumber, navigation, route, gameId }) => {
         text: "Ok",
       },
     ]);
-    navigation.navigate('Home');
+    navigation.navigate("SessionStack", { screen: "GameSession"});
   };
 
   useEffect(() => {

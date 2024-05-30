@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const SessionsList = () => {
   const { localId } = useSelector((state) => state.auth.value);
   const { data: gameSessions } = useGetGameSessionByIdQuery(localId);
-  console.log(gameSessions?.gameSession);
+
   return (
     <View>
       <View style={styles.listContainer}>
