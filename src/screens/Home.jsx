@@ -48,6 +48,7 @@ const Home = ({ route, navigation }) => {
 
   return (
     <View>
+      <ScrollView style={styles.scrollView}>
       <View style={styles.sessSection}>
         {gameSessions ? (
           <View style={styles.sessGroup}>
@@ -59,7 +60,6 @@ const Home = ({ route, navigation }) => {
           <Text style={styles.title}> Find A game Play!!</Text>
         )}
       </View>
-      <ScrollView style={styles.scrollView}>
         <View style={styles.mainGroup}>
           <HorizontalList title={"Games Available"} navigation={navigation} gridList={"GameList"} listToShow={allGames} isLoadingIn={isLoadingGames} />
           <HorizontalList
@@ -83,7 +83,7 @@ export default Home;
 const styles = StyleSheet.create({
   scrollView: {
     paddingBottom: 100,
-    height: "97%",
+    height: "100%",
   },
   mainGroup: {
     height: "100%",
