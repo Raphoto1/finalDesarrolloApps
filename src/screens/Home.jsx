@@ -33,7 +33,8 @@ const Home = ({ route, navigation }) => {
   const { data: gameSessions } = useGetGameSessionByIdQuery(localId);
   //user favorites reOrganize
   const favs = async () => {
-    const reOrganize = await userFriends.fId.map((item) => {
+  
+    const reOrganize = await userFriends?.fId.map((item) => {
       return { localId: item, findMe: true };
     });
     setFavFriends(reOrganize);

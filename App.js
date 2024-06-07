@@ -1,5 +1,5 @@
 //imports de app
-import { SafeAreaView, StyleSheet, Platform, StatusBar,Alert } from "react-native";
+import { SafeAreaView, StyleSheet, Platform, StatusBar, Alert } from "react-native";
 import { useFonts } from "expo-font";
 import { Provider } from "react-redux";
 //imports propios
@@ -11,7 +11,9 @@ import { init } from "./src/db";
 // date https://github.com/henninghall/react-native-date-picker
 (async () => {
   try {
-    const response = await init();
+    if (Platform.OS !== "web") {
+      const response = await init();
+    }
   } catch (error) {
     Alert.alert("error on sql", "restart app", [
       {
@@ -19,7 +21,7 @@ import { init } from "./src/db";
       },
     ]);
   }
-})()
+})();
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts(fonts);
